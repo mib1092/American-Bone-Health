@@ -249,6 +249,7 @@ img {
             margin-top: 66px;
             margin-left: 14px;
             font-size: 16px;
+            line-height: 1;
             color: #191f22;
             -webkit-transition: margin 0.35s;
             -moz-transition: margin 0.35s;
@@ -304,9 +305,8 @@ img {
                         }
                     .close-search {
                         position: relative;
-                        top: -6px;
-                        font-size: 46px;
-                        font-family: 'proximanova-semibold';
+                        top: -1px;
+                        font: 46px/1 'proximanova-semibold';
                         color: #bfbfbf;
                         cursor: pointer;
                         -webkit-transition: margin 0.2s;
