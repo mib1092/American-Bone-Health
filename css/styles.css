@@ -330,9 +330,29 @@ img {
     color: #fff;
 }
     .banner-box {
-        max-width: 580px;
-        width: 100%;
+        display: table-cell;
+        width: 580px;
+        height: 720px;
+        max-height: 40%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        vertical-align: middle;
     }
+        .banner-title {
+            margin-bottom: 22px;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 1;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .banner-box p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .banner-box p:last-of-type {
+            margin-bottom: 33px;
+        }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
