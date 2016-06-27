@@ -20,7 +20,36 @@ $(document).ready(function() {
 
     // for header search toggle
     $(".search-btn, .close-search").on('click', function(){
-        $('#search-box').slideToggle(200);
+        $('#search-box').slideToggle(300);
     });
 
+    // for Owl Carousel sliders
+    $('.volunteers-slider').owlCarousel({
+        items:1,
+        stagePadding: 300,
+        loop:true,
+        margin:120,
+        dots:false,
+        nav:true,
+        navSpeed:800,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                stagePadding: 150
+            },
+            1280:{
+                stagePadding: 300,
+                margin:100
+            },
+            1600:{
+                stagePadding: 400,
+                margin:120
+            }
+        }
+    })
 });
