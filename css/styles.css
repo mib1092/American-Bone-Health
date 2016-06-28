@@ -856,7 +856,7 @@ img {
         vertical-align: middle;
     }
         .join-title {
-            margin-bottom: 15px;
+            margin-bottom: 17px;
             font-size: 34px;
             line-height: 1.6;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -873,7 +873,6 @@ img {
     .join-event-list {
         display: inline-block;
         width: 30%;
-        margin-top: 5px;
         margin-left: 100px;
         vertical-align: middle;
     }
@@ -884,7 +883,7 @@ img {
         .join-event-list li a::before{
             content: '';
             position: absolute;
-            margin-top: -10px;
+            margin-top: -5px;
             top: 50%;
             left: -4px;
             width: 10px;
@@ -902,13 +901,13 @@ img {
             padding-right: 20px;
             font: 700 18px/1 'proximanova-bold';
             border-left: 2px solid #ffffff;
-            background-color: rgba(38, 48, 53, 0.15);
+            background-color: rgba(38, 48, 53, 0.2);
             text-decoration: none;
             color: #ffffff;
             cursor: pointer;
         }
         .join-event-list li a:hover{
-            background-color: rgba(38, 48, 53, 0.55);
+            background-color: rgba(38, 48, 53, 0.5);
         }
             .join-event-title{
                 display: block;
