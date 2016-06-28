@@ -1,4 +1,3 @@
-/*----------------------------------------------------------------------------------*/
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
@@ -772,6 +771,92 @@ img {
             height: auto;
         }
 
+.section-join {
+    background-color: #191f22;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    color: #ffffff;
+}
+    .join-box {
+        display: table-cell;
+        width: 580px;
+        height: 250px;
+        max-height: 40%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        vertical-align: middle;
+    }
+        .join-title {
+            margin-bottom: 15px;
+            font-size: 34px;
+            line-height: 1.6;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .join-box p {
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 1.6;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .join-box p:last-of-type {
+            margin-bottom: 32px;
+        }
+    .join-event-list {
+        display: table-cell;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 100px;
+        vertical-align: middle;
+    }
+        .join-event-list li{
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .join-event-list li::before{
+            content: '';
+            position: absolute;
+            top: 43%;
+            left: -4px;
+            width: 10px;
+            height: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            z-index: 3;
+        }
+        .join-event-list li a{
+            display: block;
+            min-height: 75px;
+            width: 300px;
+            padding-left: 20px;
+            font: 700 18px/1 'proximanova-bold';
+            border-left: 2px solid #ffffff;
+            -moz-border-top-left-radius: 5px;
+            -moz-border-bottom-left-radius: 5px;
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background-color: rgba(38, 48, 53, 0.15);
+            text-decoration: none;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .join-event-list li a:hover{
+            background-color: rgba(38, 48, 53, 0.55);
+        }
+            .join-event-title{
+                display: inline-block;
+                padding: 20px 0 5px 0;
+            }
+            .join-event-date{
+                display: inline-block;
+                padding-bottom: 20px;
+                font: 400 14px 'proximanova-regular';
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
