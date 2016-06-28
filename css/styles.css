@@ -884,7 +884,8 @@ img {
         .join-event-list li a::before{
             content: '';
             position: absolute;
-            top: 43%;
+            margin-top: -10px;
+            top: 50%;
             left: -4px;
             width: 10px;
             height: 10px;
@@ -920,51 +921,53 @@ img {
             }
 
 /*-------------------------------------FAQ------------------------------------------*/
-.section-accordion{
+.section-accordion {
     text-align: left;
     background-color: #e4e9ed;
 }
-.section-accordion > .container div{
+.section-accordion > .container div {
     margin-bottom: 20px;
-    padding-left: 40px;
 }
-    .section-accordion label{
-        padding: 5px 20px;
+    .section-accordion label {
+        padding: 35px 75px 35px 40px;
         position: relative;
         z-index: 20;
         display: block;
-        height: 30px;
         cursor: pointer;
-        color: #777;
         text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
         line-height: 33px;
-        font-size: 19px;
+        font: 600 24px 'proximanova-bold';
+        color: #0f191d;
         background: #ffffff;
     }
     .section-accordion label:hover,
-    .section-accordion input:checked + label{
+    .section-accordion input:checked + label {
         color: #0097de;
     }
     .section-accordion input:checked + label,
-    .section-accordion input:checked + label:hover{
+    .section-accordion input:checked + label:hover {
         border-right: 2px solid #0097de;
         border-top: 2px solid #0097de;
         border-left: 2px solid #0097de;
     }
-    .section-accordion label:hover:after,
-    .section-accordion input:checked + label:hover:after{
-        content: '';
+    .section-accordion label::after,
+    .section-accordion label:hover::after {
+        content: '+';
         position: absolute;
-        width: 24px;
-        height: 24px;
-        right: 13px;
-        top: 7px;
-        background: transparent url(../images/arrow_down.png) no-repeat center center;
+        margin-top: -20px;
+        right: 40px;
+        top: 50%;
+        font-size: 40px;
     }
-    .section-accordion input:checked + label:hover:after{
-        background-image: url(../images/arrow_up.png);
+    .section-accordion input:checked + label::after {
+        content: '\2013';
+        position: absolute;
+        margin-top: -24px;
+        right: 40px;
+        top: 50%;
+        font-size: 35px;
     }
-    .section-accordion input{
+    .section-accordion input {
         display: none;
     }
     .section-accordion article{
@@ -981,17 +984,16 @@ img {
         border-right: 2px solid #0097de;
         border-bottom: 2px solid #0097de;
         border-left: 2px solid #0097de;
-
+        background-color: #ffffff;
+        color: #0f191d;
     }
-    .section-accordion article p{
-        font-style: italic;
-        color: #777;
-        line-height: 23px;
-        font-size: 14px;
-        padding: 20px;
+    .section-accordion article p {
+        padding: 0px 75px 35px 40px;
+        font: 400 18px 'proximanova-regular';
         text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+        color: #0f191d;
     }
-    .section-accordion input:checked ~ article{
+    .section-accordion input:checked ~ article {
         height: 100%;
         background-color: #ffffff;
         -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
