@@ -406,6 +406,10 @@ img {
     position: relative;
     padding-top: 150px;
 }
+body:not(.home) .wrapper{
+    padding-top: 160px;
+    background-color: #e4e9ed;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -525,13 +529,15 @@ img {
                     .close-search:hover {
                         color: #191f22;
                     }
-    .header-bottom-line:after{
+    body:not(.home) .header:after{
         content: '';
         display: inline-block;
-        position: relative;
+        position: absolute;
         width: 100%;
         height: 10px;
         bottom: -10px;
+        left: 0px;
+        right: 0px;
         background-image: url(../img/header/colored_line.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -581,7 +587,7 @@ img {
 
 }
     .breadcrumbs ul {
-        margin-top: 38px;
+        margin: 24px 0;
         float: left;
         font: 400 13px 'proximanova-semibold';
         text-transform: uppercase;
