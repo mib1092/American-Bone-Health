@@ -272,6 +272,11 @@ img {
 }
 .title.white { color: #fff; }
 
+.title-sidebar {
+    text-align: left;
+    font: 600 24px 'proximanova-bold';
+}
+
 .cell-list {
     overflow: hidden;
     margin-left: -20px;
@@ -373,6 +378,7 @@ img {
                     }
 
 .mar-b-60 { margin-bottom: 60px; }
+.mar-b-40 { margin-bottom: 40px; }
 
 .container-col {
     overflow: hidden;
@@ -1239,7 +1245,37 @@ body.inner .wrapper {
                     margin-bottom: 8px;
                 }
 
-
+/*-------------------------------------STANDARD-PAGE--------------------------------*/
+.section-standard-page {
+    padding-bottom: 100px;
+}
+    .section-standard-page > .container {
+        overflow: hidden;
+    }
+        .sidebar-right {
+            float: right;
+            max-width: 380px;
+            margin: 0px 0px 0px 20px;
+            padding: 30px 20px 20px;
+            background-color: #ffffff;
+         }
+            .tranding-list {
+                padding-top: 18px;
+            }
+            .tranding-list li {
+                margin-bottom: 10px;
+            }
+            .tranding-list .list-box {
+                border: 1px solid #dedede;
+            }
+            .sidebar-right .tranding-list li:last-child {
+                margin-bottom: 0px;
+            }
+        .standard-article{
+            overflow: hidden;
+            padding: 40px;
+            background-color: #ffffff;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
