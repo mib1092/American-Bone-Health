@@ -1,7 +1,7 @@
 $(document).ready(function() {
     //блокировка стандартного поведения ссылок
     function prevent(){
-        $('.prevent').on('click', function(event){
+        $('.prevent, a[href="#"]').on('click', function(event){
             event.preventDefault();
         });
     }
