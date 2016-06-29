@@ -458,7 +458,7 @@ body.inner .wrapper {
             transition: margin 0.35s;
         }
         .scroll-js .btn.donate {
-            margin-top: 27px;
+            margin-top: 28px;
         }
         a.search-btn {
             float: right;
@@ -473,7 +473,7 @@ body.inner .wrapper {
             transition: margin 0.35s;
         }
         .scroll-js a.search-btn {
-            margin-top: 37px;
+            margin-top: 38px;
         }
         a.search-btn:hover {
             text-decoration: none;
@@ -574,7 +574,7 @@ body.inner .wrapper {
             transition: height 0.35s;
         }
         .scroll-js .main-nav ul:not(.sub-menu) a {
-            height: 93px;
+            height: 96px;
         }
         .main-nav a:hover {
             text-decoration: none;
