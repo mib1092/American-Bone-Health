@@ -417,6 +417,7 @@ img {
     width: 100%;
     background: #fff;
 }
+
     .header > .container {
         position: relative;
     }
@@ -524,7 +525,18 @@ img {
                     .close-search:hover {
                         color: #191f22;
                     }
-
+    .header-bottom-line:after{
+        content: '';
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 10px;
+        bottom: -10px;
+        background-image: url(../img/header/colored_line.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 /*--------------------------------------NAV-----------------------------------------*/
 .main-nav {
     float: right;
@@ -569,7 +581,7 @@ img {
 
 }
     .breadcrumbs ul {
-        margin: 24px 0;
+        margin-top: 38px;
         float: left;
         font: 400 13px 'proximanova-semibold';
         text-transform: uppercase;
