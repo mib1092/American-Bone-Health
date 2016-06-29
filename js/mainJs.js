@@ -45,5 +45,10 @@ $(document).ready(function() {
                 margin:120
             }
         }
-    })
+    });
+
+    // for FAQ accordion
+    $(".accordion-list > li").on('click', function(){
+        $(this).toggleClass('active').find('.accordion-box-content').slideToggle(500);
+    });
 });

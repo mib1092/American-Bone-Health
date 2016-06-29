@@ -410,6 +410,10 @@ body:not(.home) .wrapper{
     padding-top: 160px;
     background-color: #e4e9ed;
 }
+body.inner .wrapper {
+    padding-top: 180px;
+    background-color: #e4e9ed;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -587,15 +591,16 @@ body:not(.home) .wrapper{
 
 }
     .breadcrumbs ul {
-        margin: 24px 0;
-        float: left;
-        font: 400 13px 'proximanova-semibold';
+        overflow: hidden;
+        display: inline-block;
+        margin: 0 0 12px;
+        font: 600 13px 'proximanova-semibold';
         text-transform: uppercase;
         background-color: #ffffff;
     }
         .breadcrumbs ul li {
             float: left;
-            padding: 13px 10px;
+            padding: 13px 10px 11px;
         }
             .breadcrumbs a {
                 position: relative;
@@ -613,9 +618,6 @@ body:not(.home) .wrapper{
                 right: -14px;
                 font-size: 24px;
                 color: #0f191d;
-            }
-            .breadcrumbs a:hover::after{
-                color: #0097de;
             }
             .breadcrumbs li:last-child > a:after{
                 display: none;
@@ -1146,105 +1148,81 @@ body:not(.home) .wrapper{
 
 /*-------------------------------------FAQ------------------------------------------*/
 .section-accordion {
+    padding: 0 0 100px;
     text-align: left;
     background-color: #e4e9ed;
 }
-.section-accordion > .container div {
-    margin-bottom: 20px;
-}
-    .section-accordion label {
-        padding: 35px 75px 35px 40px;
-        position: relative;
-        z-index: 20;
-        display: block;
-        cursor: pointer;
-        text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-        line-height: 33px;
-        font: 600 24px 'proximanova-bold';
-        color: #0f191d;
-        background: #ffffff;
+    .accordion-list {
     }
-    .section-accordion label:hover,
-    .section-accordion input:checked + label {
-        color: #0097de;
-    }
-    .section-accordion input:checked + label,
-    .section-accordion input:checked + label:hover {
-        position: relative;
-        z-index: 5;
-        border: 2px solid #0097de;
-    }
-    .section-accordion label::after{
-        content: '';
-        position: absolute;
-        width: 23px;
-        height: 3px;
-        right: 40px;
-        top: 50%;
-        margin-top: -1px;
-        background-color: #0f191d;
-    }
-    .section-accordion label::before{
-        content: '';
-        position: absolute;
-        width: 3px;
-        height: 23px;
-        right: 40px;
-        top: 50%;
-        margin-top: -11px;
-        margin-right: 10px;
-        background-color: #0f191d;
-    }
-    .section-accordion label:hover::after,
-    .section-accordion label:hover::before{
-        background-color: #0097de;
-    }
+        .accordion-list li{
+            margin-bottom: 20px;
+            padding: 32px 75px 32px 40px;
+            border: 2px solid #ffffff;
+            background: #ffffff;
+        }
+        .accordion-list li:last-child{
+            margin-bottom: 0;
+        }
+        .accordion-list li.active{
+            border: 2px solid #0097de;
+        }
+            .accordion-list h2 {
+                position: relative;
+                display: block;
+                cursor: pointer;
+                font: 600 24px 'proximanova-bold';
+                color: #0f191d;
+            }
 
-    .section-accordion input:checked + label::after {
-        content: '';
-        position: absolute;
-        width: 23px;
-        height: 3px;
-        right: 40px;
-        top: 50%;
-        margin-top: -1px;
-        background-color: #0097de;
-    }
-    .section-accordion input:checked + label::before {
-        -webkit-transition-duration: 0.5s;
-        -o-transition-duration: 0.5s;
-        -moz-transition-duration: 0.5s;
-        transition-duration: 0.5s;
-        opacity: 0;
-    }
-    .section-accordion input {
-        display: none;
-    }
-    .section-accordion article{
-        margin-top: -2px;
-        overflow: hidden;
-        height: 0px;
-        position: relative;
-        z-index: 10;
-        border-right: 2px solid #0097de;
-        border-bottom: 2px solid #0097de;
-        border-left: 2px solid #0097de;
-        background-color: #ffffff;
-        color: #0f191d;
-    }
-    .section-accordion article p {
-        padding: 0px 75px 35px 40px;
-        font: 400 18px 'proximanova-regular';
-        text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-        color: #0f191d;
-    }
-    .section-accordion input:checked ~ article {
-        position: relative;
-        height: auto;
-        margin-top: -2px;
-        z-index: 10;
-        background-color: #ffffff;
-    }
+            .accordion-list h2:after{
+                content: '';
+                position: absolute;
+                width: 23px;
+                height: 3px;
+                right: -38px;
+                top: 50%;
+                margin-top: -1px;
+                background-color: #0f191d;
+            }
+            .accordion-list h2:before{
+                content: '';
+                position: absolute;
+                width: 3px;
+                height: 23px;
+                right: -38px;
+                top: 50%;
+                margin-top: -11px;
+                margin-right: 10px;
+                background-color: #0f191d;
+                -webkit-transition-duration: 0.35s;
+                -o-transition-duration: 0.35s;
+                -moz-transition-duration: 0.35s;
+                transition: transform 0.35s;
+            }
+            .accordion-list h2:hover::after,
+            .accordion-list h2:hover::before{
+                background-color: #0097de;
+            }
+
+            .active h2:before {
+                -moz-transform: rotate(15deg);
+                -ms-transform: rotate(15deg);
+                -webkit-transform: rotate(15deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+            .accordion-box-content {
+                display: none;
+                height: auto;
+                color: #0f191d;
+            }
+                .accordion-box-content p {
+                    padding-bottom: 5px;
+                }
+                .accordion-box-content p:first-child {
+                    margin-top: 16px;
+                }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
