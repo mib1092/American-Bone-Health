@@ -593,7 +593,7 @@ body.inner .wrapper {
     .breadcrumbs ul {
         overflow: hidden;
         display: inline-block;
-        margin: 0 0 12px;
+        margin: 0 0 11px;
         font: 600 13px 'proximanova-semibold';
         text-transform: uppercase;
         background-color: #ffffff;
@@ -885,10 +885,6 @@ body.inner .wrapper {
         .volunteers-slider .owl-controls .owl-nav .owl-next {
             right: 280px;
         }
-        .volunteers-slider .owl-controls .owl-nav .owl-prev:hover,
-        .volunteers-slider .owl-controls .owl-nav .owl-next:hover {
-            opacity: 0.7;
-        }
             .volunteers-slider .owl-controls .owl-nav .owl-prev:before,
             .volunteers-slider .owl-controls .owl-nav .owl-next:before {
                 content: '';
@@ -901,6 +897,10 @@ body.inner .wrapper {
                 margin-left: -14px;
                 background: url(../img/content/arrow.png) no-repeat center transparent;
                 background-size: contain;
+                -webkit-transition: 0.2s;
+                -moz-transition: 0.2s;
+                -o-transition: 0.2s;
+                transition: 0.35s;
             }
             .volunteers-slider .owl-controls .owl-nav .owl-prev:before {
                 -moz-transform: rotate(180deg);
@@ -908,6 +908,12 @@ body.inner .wrapper {
                 -webkit-transform: rotate(180deg);
                 -o-transform: rotate(180deg);
                 transform: rotate(180deg);
+            }
+            .volunteers-slider .owl-controls .owl-nav .owl-prev:hover:before {
+                margin-left: -21px;
+            }
+            .volunteers-slider .owl-controls .owl-nav .owl-next:hover:before {
+                margin-left: -7px;
             }
 
 .section-events,
@@ -1157,25 +1163,31 @@ body.inner .wrapper {
         .accordion-list li{
             position: relative;
             margin-bottom: 20px;
-            padding: 32px 75px 16px 40px;
+            padding: 32px 75px 32px 40px;
             border: 2px solid #ffffff;
             background: #ffffff;
+            cursor: pointer;
+            -webkit-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            -moz-transition-duration: 0.3s;
+            transition: 0.3s;
         }
         .accordion-list li:last-child{
             margin-bottom: 0;
         }
         .accordion-list li.active{
-            border: 2px solid #0097de;
+            border-color: #0097de;
         }
             .accordion-list h2 {
                 position: relative;
-                display: block;
-                padding-bottom: 16px;
-                cursor: pointer;
-                font: 600 24px 'proximanova-bold';
+                font: 700 24px 'proximanova-bold';
                 color: #0f191d;
+                -webkit-transition-duration: 0.3s;
+                -o-transition-duration: 0.3s;
+                -moz-transition-duration: 0.3s;
+                transition: 0.3s;
             }
-            .active h2 {
+            .accordion-list .active h2 {
                 color: #0097de;
             }
             .accordion-list li:after{
@@ -1220,11 +1232,11 @@ body.inner .wrapper {
             }
             .accordion-box-content {
                 display: none;
-                height: auto;
                 color: #0f191d;
+                padding-top: 16px;
             }
                 .accordion-box-content p {
-                    padding-bottom: 8px;
+                    margin-bottom: 8px;
                 }
 
 
