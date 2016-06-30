@@ -1,14 +1,60 @@
-@media all and (max-width: 1260px) {
-
+@media all and (max-width: 1400px) {
+    .banner-box {
+        height: 620px;
+    }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1280px) {
+    .banner-box {
+        height: 550px;
+    }
+}
 
+@media all and (max-width: 1199px) {
+    .learn-more.big {
+        font-size: 20px;
+        padding: 16px 35px 14px;
+    }
+
+    .btn.donate {
+        margin-left: 30px;
+    }
+    .main-nav ul:not(.sub-menu) a {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .banner-box {
+        height: auto;
+    }
+}
+
+@media all and (max-width: 1080px) {
+    .main-nav ul:not(.sub-menu) a {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+    a.search-btn {
+        margin-left: 10px;
+    }
+    .btn.donate {
+        margin-left: 25px;
+    }
 }
 
 @media all and (max-width: 991px) {
     .desktop {
         display: none !important;
+    }
+
+    .section {
+        padding: 72px 0 80px;
+    }
+    .banner-box {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     .wrapper { padding-top: 106px; }
@@ -19,28 +65,212 @@
         margin-top: 4px;
     }
     a.search-btn {
-        margin-top: 38px;
+        margin: 32px 85px 0 20px;
+        font-size: 30px;
+        line-height: 1;
     }
-    .search-box ul {
-        padding: 27px 20px 10px;
+    .search-box {
+        left: 250px;
     }
+        .search-box ul {
+            padding: 28px 20px 28px;
+        }
 
     .mobile-menu-wrap,
     .mobile-menu-toggle {
         display: block;
     }
+
+    .faces-title {
+        font-size: 14px;
+        bottom: 10px;
+    }
+    .read-story {
+        bottom: -26px;
+        font-size: 13px;
+    }
 }
 
 @media all and (max-width: 768px) {
+    .wrapper { padding-top: 84px; }
+    .home .wrapper{ padding-top: 74px; }
+    .inner .wrapper { padding-top: 104px; }
 
+    .logo {
+        height: 70px;
+    }
+    .mobile-menu-toggle {
+        height: 74px;
+        width: 74px;
+    }
+    .mobile-menu-wrap {
+        top: 84px;
+    }
+    .home .mobile-menu-wrap {
+        top: 74px;
+    }
+    a.search-btn {
+        margin-top: 21px;
+        margin-right: 76px;
+    }
+    .search-box {
+        left: 210px;
+    }
+    .search-box ul {
+        padding: 17px 20px;
+    }
+
+    .faces-list {
+        display: block;
+        overflow: hidden;
+        margin-left: -15px;
+        width: auto;
+    }
+    .faces-list > li,
+    .faces-list .small-faces li {
+        display: block;
+        float: left;
+        width: 20%;
+        margin: 0;
+        padding-left: 15px;
+    }
+    .faces-list > .small-faces {
+        width: 40%;
+        padding-left: 0;
+    }
+    .faces-list > .small-faces li {
+        width: 50%;
+    }
+    .faces-list .faces-wrap {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .faces-list .faces-wrap img {
+        display: none;
+    }
 }
 
 @media all and (max-width: 640px) {
+    .search-box {
+        left: 0;
+    }
 
+    .faces-list {
+        margin-left: -20px;
+    }
+    .faces-list > li,
+    .faces-list > .small-faces {
+        position: relative;
+        display: block;
+        float: left;
+        width: 50%;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .faces-list > li:first-child {
+        width: 66.6%;
+    }
+    .faces-list > .small-faces {
+        width: 33.33%;
+    }
+    .faces-list > .small-faces li{
+        display: block;
+        width: 100%;
+        padding: 0 0 10px;
+    }
+    .faces-list > .small-faces li:last-child {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
 }
 
 @media all and (max-width: 480px) {
+    .learn-more.big {
+        font-size: 18px;
+        padding: 14px 30px 12px;
+    }
+    .btn, a.btn {
+        padding: 11px 20px 9px;
+    }
+    .section .btn {
+        min-width: 180px;
+    }
 
+    .banner-title {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    .banner-box p {
+        margin-bottom: 12px;
+        font-size: 17px;
+    }
+    .banner-box p:last-of-type {
+        margin-bottom: 25px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .mar-b-60 { margin-bottom: 40px; }
+
+    .wrapper { padding-top: 65px; }
+    .home .wrapper{ padding-top: 60px; }
+    .inner .wrapper { padding-top: 85px; }
+
+    .logo {
+        height: 56px;
+        margin-left: -10px;
+    }
+    .mobile-menu-toggle {
+        height: 60px;
+        width: 60px;
+    }
+    .mobile-menu-toggle span:before,
+    .mobile-menu-toggle span:after,
+    .mobile-menu-toggle span {
+        width: 28px;
+    }
+    .mobile-menu-wrap {
+        top: 65px;
+    }
+    .home .mobile-menu-wrap {
+        top: 60px;
+    }
+    a.search-btn {
+        margin: 15px 60px 0 0;
+        font-size: 28px;
+    }
+    .search-box ul {
+        padding: 17px 10px;
+    }
+    .search-box .btn {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .search-box li:first-child {
+        margin-left: 10px;
+    }
+
+    .faces-list {
+        padding-top: 20px;
+        margin-left: -10px;
+    }
+    .faces-list > li,
+    .faces-list > .small-faces {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    .faces-list > .small-faces li {
+        padding-bottom: 5px;
+    }
+    .faces-list > .small-faces li:last-child {
+        padding-top: 5px;
+        padding-bottom: 0;
+    }
 }
 
 @media all and (max-width: 360px) {

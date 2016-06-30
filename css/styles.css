@@ -654,6 +654,7 @@ img {
     }
     .mobile-menu-box {
         width: 320px;
+        max-width: 85%;
         background-color: #FFFFFF;
         position: absolute;
         right: -320px;
@@ -685,6 +686,7 @@ img {
             border-top: 1px solid #E5E5E5;
         }
             .mobile-menu li a {
+                position: relative;
                 display: block;
                 padding: 15px 15px 13px;
                 font: 600 16px/1.25 "proximanova-semibold";
@@ -705,6 +707,28 @@ img {
                 color: #0097de;
                 text-decoration: none;
             }
+            .mobile-menu .expanded:after {
+                content: "\f107";
+                font-family: FontAwesome;
+                font-size: 16px;
+                line-height: 1;
+                text-indent: 0;
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                top: 50%;
+                margin-top: -8px;
+                right: 10px;
+                display: inline-block;
+                color: #979fa2;
+            }
+            .mobile-menu .expanded:hover:after {
+                color: #0097de;
+            }
+            .mobile-menu .expanded.open:after {
+                content: "\f106";
+            }
+
             .mobile-menu .sub-menu {
                 display: none;
             }
@@ -875,7 +899,7 @@ img {
                 margin-left: 20px;
                 background: #C0C9CF;
             }
-            .faces-list .small-faces > li:first-child .faces-wrap {
+            .faces-list .small-faces li:first-child .faces-wrap {
                 margin-bottom: 20px;
             }
             .faces-list > li:first-child .faces-wrap {
