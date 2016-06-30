@@ -64,16 +64,33 @@ $(document).ready(function() {
         nav:true,
         navSpeed:800,
         responsive:{
-            1000:{
-                stagePadding: 150
+            0:{
+                stagePadding: 20,
+                margin: 20
             },
-            1280:{
+            481:{
+                stagePadding: 80,
+                margin: 60
+            },
+            768:{
+                stagePadding: 120,
+                margin: 70
+            },
+            961:{
+                stagePadding: 220,
+                margin: 80
+            },
+            1281:{
                 stagePadding: 300,
-                margin:100
+                margin: 100
             },
-            1600:{
+            1500:{
                 stagePadding: 400,
-                margin:120
+                margin: 120
+            },
+            1800:{
+                stagePadding: 480,
+                margin: 150
             }
         }
     });
