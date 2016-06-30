@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // scroll navigation fixed
-    if (document.body.clientWidth > '991') {
+    if (document.body.clientWidth > '974') {
         $(window).scroll(function(){
             $('.header').toggleClass('scroll-js', $(this).scrollTop() > 0);
         });
@@ -11,7 +11,7 @@ $(document).ready(function() {
     $(".mobile-menu-toggle, .mobile-menu-overlay, .donate-mobile .donate").on('click', function(){
         $('.mobile-menu-toggle').toggleClass('active');
         $('.mobile-menu-wrap').toggleClass('showing');
-        $('body').toggleClass('overflow');
+        $(document.body).toggleClass('overflow');
     });
     $(".mobile-menu a").on('click', function(){
         $(this).toggleClass('open').siblings('.sub-menu').slideToggle(350);

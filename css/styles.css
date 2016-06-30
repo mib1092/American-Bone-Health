@@ -1458,20 +1458,26 @@ img {
     .section-standard-page > .container {
         overflow: hidden;
     }
-        .sidebar-right {
+        .sidebar {
             float: right;
             max-width: 380px;
             margin: 0 0 0 20px;
             padding: 30px 20px 20px;
             background-color: #ffffff;
         }
+
+        /**** класс .tranding-list нельзя использовать, я его создал только для той секции на Главной
+              .cell-list там общий класс
+              но будь внимательней: ты обращаешься к этим блокам в сайдбаре, а изменяется ещё и блок на Главной...
+              изолируй стиля, если только в сайдбаре стиля немного отличаются, то нужно через .sidebar делать
+        ****/
             .tranding-list {
                 padding-top: 18px;
             }
             .tranding-list li {
                 margin-bottom: 10px;
             }
-            .tranding-list .list-box {
+            .sidebar .list-box {
                 border: 1px solid #dedede;
             }
             .sidebar-right .tranding-list li:last-child {
