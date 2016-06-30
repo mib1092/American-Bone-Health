@@ -13,9 +13,16 @@ $(document).ready(function() {
     });
 
     // for burger menu
-    $(".btn-toggle").on('click', function(){
-        $(this).parent().siblings('.toggle-box').slideToggle();
-        $(this).toggleClass('active');
+    $(".mobile-menu-toggle, .mobile-menu-overlay").on('click', function(){
+        $('.mobile-menu-toggle').toggleClass('active');
+        $('.mobile-menu-wrap').toggleClass('showing');
+        $('body').toggleClass('overflow');
+    });
+    $(".mobile-menu a").on('click', function(){
+        $(this).siblings('.sub-menu').slideToggle(350);
+    });
+    $(".mobile-menu a + .sub-menu").on('load', function(){
+        $(this).siblings('a').toggleClass('expanded');
     });
 
     // for header search toggle

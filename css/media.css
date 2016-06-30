@@ -6,8 +6,29 @@
 
 }
 
-@media all and (max-width: 980px) {
+@media all and (max-width: 991px) {
+    .desktop {
+        display: none !important;
+    }
 
+    .wrapper { padding-top: 106px; }
+    .home .wrapper{ padding-top: 96px; }
+    .inner .wrapper { padding-top: 126px; }
+
+    .logo {
+        margin-top: 4px;
+    }
+    a.search-btn {
+        margin-top: 38px;
+    }
+    .search-box ul {
+        padding: 27px 20px 10px;
+    }
+
+    .mobile-menu-wrap,
+    .mobile-menu-toggle {
+        display: block;
+    }
 }
 
 @media all and (max-width: 768px) {
