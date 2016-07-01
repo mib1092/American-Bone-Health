@@ -480,9 +480,8 @@
 }
 
 @media all and (max-width: 600px) {
-    #wpadminbar {
-        display: none;
-    }
+    #wpadminbar { display: none; }
+    html[lang] { margin-top: 0 !important; }
     .admin-bar .header { top: 0; }
     .admin-bar .mobile-menu-wrap { top: 84px; }
     .home.admin-bar .mobile-menu-wrap { top: 74px; }
@@ -566,6 +565,15 @@
     .volunteers-slider .owl-controls .owl-nav .owl-next:before {
         top: 50px;
         margin-top: 0;
+    }
+
+    .cell-box {
+        padding: 12px 15px 16px;
+    }
+    .cell-date,
+    .cell-location {
+        font-size: 15px;
+        line-height: 1.2;
     }
 }
 
