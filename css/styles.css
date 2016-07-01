@@ -410,7 +410,21 @@ img {
     .col-11 { width: 91.66%; }
     .col-12 { width: 100%; }
 
-
+    .facebook a {
+        color: #3b5ba8;
+    }
+    .twitter a {
+        color: #0ba5e5;
+    }
+    .youtube a {
+        color: #d73d3d;
+    }
+    .google-plus a {
+        color: #ce4d38;
+    }
+    .linkedin a{
+        color: #4498c7;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1433,9 +1447,9 @@ img {
                 -webkit-border-radius: 2px;
                 -moz-border-radius: 2px;
                 border-radius: 2px;
-                -webkit-transition-duration: color 0.2s, transform 0.35s;
-                -o-transition-duration: color 0.2s, transform 0.35s;
-                -moz-transition-duration: color 0.2s, transform 0.35s;
+                -webkit-transition: color 0.2s, transform 0.35s;
+                -o-transition: color 0.2s, transform 0.35s;
+                -moz-transition: color 0.2s, transform 0.35s;
                 transition: color 0.2s, transform 0.35s;
             }
             .accordion-list li:after{
@@ -1493,23 +1507,150 @@ img {
               но будь внимательней: ты обращаешься к этим блокам в сайдбаре, а изменяется ещё и блок на Главной...
               изолируй стиля, если только в сайдбаре стиля немного отличаются, то нужно через .sidebar делать
         ****/
-            .tranding-list {
+            .sidebar .trand-list {
                 padding-top: 18px;
             }
-            .tranding-list li {
+            .sidebar .trand-list li {
                 margin-bottom: 10px;
+            }
+            .sidebar .trand-list .cell-box {
+                padding: 14px 20px;
             }
             .sidebar .list-box {
                 border: 1px solid #dedede;
             }
-            .sidebar-right .tranding-list li:last-child {
+            .sidebar .trand-list li:last-child {
                 margin-bottom: 0;
             }
-        .standard-article{
+
+            .sidebar .popular-list {
+                padding-top: 18px;
+            }
+            .sidebar .popular-list a {
+                display: block;
+                padding: 14px 18px;
+                border: 1px solid #dedede;
+            }
+            .sidebar .popular-list a:hover {
+                text-decoration: none;
+            }
+            .sidebar .popular-list li {
+                margin-bottom: 10px;
+            }
+            .sidebar .popular-list li:last-child {
+                margin-bottom: 0px;
+            }
+
+            .sidebar .social {
+                overflow: hidden;
+                padding-top: 1px;
+            }
+
+                .sidebar .social li {
+                    float: left;
+                    margin-left: 15px;
+                }
+                .sidebar .social li:first-child {
+                    margin-left: 0;
+                }
+                    .sidebar .social a {
+                        font-size: 32px;
+                    }
+                    .sidebar .social a:hover {
+                        opacity: 0.75;
+                    }
+        .content-article {
             overflow: hidden;
             padding: 40px;
             background-color: #ffffff;
         }
+            .content-article .content-title {
+                font: 600 34px 'proximanova-semibold';
+            }
+
+            .content h1 {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font: 600 34px 'proximanova-semibold';
+            }
+            .content h2 {
+                margin-top: 43px;
+                margin-bottom: 0px;
+                font: 600 28px 'proximanova-semibold';
+            }
+            .content h3 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font: 600 24px 'proximanova-semibold';
+            }
+            .content h4 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font: 600 20px 'proximanova-semibold';
+            }
+            .content h5 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font: 600 18px 'proximanova-bold';
+            }
+            .content p {
+                margin-bottom: 28px;
+            }
+
+            .content ol {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                counter-reset: num;
+            }
+                .content ol li:before {
+                    content: counter(num) ') ';
+                    counter-increment: num;
+                    font: 600 18px 'proximanova-semibold';
+                    color: #0097de;
+                }
+            .content ul {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+                .content ul li {
+                    position: relative;
+                    padding-left: 16px;
+                }
+                .content ul li:before {
+                    content: '\f111';
+                    position: absolute;
+                    left: 0;
+                    top: 9px;
+                    font: 7px FontAwesome;
+                    color: #0097de;
+                }
+                .content blockquote {
+                    position: relative;
+                    max-width: 700px;
+                    margin: 0;
+                    padding: 30px 40px 5px;
+                    text-align: center;
+                    border: 2px solid #ebedec;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    border-radius: 4px;
+                }
+                .content blockquote:before {
+                    content: '\f10d';
+                    position: absolute;
+                    left: 50%;
+                    top: -22px;
+                    margin-left: -21px;
+                    padding: 0 10px 0;
+                    font: 46px FontAwesome;
+                    color: #ebedec;
+                    z-index: 10;
+                    background-color: #ffffff;
+                }
+                .content blockquote p {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1574,6 +1715,24 @@ img {
                 .subscribe-box .input-style {
                     padding: 10px 15px 9px;
                 }
+
+        .social {
+            overflow: hidden;
+        }
+            .social li {
+                float: left;
+                margin-left: 4px;
+            }
+            .social li:first-child {
+                margin-left: 0;
+            }
+            .social a {
+                font-size: 38px;
+            }
+            .footer-social a:hover {
+                opacity: 0.8;
+            }
+
         .footer-social {
             overflow: hidden;
         }
