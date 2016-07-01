@@ -20,10 +20,12 @@ $(document).ready(function() {
         $(".mobile-menu a + .sub-menu").siblings('a').toggleClass('expanded');
     });
 
+
     // for header search toggle
     $(".search-btn, .close-search").on('click', function(){
         $('#search-box').slideToggle(300);
     });
+
 
     // the blocking of links default behavior
     function prevent(){
