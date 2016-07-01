@@ -215,11 +215,13 @@ input[type=submit], button,
     position: relative;
     display: inline-block;
     padding-left: 35px;
+    line-height: 1.3;
 }
 .check-style span:before {
     content: '';
     position: absolute;
-    top: 1px;
+    top: 50%;
+    margin-top: -13px;
     left: 0;
     display: inline-block;
     width: 20px;
