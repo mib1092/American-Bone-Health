@@ -305,8 +305,8 @@ img {
                     left: 0;
                     width: 0;
                     height: 0;
-                    border-bottom: 30px solid #fff;
-                    border-left: 280px solid transparent;
+                    border-bottom: 41px solid #fff;
+                    border-left: 380px solid transparent;
                 }
                 .list-box-img img {
                     max-width: 100%;
@@ -391,10 +391,12 @@ img {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
-    .col-1 { width: 8.33%; }
+    .col-1 { width: 8.33%; height: 1px; }
+    .col-1.cap { width: 5%; }
     .col-2 { width: 16.66%; }
     .col-3 { width: 25%; }
     .col-4 { width: 33.33%; }
+    .footer .col-4 { width: 35%; }
     .col-5 { width: 41.66%; }
     .col-6 { width: 50%; }
     .col-7 { width: 58.33%; }

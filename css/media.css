@@ -134,11 +134,79 @@
 
     .faces-title {
         font-size: 14px;
+        line-height: 1.25;
         bottom: 10px;
     }
     .read-story {
         bottom: -26px;
         font-size: 13px;
+    }
+
+    .join-event-list {
+        margin: 0 50px 0 75px;
+    }
+    .join-box {
+        margin-left: 50px;
+    }
+
+    .donate-list li {
+        padding: 0 10px;
+    }
+    .donate-number {
+        width: 120px;
+        height: 120px;
+    }
+    .donate-number span {
+        font-size: 38px;
+    }
+    .donate-number:after {
+        margin-left: -15px;
+        width: 30px;
+    }
+
+    .footer-top {
+        padding: 60px 0 30px;
+    }
+    .footer-top .col-4 {
+        width: 50%;
+        float: none;
+        padding-bottom: 30px;
+    }
+    .footer .col-2 {
+        width: 30%;
+    }
+    .footer .col-3 {
+        width: 40%;
+    }
+    .cap {
+        display: none;
+    }
+    .footer-bottom {
+        padding-bottom: 40px;
+    }
+    .footer-bottom > .container {
+        border-collapse: collapse;
+        border-spacing: 0;
+        display: table;
+    }
+    .footer-bottom .col:not(.cap) {
+        padding-bottom: 40px;
+    }
+    .footer .copyright {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 50px 20px;
+        display: table-footer-group;
+    }
+    .footer .copyright > p,
+    .copy-menu {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .copy-menu li {
+        float: none;
+        display: inline-block;
     }
 }
 
@@ -167,6 +235,13 @@
     .cell-list > li:first-child,
     .cell-list > li:nth-child(2n+1) {
         clear: both;
+    }
+
+    .join-event-list {
+        margin: 0 0 0 50px;
+    }
+    .join-box {
+        margin-left: 0;
     }
 }
 
@@ -213,6 +288,7 @@
         width: 20%;
         margin: 0;
         padding-left: 15px;
+
     }
     .faces-list > .small-faces {
         width: 40%;
@@ -247,11 +323,45 @@
     .section-content {
         margin-bottom: 40px;
     }
+
+    .donate-list {
+        padding-bottom: 0;
+    }
+    .donate-list li {
+        float: left;
+        width: 33.33%;
+        padding: 0 20px;
+        margin-bottom: 70px;
+    }
+    .donate-number {
+        width: 140px;
+        height: 140px;
+    }
+    .donate-number span {
+        font-size: 42px;
+    }
+    .donate-number:after {
+        margin-left: -25px;
+        width: 50px;
+    }
+
+    .footer-top .col-4 {
+        width: 60%;
+    }
+    .footer-social li {
+        margin-left: 28px;
+    }
+    .footer-social a {
+        font-size: 40px;
+    }
 }
 
 @media all and (max-width: 767px) {
     .volunteers-slider {
         padding-top: 25px;
+    }
+    .volunteers-slider .owl-item .volunteer-content {
+        padding: 112px 42px 48px;
     }
     .volunteers-slider .owl-controls .owl-nav .owl-prev,
     .volunteers-slider .owl-controls .owl-nav .owl-next {
@@ -278,6 +388,15 @@
     }
     .volunteers-slider .owl-controls .owl-nav .owl-next:hover:before {
         margin-left: -17px;
+    }
+
+    .logos-list {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .logos-list li {
+        width: 24%;
+        padding: 0 10px 20px;
     }
 }
 
@@ -313,6 +432,56 @@
         padding-top: 10px;
         padding-bottom: 0;
     }
+
+    .volunteers-slider .owl-stage-outer {
+        padding-bottom: 15px;
+        box-sizing: content-box;
+    }
+
+    .join-wrap {
+        border-collapse: collapse;
+        border-spacing: 0;
+        display: table;
+    }
+    .join-box {
+        position: relative;
+        display: table-header-group;
+        text-align: center;
+    }
+    .join-box:after {
+        content: '';
+        display: block;
+        height: 60px;
+    }
+    .join-event-list {
+        float: none;
+        margin: 0;
+        display: table-footer-group;
+    }
+    .join-event-list li a {
+        display: block;
+        max-width: 100%;
+    }
+
+    .footer .col,
+    .footer-bottom .col:not(.cap) {
+        float: none;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 560px) {
+    .logos-list li {
+        width: 32.5%;
+    }
+
+    .donate-list li {
+        width: 50%;
+    }
+    .donate-checks {
+        text-align: left;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -339,8 +508,30 @@
         margin-bottom: 25px;
     }
 
+    .small-faces .faces-wrap:hover .faces-title {
+        bottom: 40px;
+    }
+    .small-faces .faces-wrap .read-story {
+        bottom: -20px;
+        line-height: 1;
+    }
+    .small-faces .faces-wrap:hover .read-story {
+        bottom: 10px;
+    }
+
     .volunteers-slider {
         padding-top: 15px;
+    }
+    .volunteers-slider .owl-item .volunteer-content {
+        padding: 95px 20px 30px;
+    }
+    .volunteer-img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: -75px;
+    }
+    .volunteer-name {
+        margin-bottom: 20px;
     }
     .volunteers-slider .owl-controls .owl-nav .owl-prev,
     .volunteers-slider .owl-controls .owl-nav .owl-next {
@@ -362,6 +553,8 @@
 }
 
 @media all and (max-width: 420px) {
+    .input-style { padding: 6px 6px 5px; }
+    .btn, a.btn { padding: 10px 15px 8px; }
     .mar-b-60 { margin-bottom: 40px; }
 
     .wrapper { padding-top: 65px; }
@@ -393,14 +586,16 @@
         font-size: 28px;
     }
     .search-box ul {
-        padding: 17px 10px;
+        padding: 12px 10px;
     }
     .search-box .btn {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding: 10px 12px 8px;
     }
     .search-box li:first-child {
         margin-left: 10px;
+    }
+    .close-search {
+        top: -2px;
     }
 
     .faces-list {
@@ -425,8 +620,43 @@
         float: none;
         clear: both;
     }
+
+    .logos-list li {
+        width: 49%;
+    }
 }
 
 @media all and (max-width: 360px) {
+    .small-faces .title-wrap {
+        padding: 0 2px;
+    }
+    .small-faces .faces-wrap:hover .faces-title {
+        bottom: 40px;
+    }
+    .small-faces .faces-wrap .read-story {
+        bottom: -25px;
+        line-height: 1;
+    }
+    .small-faces .faces-wrap:hover .read-story {
+        bottom: 5px;
+    }
 
+    .subscribe-box .input-style {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subscribe-btn {
+        width: 110px;
+    }
+}
+
+@media all and (max-width: 340px) {
+    .donate-list {
+        padding-top: 10px;
+    }
+    .donate-list li {
+        float: none;
+        width: 100%;
+        margin-bottom: 60px;
+    }
 }

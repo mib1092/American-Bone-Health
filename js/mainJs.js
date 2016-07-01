@@ -34,20 +34,24 @@ $(document).ready(function() {
     prevent();
 
     // for "Faces of Osteoporosis" Section on devices
-    if (document.body.clientWidth <= '991') {
-        $('.faces-wrap').on("click", function() {
-            location.href = $(this).attr('data-href');
-        });
-
-        if (document.body.clientWidth <= '768') {
-            $(window).on('load resize', function() {
-                $('.faces-list li:not(.small-faces)').each(function(index){
-                    var face = $('.faces-list li:not(.small-faces)').eq(index);
-                    face.css({'height': face.width()});
-                });
+    $(window).on('load resize', function() {
+        if (document.body.clientWidth <= '991') {
+            $('.faces-wrap').on("click", function() {
+                location.href = $(this).attr('data-href');
             });
         }
-    }
+        if (document.body.clientWidth <= '768') {
+            $('.faces-list li:not(.small-faces)').each(function(index){
+                var face = $('.faces-list li:not(.small-faces)').eq(index);
+                face.css({'height': face.width()});
+            });
+        } else {
+            $('.faces-list li').each(function(index){
+                var face = $('.faces-list li').eq(index);
+                face.css({'height': 'auto'});
+            });
+        }
+    });
 
     // for FAQ accordion
     $(".accordion-list > li").on('click', function(){
@@ -66,11 +70,18 @@ $(document).ready(function() {
         responsive:{
             0:{
                 stagePadding: 20,
-                margin: 20
+                margin: 20,
+                autoHeight : true
             },
             481:{
                 stagePadding: 80,
-                margin: 60
+                margin: 60,
+                autoHeight : true
+            },
+            641:{
+                stagePadding: 80,
+                margin: 60,
+                autoHeight : false
             },
             768:{
                 stagePadding: 120,
