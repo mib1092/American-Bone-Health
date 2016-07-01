@@ -207,7 +207,8 @@ input[type=submit], button,
 .input-style:focus:-ms-input-placeholder { opacity: 0; }
 .input-style:focus:-moz-placeholder { opacity: 0; }
 
-.check-style input[type=checkbox] {
+.check-style input[type=checkbox],
+.check-style input[type=radio] {
     display: none;
 }
 .check-style span {
@@ -233,7 +234,8 @@ input[type=submit], button,
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
-.check-style input[type=checkbox]:checked + span:before {
+.check-style input[type=checkbox]:checked + span:before,
+.check-style input[type=radio]:checked + span:before {
     content: '\f00c';
 }
 
@@ -1244,7 +1246,8 @@ img {
             padding: 0 20px;
             text-align: center;
         }
-            .donate-list input[type=checkbox] {
+            .donate-list input[type=checkbox],
+            .donate-list input[type=radio] {
                 display: none;
             }
             .donate-number {
@@ -1267,13 +1270,16 @@ img {
             }
             .donate-list input[type=checkbox]:not(:checked) + .donate-number:hover,
             .donate-list input[type=checkbox]:not(:checked) + a.donate-number:hover,
+            .donate-list input[type=radio]:not(:checked) + .donate-number:hover,
+            .donate-list input[type=radio]:not(:checked) + a.donate-number:hover,
             a.donate-number:hover {
                 text-decoration: none;
                 top: -10px;
                 border-color: #cf2d7d;
                 color: #cf2d7d;
             }
-            .donate-list input[type=checkbox]:checked + .donate-number {
+            .donate-list input[type=checkbox]:checked + .donate-number,
+            .donate-list input[type=radio]:checked + .donate-number {
                 background: #cf2d7d;
                 border-color: #cf2d7d;
                 color: #fff;
@@ -1303,6 +1309,8 @@ img {
                 }
                 .donate-list input[type=checkbox]:not(:checked) + .donate-number:hover:before,
                 .donate-list input[type=checkbox]:checked + .donate-number:before,
+                .donate-list input[type=radio]:not(:checked) + .donate-number:hover:before,
+                .donate-list input[type=radio]:checked + .donate-number:before,
                 a.donate-number:hover:before {
                     background: #cf2d7d;
                 }
@@ -1329,6 +1337,7 @@ img {
                     transition: 0.3s;
                 }
                 .donate-list input[type=checkbox]:not(:checked) + .donate-number:hover:after,
+                .donate-list input[type=radio]:not(:checked) + .donate-number:hover:after,
                 a.donate-number:hover:after {
                     bottom: -35px;
                     background: rgba(20, 20, 20, .05);
