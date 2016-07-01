@@ -434,6 +434,9 @@ img {
     width: 100%;
     background: #fff;
 }
+.admin-bar .header {
+    top: 32px;
+}
     .header:after{
         content: '';
         display: inline-block;
@@ -629,6 +632,12 @@ img {
 }
 .home .mobile-menu-wrap {
     top: 96px;
+}
+.admin-bar .mobile-menu-wrap {
+    top: 138px;
+}
+.home.admin-bar .mobile-menu-wrap {
+    top: 128px;
 }
 .mobile-menu-wrap.showing {
     height: 100%;
