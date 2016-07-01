@@ -277,6 +277,8 @@ img {
 .title.white { color: #fff; }
 
 .title-sidebar {
+    margin-top: 20px;
+    margin-bottom: 2px;
     text-align: left;
     font: 600 24px 'proximanova-bold';
 }
@@ -1501,7 +1503,7 @@ img {
             right: 0;
             max-width: 380px;
             margin: 0 0 0 20px;
-            padding: 30px 20px 20px;
+            padding: 4px 20px 20px;
             background-color: #ffffff;
         }
 
@@ -1510,8 +1512,11 @@ img {
               но будь внимательней: ты обращаешься к этим блокам в сайдбаре, а изменяется ещё и блок на Главной...
               изолируй стиля, если только в сайдбаре стиля немного отличаются, то нужно через .sidebar делать
         ****/
+            .sidebar .related-article {
+                padding-bottom: 14px;
+            }
             .sidebar .trand-list {
-                padding-top: 18px;
+                padding-top: 17px;
             }
             .sidebar .trand-list li {
                 margin-bottom: 10px;
@@ -1519,13 +1524,27 @@ img {
             .sidebar .trand-list .cell-box {
                 padding: 14px 20px;
             }
-            .sidebar .list-box {
+            .sidebar .list-box .cell-box {
+                position: relative;
                 border: 1px solid #dedede;
+                border-top: none;
+            }
+            .sidebar .list-box .cell-box:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 36px;
+                right: -1px;
+                top: -36px;
+                z-index: 5;
+                background-color: #dedede;
             }
             .sidebar .trand-list li:last-child {
                 margin-bottom: 0;
             }
-
+            .sidebar .popular-post{
+                padding-bottom: 14px;
+            }
             .sidebar .popular-list {
                 padding-top: 18px;
             }
@@ -1562,6 +1581,56 @@ img {
                     .sidebar .social a:hover {
                         opacity: 0.75;
                     }
+            .sidebar  .cell-date {
+                font-size: 14px;
+            }
+            .sidebar .enewslette-box {
+                display: table;
+                width: 100%;
+                padding-top: 5px;
+                margin-bottom: 15px;
+            }
+            .sidebar .enewslette-box li {
+                display: table-cell;
+                vertical-align: top;
+            }
+            .enewslette-btn {
+                width: 130px;
+                padding-left: 10px;
+            }
+            .enewslette .btn {
+                width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+                background-color: #8b8f90;
+                opacity: 0.8;
+            }
+            .enewslette .btn:hover {
+                opacity: 1;
+            }
+            .sidebar .enewslette-box .input-style {
+                padding: 8px 15px 8px;
+            }
+            .sidebar .calculator {
+                position: relative;
+                width: 100%;
+                margin-top: 15px;
+                font-size: 16px;
+                color: #ffffff;
+            }
+            .sidebar .calculator:before {
+                content: '\f1ec';
+                position: absolute;
+                left: 20px;
+                top: 50%;
+                margin-top: -19px;
+                font: 38px FontAwesome;
+            }
+            .sidebar .calculator span {
+                display: inline-block;
+                margin-left: 50px;
+                font: 600 16px 'proximanova-semibold';
+            }
         .content-article {
             overflow: hidden;
             padding: 40px;
