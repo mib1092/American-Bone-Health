@@ -1660,8 +1660,9 @@ img {
     }
     .post-info span {
         margin-right: 20px;
+        color: #707173;
      }
-    .post-info.cell-box {
+    .post-info {
         padding: 15px 0 15px;
     }
     .image-box {
@@ -1671,8 +1672,16 @@ img {
         margin-bottom: 20px;
         margin-left: -60px;
     }
+    .image-box img{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
     .after-popular-article .title-sidebar {
         margin-left: -20px;
+    }
+    .after-popular-article .cell-box {
+        padding: 16px 20px 14px;
     }
     .after-popular-article .cell-list {
         width: -webkit-calc(100% + 70px);
@@ -1689,6 +1698,46 @@ img {
             .after-popular-article .title-cell {
                 font-size: 16px;
             }
+            .standard-page .content-box .tags-box {
+                position: relative;
+                padding-top: 30px;
+                padding-right: 25px;
+            }
+            .standard-page .content-box .tags-box:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: #e8e8e8;
+            }
+    .standard-page .tagcloud a {
+        display: inline-block;
+        padding: 5px 10px;
+        font: 400 12px 'proximanova-regular';
+        color: #191f22;
+        background-color: #eaeceb;
+        text-decoration: none;
+    }
+    .standard-page .tagcloud a:hover {
+        color: #ffffff;
+        background-color: #0098de;
+    }
+    .standard-page .tagcloud {
+        margin-bottom: -10px;
+    }
+    .standard-page .tags-box {
+        position: relative;
+    }
+    .standard-page .tags-box a.tags-box-link {
+        position: absolute;
+        top: 33px;
+        right: 0;
+        color: #a6a7a9;
+    }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1701,6 +1750,25 @@ img {
     padding: 4px 20px 20px;
     background-color: #ffffff;
 }
+.sidebar .widget-search {
+    margin-bottom: 34px;
+    padding-top: 16px;
+}
+    .sidebar .widget-search .search-icon {
+        position: relative;
+    }
+    .sidebar .widget-search .search-icon:before {
+        content: '\f002';
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        margin-top: -8px;
+        font: 16px FontAwesome;
+        color: #c5c7c8;
+    }
+    .sidebar .widget-search .input-style {
+        padding-left: 30px;
+    }
 .sidebar .related-article {
     padding-bottom: 14px;
 }
@@ -1778,7 +1846,6 @@ img {
     display: table;
     width: 100%;
     padding-top: 5px;
-    margin-bottom: 15px;
 }
 .sidebar .newsletter-box li {
     display: table-cell;
@@ -1799,7 +1866,7 @@ img {
 .sidebar .calculator {
     position: relative;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 40px;
     padding: 20px 20px 20px 68px;
     font-size: 16px;
     text-align: left;
@@ -1818,6 +1885,17 @@ img {
     font: 400 16px 'proximanova-regular';
     text-align: left;
     opacity: 0.8;
+}
+.sidebar .tagcloud a{
+    display: inline-block;
+    padding: 5px 10px;
+    font: 400 12px 'proximanova-regular';
+    color: #191f22;
+    background-color: #eaeceb;
+}
+.sidebar .tagcloud {
+    padding-top: 18px;
+    margin-bottom: 33px;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
