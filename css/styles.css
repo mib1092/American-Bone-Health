@@ -1497,6 +1497,22 @@ img {
         position: relative;
         overflow: hidden;
     }
+    .article-banner {
+        margin-top: -20px;
+        margin-bottom: 20px;
+        background-image: url(img/header/banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: #ffffff;
+    }
+        .article-banner .banner-title {
+            margin: 0;
+            padding: 85px 0 90px;
+            font: 600 52px 'proximanova-semibold';
+            text-align: center;
+            color: #ffffff;
+        }
         .sidebar {
             position: absolute;
             top: 0;
