@@ -1497,16 +1497,17 @@ img {
 }
     .section-standard-page > .container {
         position: relative;
-        overflow: hidden;
+    }
+    .content-box {
+        padding-right: 400px;
     }
     .article-banner {
         margin-top: -20px;
         margin-bottom: 20px;
-        background-image: url(../img/header/banner.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-color: #ffffff;
+        background-color: #324046;
     }
     .article-banner-box {
         display: table;
@@ -1521,137 +1522,9 @@ img {
             vertical-align: middle;
             color: #ffffff;
         }
-        .sidebar {
-            position: absolute;
-            top: 0;
-            right: 20px;
-            max-width: 380px;
-            margin: 0 0 0 20px;
-            padding: 4px 20px 20px;
-            background-color: #ffffff;
-        }
-            .sidebar .related-article {
-                padding-bottom: 14px;
-            }
-            .sidebar .trand-list {
-                padding-top: 17px;
-            }
-            .sidebar .trand-list li {
-                margin-bottom: 10px;
-            }
-            .sidebar .trand-list .cell-box {
-                padding: 14px 20px;
-            }
-            .sidebar .list-box .cell-box {
-                position: relative;
-                border: 1px solid #dedede;
-                border-top: none;
-            }
-            .sidebar .list-box .cell-box:after {
-                content: '';
-                position: absolute;
-                width: 1px;
-                height: 36px;
-                right: -1px;
-                top: -36px;
-                z-index: 5;
-                background-color: #dedede;
-            }
-            .sidebar .trand-list li:last-child {
-                margin-bottom: 0;
-            }
-            .sidebar .popular-post{
-                padding-bottom: 14px;
-            }
-            .sidebar .popular-list {
-                padding-top: 18px;
-            }
-            .sidebar .popular-list a {
-                display: block;
-                padding: 14px 18px;
-                border: 1px solid #dedede;
-            }
-            .sidebar .popular-list a:hover {
-                text-decoration: none;
-            }
-            .sidebar .popular-list li {
-                margin-bottom: 10px;
-            }
-            .sidebar .popular-list li:last-child {
-                margin-bottom: 0;
-            }
 
-            .sidebar .social {
-                overflow: hidden;
-                padding-top: 1px;
-            }
-
-                .sidebar .social li {
-                    float: left;
-                    margin-left: 15px;
-                }
-                .sidebar .social li:first-child {
-                    margin-left: 0;
-                }
-                    .sidebar .social a {
-                        font-size: 32px;
-                    }
-                    .sidebar .social a:hover {
-                        opacity: 0.75;
-                    }
-            .sidebar  .cell-date {
-                font-size: 14px;
-                margin-bottom: 3px;
-            }
-            .sidebar .newsletter-box {
-                display: table;
-                width: 100%;
-                padding-top: 5px;
-                margin-bottom: 15px;
-            }
-            .sidebar .newsletter-box li {
-                display: table-cell;
-                vertical-align: top;
-            }
-            .newsletter-btn {
-                width: 130px;
-                padding-left: 10px;
-            }
-            .newsletter .btn {
-                width: 100%;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            .sidebar .newsletter-box .input-style {
-                padding: 8px 15px 7px;
-            }
-            .sidebar .calculator {
-                position: relative;
-                width: 100%;
-                margin-top: 25px;
-                padding: 20px 20px 20px 68px;
-                font-size: 16px;
-                text-align: left;
-                color: #ffffff;
-            }
-            .sidebar .calculator:before {
-                content: '\f1ec';
-                position: absolute;
-                left: 20px;
-                top: 50%;
-                margin-top: -19px;
-                font: 38px FontAwesome;
-            }
-            .sidebar .calculator span {
-                display: inline-block;
-                font: 400 16px 'proximanova-regular';
-                text-align: left;
-                opacity: 0.8;
-            }
         .content-article {
-            overflow: hidden;
             padding: 40px;
-            margin-right: 400px;
             background-color: #ffffff;
         }
             .content-article .content-title {
@@ -1771,14 +1644,139 @@ img {
                 }
                 .content img.aligncenter{
                     display: block;
-                    margin: 0 auto 40px;
+                    margin: 0 auto;
                     clear: both;
-                    width: 100%;
                 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    max-width: 380px;
+    margin: 0 0 0 20px;
+    padding: 4px 20px 20px;
+    background-color: #ffffff;
+}
+.sidebar .related-article {
+    padding-bottom: 14px;
+}
+.sidebar .trand-list {
+    padding-top: 17px;
+}
+.sidebar .trand-list li {
+    margin-bottom: 10px;
+}
+.sidebar .trand-list .cell-box {
+    padding: 14px 20px;
+}
+.sidebar .list-box .cell-box {
+    position: relative;
+    border: 1px solid #dedede;
+    border-top: none;
+}
+.sidebar .list-box .cell-box:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 36px;
+    right: -1px;
+    top: -36px;
+    z-index: 5;
+    background-color: #dedede;
+}
+.sidebar .trand-list li:last-child {
+    margin-bottom: 0;
+}
+.sidebar .popular-post{
+    padding-bottom: 14px;
+}
+.sidebar .popular-list {
+    padding-top: 18px;
+}
+.sidebar .popular-list a {
+    display: block;
+    padding: 14px 18px;
+    border: 1px solid #dedede;
+}
+.sidebar .popular-list a:hover {
+    text-decoration: none;
+}
+.sidebar .popular-list li {
+    margin-bottom: 10px;
+}
+.sidebar .popular-list li:last-child {
+    margin-bottom: 0;
+}
 
+.sidebar .social {
+    overflow: hidden;
+    padding-top: 1px;
+}
+
+.sidebar .social li {
+    float: left;
+    margin-left: 15px;
+}
+.sidebar .social li:first-child {
+    margin-left: 0;
+}
+.sidebar .social a {
+    font-size: 32px;
+}
+.sidebar .social a:hover {
+    opacity: 0.75;
+}
+.sidebar  .cell-date {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.sidebar .newsletter-box {
+    display: table;
+    width: 100%;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+.sidebar .newsletter-box li {
+    display: table-cell;
+    vertical-align: top;
+}
+.newsletter-btn {
+    width: 130px;
+    padding-left: 10px;
+}
+.newsletter .btn {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sidebar .newsletter-box .input-style {
+    padding: 8px 15px 7px;
+}
+.sidebar .calculator {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    padding: 20px 20px 20px 68px;
+    font-size: 16px;
+    text-align: left;
+    color: #ffffff;
+}
+.sidebar .calculator:before {
+    content: '\f1ec';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -19px;
+    font: 38px FontAwesome;
+}
+.sidebar .calculator span {
+    display: inline-block;
+    font: 400 16px 'proximanova-regular';
+    text-align: left;
+    opacity: 0.8;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
