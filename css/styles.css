@@ -1676,7 +1676,7 @@ img {
         margin-left: -60px;
     }
     .image-box img{
-        width: 100%;
+        max-width: 100%;
         height: auto;
         text-align: center;
     }
@@ -1701,12 +1701,12 @@ img {
             .after-popular-article .title-cell {
                 font-size: 16px;
             }
-            .standard-page .content-box .tags-box {
+            .blog-bottom-box {
                 position: relative;
                 padding-top: 30px;
                 padding-right: 25px;
             }
-            .standard-page .content-box .tags-box:before {
+            .blog-bottom-box:before {
                 content: '';
                 position: absolute;
                 width: 100%;
@@ -1716,7 +1716,7 @@ img {
                 right: 0;
                 background-color: #e8e8e8;
             }
-    .standard-page .tagcloud a {
+    .blog-bottom-box .tagcloud a {
         display: inline-block;
         padding: 5px 10px;
         font: 400 12px 'proximanova-regular';
@@ -1724,21 +1724,26 @@ img {
         background-color: #eaeceb;
         text-decoration: none;
     }
-    .standard-page .tagcloud a:hover {
+    .blog-bottom-box a:hover {
         color: #ffffff;
         background-color: #0098de;
     }
-    .standard-page .tagcloud {
+    .blog-bottom-box {
         margin-bottom: -10px;
     }
-    .standard-page .tags-box {
+    .blog-bottom-box {
         position: relative;
     }
-    .standard-page .tags-box a.tags-box-link {
+    .blog-bottom-box a.tags-box-link {
         position: absolute;
         top: 33px;
         right: 0;
         color: #a6a7a9;
+        opacity: 0.8;
+    }
+    .blog-bottom-box a.tags-box-link:hover {
+        background-color: #ffffff;
+        opacity: 1;
     }
 
 /*----------------------------------------------------------------------------------*/
@@ -1895,6 +1900,11 @@ img {
     font: 400 12px 'proximanova-regular';
     color: #191f22;
     background-color: #eaeceb;
+    text-decoration: none;
+}
+.sidebar .tagcloud a:hover {
+    color: #ffffff;
+    background-color: #0098de;
 }
 .sidebar .tagcloud {
     padding-top: 18px;
