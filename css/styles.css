@@ -124,9 +124,11 @@ input[type=submit], button,
 }
 .btn:hover { background: #0075BC; text-decoration: none; }
 .btn.red { background: #cf2d7d; }
-.btn.red:hover { background: #B71565; color: #fff; }
+.btn.red:hover { background: #B71565; }
 .btn.white { background: #fff; color: #0097de; }
 .btn.white:hover { background: #0075BC; color: #fff; }
+.btn.grey { background: #8b8f90; }
+.btn.grey:hover { background: #777B7C; }
 .btn .fa { font-size: 14px; }
 .btn .fa-chevron-right { margin-left: 5px; }
 .btn .fa-calculator { margin-right: 2px; position: relative; top: -1px; }
@@ -1500,7 +1502,7 @@ img {
     .article-banner {
         margin-top: -20px;
         margin-bottom: 20px;
-        background-image: url(img/header/banner.png);
+        background-image: url(../img/header/banner.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1510,8 +1512,7 @@ img {
         display: table;
         width: 100%;
         height: 237px;
-        padding: 25px 0 30px;
-
+        padding: 24px 0;
     }
         .article-banner .banner-title {
             display: table-cell;
@@ -1523,18 +1524,12 @@ img {
         .sidebar {
             position: absolute;
             top: 0;
-            right: 0;
+            right: 20px;
             max-width: 380px;
             margin: 0 0 0 20px;
             padding: 4px 20px 20px;
             background-color: #ffffff;
         }
-
-        /**** класс .tranding-list нельзя использовать, я его создал только для той секции на Главной
-              .cell-list там общий класс
-              но будь внимательней: ты обращаешься к этим блокам в сайдбаре, а изменяется ещё и блок на Главной...
-              изолируй стиля, если только в сайдбаре стиля немного отличаются, то нужно через .sidebar делать
-        ****/
             .sidebar .related-article {
                 padding-bottom: 14px;
             }
@@ -1583,7 +1578,7 @@ img {
                 margin-bottom: 10px;
             }
             .sidebar .popular-list li:last-child {
-                margin-bottom: 0px;
+                margin-bottom: 0;
             }
 
             .sidebar .social {
@@ -1626,14 +1621,9 @@ img {
                 width: 100%;
                 padding-left: 10px;
                 padding-right: 10px;
-                background-color: #8b8f90;
-                opacity: 0.8;
-            }
-            .newsletter .btn:hover {
-                opacity: 1;
             }
             .sidebar .newsletter-box .input-style {
-                padding: 8px 15px 8px;
+                padding: 8px 15px 7px;
             }
             .sidebar .calculator {
                 position: relative;
@@ -1661,7 +1651,7 @@ img {
         .content-article {
             overflow: hidden;
             padding: 40px;
-            margin-right: 380px;
+            margin-right: 400px;
             background-color: #ffffff;
         }
             .content-article .content-title {
@@ -1711,7 +1701,7 @@ img {
                     content: counter(num) ') ';
                     counter-increment: num;
                     display: inline-block;
-                    min-width: 14px;
+                    min-width: 15px;
                     margin-right: 6px;
                     font: 600 18px 'proximanova-semibold';
                     color: #0097de;
