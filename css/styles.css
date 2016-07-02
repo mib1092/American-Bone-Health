@@ -1506,11 +1506,18 @@ img {
         background-size: cover;
         background-color: #ffffff;
     }
+    .article-banner-box {
+        display: table;
+        width: 100%;
+        height: 237px;
+        padding: 25px 0 30px;
+
+    }
         .article-banner .banner-title {
-            margin: 0;
-            padding: 85px 0 90px;
+            display: table-cell;
             font: 600 52px 'proximanova-semibold';
             text-align: center;
+            vertical-align: middle;
             color: #ffffff;
         }
         .sidebar {
@@ -1599,39 +1606,42 @@ img {
                     }
             .sidebar  .cell-date {
                 font-size: 14px;
+                margin-bottom: 3px;
             }
-            .sidebar .enewslette-box {
+            .sidebar .newsletter-box {
                 display: table;
                 width: 100%;
                 padding-top: 5px;
                 margin-bottom: 15px;
             }
-            .sidebar .enewslette-box li {
+            .sidebar .newsletter-box li {
                 display: table-cell;
                 vertical-align: top;
             }
-            .enewslette-btn {
+            .newsletter-btn {
                 width: 130px;
                 padding-left: 10px;
             }
-            .enewslette .btn {
+            .newsletter .btn {
                 width: 100%;
                 padding-left: 10px;
                 padding-right: 10px;
                 background-color: #8b8f90;
                 opacity: 0.8;
             }
-            .enewslette .btn:hover {
+            .newsletter .btn:hover {
                 opacity: 1;
             }
-            .sidebar .enewslette-box .input-style {
+            .sidebar .newsletter-box .input-style {
                 padding: 8px 15px 8px;
             }
             .sidebar .calculator {
                 position: relative;
                 width: 100%;
-                margin-top: 15px;
+                margin-top: 25px;
+                padding: 20px 20px 20px 68px;
                 font-size: 16px;
+                text-align: left;
                 color: #ffffff;
             }
             .sidebar .calculator:before {
@@ -1644,8 +1654,9 @@ img {
             }
             .sidebar .calculator span {
                 display: inline-block;
-                margin-left: 50px;
-                font: 600 16px 'proximanova-semibold';
+                font: 400 16px 'proximanova-regular';
+                text-align: left;
+                opacity: 0.8;
             }
         .content-article {
             overflow: hidden;
@@ -1699,6 +1710,9 @@ img {
                 .content ol li:before {
                     content: counter(num) ') ';
                     counter-increment: num;
+                    display: inline-block;
+                    min-width: 14px;
+                    margin-right: 6px;
                     font: 600 18px 'proximanova-semibold';
                     color: #0097de;
                 }
@@ -1720,7 +1734,6 @@ img {
                 }
                 .content blockquote {
                     position: relative;
-                    max-width: 700px;
                     margin: 46px 0 0 0;
                     padding: 30px 40px 5px;
                     text-align: center;
@@ -1742,6 +1755,7 @@ img {
                     background-image: url(../img/content/quote.png);
                     background-repeat: no-repeat;
                     background-position: center;
+                    background-size: contain;
                     background-color: #ffffff;
                 }
                 .content blockquote p {
@@ -1755,15 +1769,21 @@ img {
                     -moz-border-radius: 4px;
                     border-radius: 4px;
                 }
-                .content .align-left{
+                .content img.alignleft{
                     float: left;
                     margin: 7px 20px 20px 0;
-                    max-width: 360px;
+                    max-width: 350px;
                 }
-                .content .align-right{
+                .content img.alignright{
                     float: right;
                     margin: 7px 0 20px 20px;
-                    max-width: 360px;
+                    max-width: 350px;
+                }
+                .content img.aligncenter{
+                    display: block;
+                    margin: 0 auto 40px;
+                    clear: both;
+                    width: 100%;
                 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/

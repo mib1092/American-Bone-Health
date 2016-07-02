@@ -60,6 +60,10 @@ $(document).ready(function() {
         $(this).toggleClass('active').find('.accordion-box-content').slideToggle(500);
     });
 
+    // for pages with sidebar
+    var sidebar = $('#sidebar');
+    $(sidebar).parent().css({'min-height': sidebar.height() + 24});
+
     // for Owl Carousel sliders
     $('.volunteers-slider').owlCarousel({
         items:1,
