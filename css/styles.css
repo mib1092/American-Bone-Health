@@ -1765,8 +1765,30 @@ img {
 
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
-    float: right;
+
 }
+    .wp-pagenavi a {
+        font-size: 20px;
+        line-height: 40px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #8B9499;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        text-align: center;
+        color: #8B9499;
+        text-decoration: none;
+    }
+    .wp-pagenavi a:hover {
+        color: #0097de;
+        border-color: #0097de;
+    }
+    .wp-pagenavi .current,
+    .wp-pagenavi .extend {
+        padding: 0 5px;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
