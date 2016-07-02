@@ -1822,11 +1822,10 @@ img {
     }
     .sidebar .widget-search .style-search {
         position: absolute;
-        width: 20px;
-        height: 20px;
-        top: 50%;
-        left: 6px;
-        margin-top: -10px;
+        width: 30px;
+        height: 100%;
+        top: 0;
+        left: 0;
         opacity: 0;
     }
 .sidebar .related-article {
