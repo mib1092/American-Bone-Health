@@ -1653,7 +1653,7 @@ img {
         padding-bottom: 40px;
     }
     .blog-page .content-box .content-article{
-        margin-bottom: 20px;
+
     }
     .post-info {
         margin-top: -22px;
@@ -1760,19 +1760,26 @@ img {
         color: #0097de;
     }
     .after-post-widget {
-        padding-top: 10px;
+        padding-top: 30px;
     }
-
+    ul.blog-list > li {
+        margin-bottom: 20px;
+    }
+    ul.blog-list > li:last-child {
+        margin-bottom: 0;
+    }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
-
+    margin-top: 20px;
+    text-align: right;
 }
     .wp-pagenavi a {
-        font-size: 20px;
-        line-height: 40px;
         display: inline-block;
         width: 40px;
         height: 40px;
+        margin-right: 10px;
+        font-size: 20px;
+        line-height: 40px;
         border: 2px solid #8B9499;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -1781,6 +1788,72 @@ img {
         color: #8B9499;
         text-decoration: none;
     }
+    .wp-pagenavi a.first,
+    .wp-pagenavi a.previouspostslink,
+    .wp-pagenavi a.nextpostslink,
+    .wp-pagenavi a.last {
+        color: rgba(255, 255, 255, 0);;
+        position: relative;
+    }
+    .wp-pagenavi a.first:hover,
+    .wp-pagenavi a.previouspostslink:hover,
+    .wp-pagenavi a.nextpostslink:hover,
+    .wp-pagenavi a.last:hover {
+        color: rgba(255, 255, 255, 0);;
+    }
+    .wp-pagenavi .first:before {
+        content: '\f100';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -15px;
+        font: 30px FontAwesome;
+        color: #8B9499;
+    }
+    .wp-pagenavi .last:before {
+        content: '\f101';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -7px;
+        margin-top: -15px;
+        font: 30px FontAwesome;
+        color: #8B9499;
+    }
+    .wp-pagenavi .previouspostslink:before {
+        content: '\f104';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -7px;
+        margin-top: -15px;
+        font: 30px FontAwesome;
+        color: #8B9499;
+    }
+    .wp-pagenavi .nextpostslink:before {
+        content: '\f105';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -5px;
+        margin-top: -15px;
+        font: 30px FontAwesome;
+        color: #8B9499;
+    }
+    .wp-pagenavi .first:hover:before,
+    .wp-pagenavi .last:hover:before,
+    .wp-pagenavi .previouspostslink:hover:before,
+    .wp-pagenavi .nextpostslink:hover:before{
+        color: #0097de;
+    }
+    .wp-pagenavi a:last-child {
+        margin-right: 0;
+    }
     .wp-pagenavi a:hover {
         color: #0097de;
         border-color: #0097de;
@@ -1788,6 +1861,11 @@ img {
     .wp-pagenavi .current,
     .wp-pagenavi .extend {
         padding: 0 5px;
+        margin-right: 10px;
+        color: #8B9499;
+    }
+    .wp-pagenavi .current{
+        color: #0097de;
     }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
