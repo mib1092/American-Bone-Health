@@ -1652,8 +1652,8 @@ img {
     .standard-page.blog-page {
         padding-bottom: 40px;
     }
-    .blog-page .content-box .content-article{
-
+    .standard-page.blog-list {
+        padding-bottom: 30px;
     }
     .post-info {
         margin-top: -22px;
@@ -1737,7 +1737,7 @@ img {
         text-decoration: none;
     }
     .blog-bottom-box .tagcloud {
-        padding-left: 165px;
+        overflow: hidden;
     }
     .blog-bottom-box a:hover {
         color: #ffffff;
