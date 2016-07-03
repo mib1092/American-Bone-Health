@@ -595,6 +595,7 @@ img {
         .main-nav a,
         .wr-megamenu-container a {
             color: #191f22;
+            white-space: normal !important;
         }
             .main-nav > ul > li > a,
             .main-nav .wr-megamenu-container ul.wr-mega-menu > li.wr-megamenu-item > a.menu-item-link {
@@ -658,7 +659,11 @@ img {
                             box-shadow: 0 5px 10px rgba(0,0,0,0.2);
                         }
                             .wr-megamenu-container .jsn-bootstrap3 .row > div {
-                                width: 20%;
+                                width: 22.22%;
+                            }
+                            .wr-megamenu-container .jsn-bootstrap3 .row > div:first-child,
+                            .wr-megamenu-container .jsn-bootstrap3 .row > div:last-child {
+                                width: 16.66%;
                             }
                                 .wr-megamenu-container .wr-element-submenu a {
                                     padding: 0 10px;
