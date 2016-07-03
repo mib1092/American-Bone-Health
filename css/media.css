@@ -56,7 +56,8 @@
     .btn.donate {
         margin-left: 30px;
     }
-    .main-nav ul:not(.sub-menu) a {
+    .main-nav > ul > li > a,
+    .main-nav .wr-megamenu-container ul.wr-mega-menu > li.wr-megamenu-item > a.menu-item-link {
         padding-left: 12px;
         padding-right: 12px;
     }
@@ -67,7 +68,8 @@
 }
 
 @media all and (max-width: 1080px) {
-    .main-nav ul:not(.sub-menu) a {
+    .main-nav > ul > li > a,
+    .main-nav .wr-megamenu-container ul.wr-mega-menu > li.wr-megamenu-item > a.menu-item-link {
         padding-left: 10px;
         padding-right: 10px;
         font-size: 14px;
@@ -586,6 +588,10 @@
     .home .wrapper{ padding-top: 60px; }
     .inner .wrapper { padding-top: 85px; }
 
+    .header:after {
+        height: 5px;
+        bottom: -5px;
+    }
     .logo {
         height: 56px;
         margin-left: -10px;
