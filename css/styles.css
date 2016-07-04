@@ -128,6 +128,7 @@ input[type=submit], button,
 .btn.white { background: #fff; color: #0097de; }
 .btn.white:hover { background: #0075BC; color: #fff; }
 .btn.grey { background: #8b8f90; }
+.btn.light-grey {background: #b1b6ba}
 .btn.grey:hover { background: #777B7C; }
 .btn .fa { font-size: 14px; }
 .btn .fa-chevron-right { margin-left: 5px; }
@@ -1872,12 +1873,18 @@ img {
                 padding: 10px 9px 9px;
                 border: none;
             }
+            .search-banner-box .fa-search {
+                position: relative;
+                top: -2px;
+                font-size: 14px;
+                margin-right: 3px;
+            }
     .search-filter {
         text-transform: uppercase;
     }
     .search-filter .filter-top ul li {
         display: inline-block;
-        padding: 7px 19px 6px;
+        padding: 6px 19px 6px;
     }
     .search-filter .filter-top li.active {
         background-color: rgba(237, 234, 234, 0.32);
@@ -1892,6 +1899,7 @@ img {
         color: #ffffff;
     }
         .search-filter .filter-top a {
+            font: 600 15px 'proximanova-semibold';
             text-decoration: none;
             color: #bbc0c3  ;
         }
@@ -1904,7 +1912,7 @@ img {
     }
     .search-filter .filter-bottom ul li {
         display: inline-block;
-        padding: 13px 0 15px;
+        padding: 11px 0 8px;
         margin: 0 15px;
     }
     .search-filter .filter-bottom li.active {
@@ -1914,8 +1922,9 @@ img {
             color: #0097de;
         }
         .search-filter .filter-bottom a {
+            font: 600 15px 'proximanova-semibold';
             text-decoration: none;
-            color: #191f22;
+            color: #324046;
         }
         .search-filter .filter-bottom a:hover {
             color: #0097de;
@@ -1973,6 +1982,17 @@ img {
             }
             .article-content-box .content p {
                 margin-bottom: 20px;
+            }
+            .search-page .btn-box {
+                width: 100%;
+                text-align: center;
+            }
+            .search-page .btn-load-more {
+                padding: 12px 22px 10px;
+                margin-top: 40px;
+            }
+            .btn-load-more .fa-refresh{
+                margin-right: 2px;
             }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
