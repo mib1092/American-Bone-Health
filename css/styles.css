@@ -1599,7 +1599,7 @@ img {
                 margin-top: -17px;
                 margin-bottom: 20px;
                 font: 600 34px 'proximanova-semibold';
-                line-height: 1.45;
+                line-height: 1.35;
             }
             .addtoany_list {
                 margin-top: -24px;
@@ -1821,7 +1821,8 @@ img {
         padding-top: 15px;
     }
     .blog-list > li,
-    .search-list > li{
+    .search-list > li,
+    .article-list > li {
         margin-bottom: 20px;
         padding: 40px;
         background-color: #ffffff;
@@ -1829,12 +1830,14 @@ img {
         -moz-border-radius: 4px;
         border-radius: 4px;
     }
-    .search-list > li {
+    .search-list > li,
+    .article-list > li {
         overflow: hidden;
         padding: 0;
     }
     .blog-list > li:last-child,
-    .search-list > li:last-child {
+    .search-list > li:last-child,
+    .article-list > li:last-child {
         margin-bottom: 0;
     }
     a.content-title-link {
@@ -1914,6 +1917,7 @@ img {
         display: inline-block;
         padding: 11px 0 8px;
         margin: 0 15px;
+        border-bottom: 3px solid #ffffff;
     }
     .search-filter .filter-bottom li.active {
         border-bottom: 3px solid #0097de;
@@ -1942,7 +1946,7 @@ img {
         .article-video-box {
             position: relative;
             float: left;
-            max-width: 265px;
+            max-width: 270px;
             margin-right: 30px;
             padding-right: 5px;
         }
@@ -1953,7 +1957,7 @@ img {
                 height: auto;
             }
             .article-video-box img{
-                margin: 5px;
+                margin: 5px 0 5px 5px;
             }
         .article-video-box .video-time {
             position: absolute;
@@ -1968,10 +1972,11 @@ img {
         .article-content-box {
             padding: 30px 40px 3px 40px;
         }
-            .article-content-box .content-title {
-                margin-top: -7px;
+            .box-list-title {
+                margin-top: -6px;
+                margin-bottom: 21px;
                 font: 700 24px 'proximanova-bold';
-                line-height: 1.35;
+                line-height: 1.25;
             }
             .content-header {
                 overflow: hidden;
@@ -1981,6 +1986,9 @@ img {
                 margin-bottom: 7px;
             }
             .article-content-box .content p {
+                margin-bottom: 12px;
+            }
+            .article-content-box .content p:last-child {
                 margin-bottom: 20px;
             }
             .search-page .btn-box {
