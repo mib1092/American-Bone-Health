@@ -1592,7 +1592,7 @@ img {
                 font: 600 34px 'proximanova-semibold';
                 line-height: 1.45;
             }
-            .social {
+            .addtoany_list {
                 margin-top: -24px;
                 margin-bottom: 20px;
             }
@@ -2158,21 +2158,21 @@ img {
                     padding: 10px 15px 9px;
                 }
 
-        .social {
+        .addtoany_list {
             overflow: hidden;
         }
-            .social li {
+            .addtoany_list li {
                 float: left;
                 margin-left: 4px;
             }
-            .social li:first-child {
+            .addtoany_list li:first-child {
                 margin-left: 0;
             }
-            .social a {
+            .addtoany_list a {
                 font-size: 38px;
                 line-height: 1;
             }
-            .social a:hover {
+            .addtoany_list a:hover {
                 opacity: 0.8;
             }
 
