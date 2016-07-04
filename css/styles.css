@@ -2220,10 +2220,12 @@ img {
     .footer-top {
         padding: 98px 0 23px;
     }
+        .es_msg {
+            padding-top: 0;
+        }
         .subscribe-box {
             display: table;
             width: 100%;
-            padding-top: 5px;
             margin-bottom: 15px;
         }
             .subscribe-box li {
@@ -2253,13 +2255,13 @@ img {
             .addtoany_list li:first-child {
                 margin-left: 0;
             }
-            .addtoany_list a {
-                font-size: 38px;
-                line-height: 1;
-            }
-            .addtoany_list a:hover {
-                opacity: 0.8;
-            }
+                .addtoany_list a {
+                    font-size: 38px;
+                    line-height: 1;
+                }
+                .addtoany_list a:hover {
+                    opacity: 0.8;
+                }
 
         .footer-social {
             overflow: hidden;
