@@ -111,5 +111,9 @@ $(document).ready(function() {
             }
         }
     });
-
+    // Article slider
+    $('.bxslider').bxSlider({
+        pagerCustom: '#bx-pager',
+        slideWidth: 595
+    });
 });

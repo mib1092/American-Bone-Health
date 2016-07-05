@@ -2003,7 +2003,17 @@ img {
             }
 
 /*-------------------------------------ARTICLE-LIST---------------------------------*/
-
+.article-slider-box {
+    display: table;
+}
+    .article-slider-box #bx-pager {
+        display: table-cell;
+        vertical-align: top;
+        width: 180px;
+    }
+    .article-slider-box .bx-wrapper {
+        display: table-cell;
+    }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;

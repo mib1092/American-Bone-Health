@@ -11,6 +11,7 @@
     <link href="assets/owl.carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/media.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -105,15 +106,24 @@
             </div>
         </div>
 
-        <div class="article-slider-box">
-            <div class="container">
-
-            </div>
-        </div>
 
         <section class="standard-page article-page">
             <div class="container">
                 <div class="content-box">
+                    <div class="article-slider-box">
+                        <ul class="bxslider">
+                            <li><img src="img/content/slider/slide1.jpg" /></li>
+                            <li><img src="img/content/slider/slide2.jpg" /></li>
+                            <li><img src="img/content/slider/slide3.jpg" /></li>
+                        </ul>
+
+                        <div id="bx-pager">
+                            <a data-slide-index="0" href=""><img src="img/content/slider/thumbs/thub_slide1.jpg" /></a>
+                            <a data-slide-index="1" href=""><img src="img/content/slider/thumbs/thub_slide2.jpg" /></a>
+                            <a data-slide-index="2" href=""><img src="img/content/slider/thumbs/thub_slide3.jpg" /></a>
+                        </div>
+                    </div>
+
                     <ul class="article-list">
                         <li>
                             <article>
@@ -348,6 +358,7 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="assets/owl.carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
 	<script src="js/scroll.js"></script>
     <script src="js/mainJs.js"></script>
 </body>
