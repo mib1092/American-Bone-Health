@@ -2107,6 +2107,9 @@ img {
         margin: 20px 0 23px -20px;
         font: 700 24px 'proximanova-bold';
     }
+    .article-page .sidebar .sidebar-wrap-box {
+        margin-top: 5px;
+    }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
@@ -2222,7 +2225,7 @@ img {
     overflow: hidden;
     position: relative;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     background: #ffffff;
 }
 .sidebar .widget-guide .avatar-info {
@@ -2410,6 +2413,7 @@ img {
     padding-top: 18px;
     margin-bottom: 33px;
 }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
