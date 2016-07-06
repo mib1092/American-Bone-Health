@@ -449,6 +449,9 @@ img {
 .inner .wrapper {
     padding-top: 180px;
 }
+.inner-faces .wrapper {
+    padding-top: 200px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -2126,6 +2129,28 @@ img {
     .article-page .sidebar .sidebar-wrap-box {
         margin-top: 5px;
     }
+/*-------------------------------------FACES-DETAILS--------------------------------*/
+.faces-details-page .content .alignleft {
+    margin: 7px 40px 13px 0;
+}
+    .faces-details-page .content p:last-child {
+        margin-bottom: -10px;
+    }
+    .faces-list-box {
+        overflow: hidden;
+    }
+        .faces-list-box li {
+            float: left;
+            margin-right: 10px;
+        }
+        .faces-list-box li:nth-child(7n+1) {
+            clear: both;
+        }
+            .faces-list-box img {
+                display: block;
+                width: 102px;
+                height: 102px;
+            }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
@@ -2250,13 +2275,13 @@ img {
         height: 80px;
         padding: 5px 40px 9px 120px;
         background: #d0d9e0;
-        text-align: center;
     }
         .sidebar .widget-guide .avatar-info {
             display: table-cell;
             width: 100%;
             padding-left: 20px;
             vertical-align: bottom;
+            text-align: left;
             font: 400 16px 'proximanova-regular';
 
         }
@@ -2268,15 +2293,23 @@ img {
             bottom: -40px;
             left: 40px;
             border-radius: 50%;
+            text-align: center;
         }
+            .sidebar .widget-guide .avatar img {
+                display: table-cell;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                vertical-align: middle;
+            }
     .sidebar .widget-guide .guide-name {
         display: block;
         margin-top: 5px;
-        padding-left: 140px;
+        padding: 0 40px 0 140px;
         font: 700 22px 'proximanova-bold';
     }
     .sidebar .guide-list-box {
-        padding: 32px 40px 34px 40px;
+        padding: 32px 40px;
     }
     .sidebar .guide-list-box li {
         margin-bottom: 8px;
