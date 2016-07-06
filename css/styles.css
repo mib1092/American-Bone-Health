@@ -2211,13 +2211,45 @@ img {
     top: 0;
     right: 20px;
     margin: 0 0 0 20px;
+    max-width: 380px;
 }
 .sidebar .sidebar-wrap-box {
-    max-width: 380px;
+
     padding: 4px 20px 20px;
     background-color: #ffffff;
 }
-
+.sidebar .widget-guide{
+    overflow: hidden;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #ffffff;
+}
+.sidebar .widget-guide .avatar-info {
+    display: block;
+    width: 100%;
+    padding: 51px 40px 9px 140px;
+    margin-bottom: 5px;
+    font: 400 16px 'proximanova-regular';
+    background: #d0d9e0;
+}
+.sidebar .widget-guide .avatar {
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 40px;
+    border-radius: 50%;
+}
+.sidebar .widget-guide .guide-name {
+    margin-top: 15px;
+    padding-left: 140px;
+    font: 700 22px 'proximanova-bold';
+}
+.sidebar .guide-list-box {
+    padding: 37px 40px 34px 40px;
+}
 .sidebar .widget-search {
     margin-bottom: 34px;
     padding-top: 16px;
