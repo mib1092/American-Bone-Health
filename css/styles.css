@@ -2095,6 +2095,7 @@ img {
             height: 80px;
             text-indent: -9999px;
             z-index: 9999;
+            background-size: contain;
         }
         .article-slider-box .bx-wrapper .bx-next,
         .article-slider-box .bx-wrapper .bx-next:hover {
@@ -2232,7 +2233,6 @@ img {
     max-width: 380px;
 }
 .sidebar .sidebar-wrap-box {
-
     padding: 4px 20px 20px;
     background-color: #ffffff;
 }
@@ -2242,32 +2242,59 @@ img {
     margin-top: 5px;
     margin-bottom: 20px;
     background: #ffffff;
-}
-.sidebar .widget-guide .avatar-info {
-    display: block;
-    width: 100%;
-    padding: 51px 40px 9px 140px;
-    margin-bottom: 5px;
-    font: 400 16px 'proximanova-regular';
-    background: #d0d9e0;
-}
-.sidebar .widget-guide .avatar {
-    position: absolute;
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    top: 40px;
-    left: 40px;
-    border-radius: 50%;
-}
-.sidebar .widget-guide .guide-name {
-    margin-top: 15px;
-    padding-left: 140px;
-    font: 700 22px 'proximanova-bold';
-}
-.sidebar .guide-list-box {
-    padding: 37px 40px 34px 40px;
-}
+}  
+    .sidebar .avatar-wrap {
+        position: relative;
+        display: table;
+        width: 100%;
+        height: 80px;
+        padding: 5px 40px 9px 120px;
+        background: #d0d9e0;
+        text-align: center;
+    }
+        .sidebar .widget-guide .avatar-info {
+            display: table-cell;
+            width: 100%;
+            padding-left: 20px;
+            vertical-align: bottom;
+            font: 400 16px 'proximanova-regular';
+
+        }
+        .sidebar .widget-guide .avatar {
+            position: absolute;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            bottom: -40px;
+            left: 40px;
+            border-radius: 50%;
+        }
+    .sidebar .widget-guide .guide-name {
+        display: block;
+        margin-top: 5px;
+        padding-left: 140px;
+        font: 700 22px 'proximanova-bold';
+    }
+    .sidebar .guide-list-box {
+        padding: 32px 40px 34px 40px;
+    }
+    .sidebar .guide-list-box li {
+        margin-bottom: 8px;
+    }
+    .sidebar .guide-list-box li:last-child {
+        margin-bottom: 0;
+    }
+        .sidebar .guide-list-box a {
+            color: #191f22;
+            text-decoration: none;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+        }
+        .sidebar .guide-list-box a:hover {
+            color: #0097de;
+        }
 .sidebar .widget-search {
     margin-bottom: 34px;
     padding-top: 16px;
