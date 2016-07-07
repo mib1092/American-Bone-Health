@@ -2226,6 +2226,49 @@ img {
         padding-top: 40px;
         margin-bottom: -80px;
     }
+
+/*-------------------------------------FACES-OP-------------------------------------*/
+.section-faces-top,
+.section-faces-bottom {
+    text-align: center;
+}
+    .section-faces-top .container {
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+    .section-faces-top .section-content {
+        max-width: 980px;
+    }
+
+.section-faces-bottom {
+    background: #ffffff;
+}
+    .section-faces-bottom .container {
+        position: relative;
+        padding-top: 125px;
+        padding-bottom: 40px;
+    }
+        .senator-ava-box {
+            position: absolute;
+            display: block;
+            width: 180px;
+            height: 180px;
+            top: -90px;
+            left: 50%;
+            margin-left: -90px;
+            border-radius: 50%;
+        }
+        .section-faces-bottom .section-content {
+            max-width: 480px;
+            margin: 0 auto 21px;
+        }
+            .section-faces-bottom .section-content p {
+                font: 600 24px 'proximanova-semibold';
+                line-height: 1.35;
+            }
+        .section-faces-bottom .btn {
+            padding: 11px 42px;
+        }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
