@@ -1826,7 +1826,8 @@ img {
     }
     .blog-list > li,
     .search-list > li,
-    .article-list > li {
+    .article-list > li,
+    .volonteers-list > li{
         margin-bottom: 20px;
         padding: 40px;
         background-color: #ffffff;
@@ -1835,13 +1836,15 @@ img {
         border-radius: 4px;
     }
     .search-list > li,
-    .article-list > li {
+    .article-list > li,
+    .volonteers-list > li {
         overflow: hidden;
         padding: 0;
     }
     .blog-list > li:last-child,
     .search-list > li:last-child,
-    .article-list > li:last-child {
+    .article-list > li:last-child,
+    .volonteers-list > li:last-child {
         margin-bottom: 0;
     }
     a.content-title-link {
@@ -2282,6 +2285,34 @@ img {
         .my-faces .faces-wrap img,
         .my-faces .face {
             width: 100%;
+        }
+
+/*-------------------------------------VOLONTEERS-PAGE------------------------------*/
+.standard-page.volonteers-page{
+    padding-bottom: 40px;
+}
+.volonteers-page .content-title {
+    margin-top: 30px;
+    margin-bottom: 28px;
+}
+    .volonteers-list .volonteer-img-box {
+            position: relative;
+            overflow: hidden;
+            float: left;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin: 30px;
+        }
+    .volonteers-list .volonteer-content-box {
+        padding: 30px 50px 40px 50px;
+    }
+        .volonteer-content-box .volonteer-list-title {
+            font: 700 20px 'proximanova-bold';
+            margin-bottom: 18px;
+        }
+        .volonteers-list .volonteer-content-box .content p:last-child {
+            margin-bottom: 0px;
         }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
