@@ -2258,6 +2258,13 @@ img {
             margin-left: -90px;
             border-radius: 50%;
         }
+            .senator-ava-box img {
+                display: table-cell;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                vertical-align: middle;
+            }
         .section-faces-bottom .section-content {
             max-width: 480px;
             margin: 0 auto 21px;
