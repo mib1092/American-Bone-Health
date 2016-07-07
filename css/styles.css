@@ -2269,6 +2269,13 @@ img {
         .section-faces-bottom .btn {
             padding: 11px 42px;
         }
+        .my-faces .faces-list {
+            padding-top: 39px;
+        }
+        .my-faces .faces-wrap img,
+        .my-faces .face {
+            width: 100%;
+        }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
