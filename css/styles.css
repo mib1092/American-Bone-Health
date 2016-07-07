@@ -2142,11 +2142,11 @@ img {
     .faces-details-page .content .face-thubm {
         float: left;
         max-width: 320px;
-        margin: 7px 40px 14px 0;
+        padding: 7px 40px 14px 0;
     }
         .face-thubm img {
             display: block;
-            width: 100%;
+            max-width: 100%;
             height: auto;
         }
     .faces-details-page .content p:last-child {
@@ -2169,6 +2169,7 @@ img {
             clear: both;
         }
             .faces-list-box .face-img-box {
+                overflow: hidden;
                 position: relative;
                 width: 100%;
                 height: 100%;
@@ -2188,10 +2189,10 @@ img {
                 -o-transition: 0.2s;
                 transition: 0.2s;
             }
-            .faces-list-box li:hover .face-hover-box {
+            .faces-list-box li:not(.active):hover .face-hover-box {
                 opacity: 0.35;
             }
-            .faces-list-box li:hover a {
+            .faces-list-box li:not(.active):hover a {
                 color: #0097de;
             }
             .faces-list-box .active {
@@ -2252,6 +2253,7 @@ img {
         padding-bottom: 40px;
     }
         .senator-ava-box {
+            overflow: hidden;
             position: absolute;
             display: block;
             width: 180px;
@@ -2281,10 +2283,6 @@ img {
         }
         .my-faces .faces-list {
             padding-top: 39px;
-        }
-        .my-faces .faces-wrap img,
-        .my-faces .face {
-            width: 100%;
         }
 
 /*-------------------------------------VOLONTEERS-PAGE------------------------------*/
