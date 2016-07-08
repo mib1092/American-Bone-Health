@@ -2140,12 +2140,12 @@ img {
     margin: 7px 0 13px 40px;
 }
     .faces-details-page .content .face-thubm {
+        overflow: hidden;
         float: left;
-        max-width: 320px;
-        padding: 7px 40px 14px 0;
+        max-width: 45%;
+        margin: 7px 40px 14px 0;
     }
         .face-thubm img {
-            display: block;
             max-width: 100%;
             height: auto;
         }
@@ -2219,6 +2219,7 @@ img {
                     display: block;
                     width: 100%;
                     padding: 0 10px;
+                    font: 700 16px 'proximanova-bold';
                 }
                 .faces-list-box .face-age {
                     display: block;
