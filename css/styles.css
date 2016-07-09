@@ -2526,11 +2526,13 @@ img {
         .event-register-box .btn-event-reg:before {
 
         }
-            .event-register-box .btn-event-reg {
+            .event-register-box .event-btn-wrap {
                 position: absolute;
                 top: -28px;
                 left: 50%;
+                padding: 0 15px;
                 margin-left: -64px;
+                background: #ffffff;
             }
         .event-det-page .event-sponsor-list {
             text-align: center;
