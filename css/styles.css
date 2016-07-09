@@ -2342,6 +2342,12 @@ img {
       padding: 20px;
       background: #ffffff;
   }
+    .event-search-box .input-style {
+        padding: 8px 8px 7px 30px;
+    }
+    .event-search-box select.input-style {
+        padding: 8px 8px 7px 8px;
+    }
         .event-search-wrap {
             display: table;
             width: 100%;
@@ -2349,60 +2355,76 @@ img {
             .event-search-filter-box,
             .event-search-btn-box {
                 display: table-cell;
+                vertical-align: top;
             }
             .event-search-btn-box {
-                width: 40px;
-
+                width: 41px;
             }
                 .event-search-btn-box .btn {
-                    padding: 12px 13px 10px;
+                    width: 100%;
+                    padding: 11px 13px 10px;
                 }
                     .event-search-top-box,
                     .event-search-bottom-box,
                     .event-search-date-box,
                     .event-search-select-box {
-                        display: inline-block;
+                        width: 100%;
+                    }
+                    .event-search-bottom-box {
+                        display: none;
                     }
                         .event-search-top-box > li,
                         .event-search-bottom-box > li,
-                        .event-search-date-box > li,
-                        .event-search-select-box > li {
-                            float: left;
-                            padding: 10px;
-                        }
-
-                        .event-in-search,
-                        .event-in-near,
-                        .event-in-date {
+                        .event-search-select-box > li,
+                        .event-search-date-box > li {
                             position: relative;
-                        }
-                        .event-in-search:before {
-                            content: '\f002';
-                            position: absolute;
-                            left: 10px;
-                            top: 50%;
-                            margin-top: -8px;
-                            font: 16px FontAwesome;
+                            width: 50%;
+                            float: left;
                             color: #c5c7c8;
                         }
-                        .event-in-near:before {
-                            content: '\f002';
+                            .event-search-top-box > li {
+                                padding-right: 10px;
+                                margin-bottom: 13px;
+                            }
+                            .event-search-bottom-box > li {
+                                padding-right: 10px;
+                            }
+                                .event-search-date-box >li,
+                                .event-search-select-box > li {
+                                    padding-right: 10px;
+                                    margin-bottom: 13px;
+                                }
+                                .event-search-date-box >li:last-child,
+                                .event-search-select-box > li:last-child {
+                                    padding-right: 0;
+                                }
+
+                        .event-in-search+i.fa,
+                        .event-in-near+i.fa,
+                        .event-in-date+i.fa {
                             position: absolute;
-                            left: 10px;
-                            top: 50%;
-                            margin-top: -8px;
-                            font: 16px FontAwesome;
                             color: #c5c7c8;
                         }
-                        .event-in-date:before {
-                            content: '\f002';
-                            position: absolute;
-                            left: 10px;
-                            top: 50%;
-                            margin-top: -8px;
-                            font: 16px FontAwesome;
-                            color: #c5c7c8;
+                        .event-in-search+i.fa {
+                            left: 12px;
+                            bottom: 11px;
                         }
+                        .event-in-near+i.fa {
+                            left: 14px;
+                            bottom: 10px;
+                        }
+                        .event-in-date+i.fa {
+                            left: 10px;
+                            bottom: 12px;
+                        }
+                        .event-in-date-t-h {
+                            opacity: 0;
+                        }
+                #event-in-date-t,
+                #event-in-date-f {
+                    padding: 6px 7px 5px 30px;
+                }
+
     .event-list .event-info {
         margin-top: -6px;
     }
@@ -2432,6 +2454,26 @@ img {
                 padding: 12px 22px 10px;
                 margin-top: 40px;
             }
+    .hide-adv-wrap {
+        width: 100%;
+        margin-top: 7px;
+        padding-top: 13px;
+        text-align: center;
+        border-top: 2px solid #eaeceb;
+    }
+        a.hide-adv {
+            text-decoration: none;
+            color: #c5c7c8;
+            border-bottom: 1px dashed #c5c7c8;
+        }
+        a:hover.hide-adv {
+            color: #0097de;
+            border-bottom: 1px dashed #0097de;
+        }
+        .hide-adv-show {
+            display: none;
+        }
+
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;

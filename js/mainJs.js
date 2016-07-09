@@ -111,7 +111,10 @@ $(document).ready(function() {
             }
         }
     });
-
+    // for Search Event
+    $('a.hide-adv').click(function () {
+        $('.event-search-bottom-box').slideToggle('slow');
+    });
     // Article slider
     $('.bxslider').bxSlider({
         pagerCustom: '#bx-pager'

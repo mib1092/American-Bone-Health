@@ -110,43 +110,58 @@
             <div class="container">
                 <div class="content-box">
 
-                    <div class="event-search-box">
+                    <div class="event-search-box radius">
                         <form>
                             <ul class="event-search-wrap">
                                 <li class="event-search-filter-box">
                                     <ul>
                                         <li>
                                             <ul class="event-search-top-box">
-                                                <li><input type="search" name="s" class="input-style event-in-search" placeholder="Search"></li>
-                                                <li><input type="search" name="s" class="input-style" placeholder="Near" class="event-in-near"></li>
+                                                <li>
+                                                    <input type="search" name="s" class="input-style event-in-search" placeholder="Search">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                </li>
+                                                <li>
+                                                    <input type="search" name="s" class="input-style event-in-near" placeholder="Near">
+                                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <ul class="event-search-bottom-box" style="display: block">
+                                            <ul class="event-search-bottom-box">
                                                 <li>
                                                     <ul class="event-search-date-box">
-                                                        <li>Dates<input type="date" class="input-style" class="event-in-date"></li>
-                                                        <li><input type="date" class="input-style" class="event-in-date"></li>
+                                                        <li>
+                                                            <label for="event-in-date-f">Dates</label>
+                                                            <input type="date" class="input-style event-in-date" id="event-in-date-f">
+                                                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><label for="event-in-date-t" class="event-in-date-t-h">Dates</label>
+                                                            <input type="date" class="input-style event-in-date" id="event-in-date-t">
+                                                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <ul class="event-search-select-box">
-                                                        <li>
-                                                            Category
-                                                            <select class="input-style">
-                                                                <option>Пункт 1</option>
-                                                                <option>Пункт 2</option>
-                                                                <option>Пункт 3</option>
-                                                                <option>Пункт 4</option>
+                                                        <li><label for="check-category">Category</label>
+
+                                                            <select class="input-style" id="check-category">
+                                                                <option selected >All categories</option>
+                                                                <option>Category 1</option>
+                                                                <option>Category2</option>
+                                                                <option>Category 3</option>
+                                                                <option>Category 4</option>
                                                             </select>
                                                         </li>
-                                                        <li>
-                                                            Country
-                                                            <select class="input-style">
-                                                                <option>Пункт 1</option>
-                                                                <option>Пункт 2</option>
-                                                                <option>Пункт 3</option>
-                                                                <option>Пункт 4</option>
+                                                        <li><label for="check-country">Country</label>
+
+                                                            <select class="input-style" id="check-country">
+                                                                <option selected >All cantries</option>
+                                                                <option>Country 1</option>
+                                                                <option>Country 2</option>
+                                                                <option>Country 3</option>
+                                                                <option>Country 4</option>
                                                             </select>
                                                         </li>
                                                     </ul>
@@ -159,7 +174,9 @@
                                     <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </li>
                             </ul>
-                            <a href="#">Hide Advanced Search</a>
+                            <div class="hide-adv-wrap">
+                                <a href="#" class="hide-adv">Hide Advanced Search</a>
+                            </div>
                         </form>
                     </div>
 
