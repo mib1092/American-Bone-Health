@@ -112,37 +112,54 @@
 
                     <div class="event-search-box">
                         <form>
-                            <ul class=" ">
-                                <li><input type="search" name="s" class="input-style" placeholder="Search"></li>
-                                <li><input type="search" name="s" class="input-style" placeholder="Near"></li>
-                                <li><button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search</button></li>
-                                <li> Dates
+                            <ul class="event-search-wrap">
+                                <li class="event-search-filter-box">
                                     <ul>
-                                        <li><input type="date" class="input-style"></li>
-                                        <li><input type="date" class="input-style"></li>
+                                        <li>
+                                            <ul class="event-search-top-box">
+                                                <li><input type="search" name="s" class="input-style event-in-search" placeholder="Search"></li>
+                                                <li><input type="search" name="s" class="input-style" placeholder="Near" class="event-in-near"></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul class="event-search-bottom-box" style="display: block">
+                                                <li>
+                                                    <ul class="event-search-date-box">
+                                                        <li>Dates<input type="date" class="input-style" class="event-in-date"></li>
+                                                        <li><input type="date" class="input-style" class="event-in-date"></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="event-search-select-box">
+                                                        <li>
+                                                            Category
+                                                            <select class="input-style">
+                                                                <option>Пункт 1</option>
+                                                                <option>Пункт 2</option>
+                                                                <option>Пункт 3</option>
+                                                                <option>Пункт 4</option>
+                                                            </select>
+                                                        </li>
+                                                        <li>
+                                                            Country
+                                                            <select class="input-style">
+                                                                <option>Пункт 1</option>
+                                                                <option>Пункт 2</option>
+                                                                <option>Пункт 3</option>
+                                                                <option>Пункт 4</option>
+                                                            </select>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li>
-                                    Category
-                                    <select  multiple name="hero[]">
-                                        <option disabled>All categories</option>
-                                        <option value="Чебурашка">Чебурашка</option>
-                                        <option selected value="Крокодил Гена">Крокодил Гена</option>
-                                        <option value="Шапокляк">Шапокляк</option>
-                                        <option value="Крыса Лариса">Крыса Лариса</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    Country
-                                    <select  multiple name="hero[]">
-                                        <option disabled>All categories</option>
-                                        <option value="Чебурашка">Чебурашка</option>
-                                        <option selected value="Крокодил Гена">Крокодил Гена</option>
-                                        <option value="Шапокляк">Шапокляк</option>
-                                        <option value="Крыса Лариса">Крыса Лариса</option>
-                                    </select>
+                                <li class="event-search-btn-box">
+                                    <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </li>
                             </ul>
+                            <a href="#">Hide Advanced Search</a>
                         </form>
                     </div>
 

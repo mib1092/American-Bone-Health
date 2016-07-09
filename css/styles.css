@@ -2342,7 +2342,67 @@ img {
       padding: 20px;
       background: #ffffff;
   }
+        .event-search-wrap {
+            display: table;
+            width: 100%;
+        }
+            .event-search-filter-box,
+            .event-search-btn-box {
+                display: table-cell;
+            }
+            .event-search-btn-box {
+                width: 40px;
 
+            }
+                .event-search-btn-box .btn {
+                    padding: 12px 13px 10px;
+                }
+                    .event-search-top-box,
+                    .event-search-bottom-box,
+                    .event-search-date-box,
+                    .event-search-select-box {
+                        display: inline-block;
+                    }
+                        .event-search-top-box > li,
+                        .event-search-bottom-box > li,
+                        .event-search-date-box > li,
+                        .event-search-select-box > li {
+                            float: left;
+                            padding: 10px;
+                        }
+
+                        .event-in-search,
+                        .event-in-near,
+                        .event-in-date {
+                            position: relative;
+                        }
+                        .event-in-search:before {
+                            content: '\f002';
+                            position: absolute;
+                            left: 10px;
+                            top: 50%;
+                            margin-top: -8px;
+                            font: 16px FontAwesome;
+                            color: #c5c7c8;
+                        }
+                        .event-in-near:before {
+                            content: '\f002';
+                            position: absolute;
+                            left: 10px;
+                            top: 50%;
+                            margin-top: -8px;
+                            font: 16px FontAwesome;
+                            color: #c5c7c8;
+                        }
+                        .event-in-date:before {
+                            content: '\f002';
+                            position: absolute;
+                            left: 10px;
+                            top: 50%;
+                            margin-top: -8px;
+                            font: 16px FontAwesome;
+                            color: #c5c7c8;
+                        }
     .event-list .event-info {
         margin-top: -6px;
     }
