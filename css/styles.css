@@ -2292,6 +2292,9 @@ img {
         .my-faces .faces-list {
             padding-top: 39px;
         }
+        .my-faces .faces-list.next-ul {
+            padding-top: 18px;
+        }
         .my-faces > .container {
             max-width: 1600px;
         }
