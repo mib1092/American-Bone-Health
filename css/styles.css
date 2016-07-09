@@ -1725,7 +1725,7 @@ img {
                     content: counter(num) ') ';
                     counter-increment: num;
                     display: inline-block;
-                    min-width: 15px;
+                    min-width: 16px;
                     margin-right: 6px;
                     font: 600 18px 'proximanova-semibold';
                     color: #0097de;
