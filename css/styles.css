@@ -1827,7 +1827,8 @@ img {
     .blog-list > li,
     .search-list > li,
     .article-list > li,
-    .volonteers-list > li{
+    .volonteers-list > li,
+    .event-list > li{
         margin-bottom: 20px;
         padding: 40px;
         background-color: #ffffff;
@@ -1837,14 +1838,16 @@ img {
     }
     .search-list > li,
     .article-list > li,
-    .volonteers-list > li {
+    .volonteers-list > li,
+    .event-list > li {
         overflow: hidden;
         padding: 0;
     }
     .blog-list > li:last-child,
     .search-list > li:last-child,
     .article-list > li:last-child,
-    .volonteers-list > li:last-child {
+    .volonteers-list > li:last-child,
+    .event-list > li:last-child {
         margin-bottom: 0;
     }
     a.content-title-link {
@@ -2313,6 +2316,37 @@ img {
         .volonteers-list .volonteer-content-box .content p:last-child {
             margin-bottom: 0px;
         }
+
+/*-------------------------------------EVENT-PAGE-----------------------------------*/
+    .event-list .event-info {
+        margin-top: -6px;
+    }
+        .event-list .event-info span {
+            display: inline-block;
+            margin-right: 7px;
+        }
+        .event-list .event-date {
+            margin-bottom: 12px;
+            padding: 8px 10px 5px 12px;
+            font: 600 16px 'proximanova-semibold';
+            color: #ffffff;
+            background: #0097de;
+        }
+        .event-list .event-loc {
+            margin-bottom: 3px;
+            padding: 8px 10px 5px 0;
+            font: 400 16px 'proximanova-regular';
+            color: #0097de;
+        }
+
+        .event-page .btn-box {
+            width: 100%;
+            text-align: center;
+        }
+            .event-page .btn-load-more {
+                padding: 12px 22px 10px;
+                margin-top: 40px;
+            }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
