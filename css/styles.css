@@ -1690,8 +1690,8 @@ img {
                 line-height: 1.35;
             }
             .addtoany_list {
-                margin-top: -24px;
-                margin-bottom: 20px;
+                margin-top: -12px;
+                margin-bottom: 26px;
             }
             .content h1 {
                 margin-top: 5px;
@@ -3038,22 +3038,23 @@ img {
                     padding: 10px 15px 9px;
                 }
 
-        .addtoany_list {
+        .content-article .addtoany_list {
             overflow: hidden;
+            display: block;
         }
-            .addtoany_list li {
-                float: left;
-                margin-left: 4px;
+            .content-article .addtoany_list a {
+                font-size: 32px;
+                padding: 0 2px;
             }
-            .addtoany_list li:first-child {
-                margin-left: 0;
+            .content-article .addtoany_list a:first-child {
+                padding-left: 0;
             }
-                .addtoany_list a {
-                    font-size: 38px;
-                    line-height: 1;
-                }
-                .addtoany_list a:hover {
-                    opacity: 0.8;
+            .content-article .addtoany_list a:hover {
+                opacity: 0.7;
+            }
+                .a2a_kit_size_32.addtoany_override .a2a_svg,
+                .addtoany_list.a2a_kit_size_32 a > span {
+                    border-radius: 0;
                 }
 
         .footer-social {
@@ -3107,3 +3108,17 @@ img {
             text-decoration: none;
             color: #0097de;
         }
+
+/*----------------------------------------------------------------------------------*/
+/*--------------------------------------OTHER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#fancybox-outer {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+    #fancybox-content {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
