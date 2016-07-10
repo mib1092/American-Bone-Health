@@ -113,8 +113,10 @@ $(document).ready(function() {
     });
 
     // for Search Event
-    $('.hide-adv').click(function () {
-        $('.event-search-bottom-box').slideToggle(500);
+    $('.hide-adv').on('click', function() {
+        var hideBlock = $('.event-search-bottom-box');
+        $(this).toggleClass('active').parent().siblings('.event-search-wrap').find(hideBlock).slideToggle(500);
+        $(this).text(hideBlock.is(':visible') ? 'Show Advanced Search' : 'Hide Advanced Search');
     });
 
     // Article slider
