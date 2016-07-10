@@ -2515,20 +2515,24 @@ img {
 
     .event-info {
         margin-top: -6px;
+        margin-bottom: 7px;
     }
         .event-info span {
             display: inline-block;
             margin-right: 7px;
+            margin-bottom: 5px;
+        }
+        .event-info span .fa {
+            font-size: 18px;
+            margin-right: 3px;
         }
         .event-date {
-            margin-bottom: 12px;
             padding: 8px 10px 5px 12px;
             font: 600 16px 'proximanova-semibold';
             color: #ffffff;
             background: #0097de;
         }
         .event-loc {
-            margin-bottom: 3px;
             padding: 8px 10px 5px 0;
             font: 400 16px 'proximanova-regular';
             color: #0097de;
@@ -2607,16 +2611,11 @@ img {
     }
         .event-register-box .btn {
             padding: 21px 30px 17px;
-        }
-        .event-register-box .btn-event-reg:before {
-
-        }
-        .event-register-box .btn-event-reg:before {
-
+            font-size: 22px;
         }
             .event-register-box .event-btn-wrap {
                 position: absolute;
-                top: -28px;
+                top: -30px;
                 left: 50%;
                 padding: 0 15px;
                 margin-left: -64px;
@@ -2624,16 +2623,19 @@ img {
             }
         .event-det-page .event-sponsor-list {
             text-align: center;
+            margin-left: -20px;
+            margin-right: -20px;
         }
             .event-det-page .event-sponsor-list li {
                 display: inline-table;
-                vertical-align: middle;
                 width: 24.5%;
-                padding: 0 20px 15px;
+                padding: 0 10px 0;
+                margin-bottom: 30px;
             }
                 .event-det-page .event-sponsor-list img {
                     max-width: 100%;
                     height: auto;
+                    vertical-align: middle;
                 }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
