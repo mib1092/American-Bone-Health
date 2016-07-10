@@ -2458,6 +2458,11 @@ img {
                     .event-search-select-box {
                         width: 100%;
                     }
+                        .event-search-date-box label,
+                        .event-search-select-box label {
+                            font: 700 16px 'proximanova-bold';
+                            color: #a7a8a9;
+                        }
                     .event-search-bottom-box {
                         display: none;
                     }
@@ -2557,8 +2562,11 @@ img {
             text-decoration: none;
             color: #c5c7c8;
             border-bottom: 1px dashed #c5c7c8;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 1;
         }
-        a:hover.hide-adv {
+        a.hide-adv:hover {
             color: #0097de;
             border-bottom: 1px dashed #0097de;
         }
@@ -2567,19 +2575,23 @@ img {
         }
 /*-------------------------------------EVENT-DETAILS--------------------------------*/
 .event-det-page .image-box {
+    display: table;
+    width: -webkit-calc(100% + 80px);
+    width: -moz-calc(100% + 80px);
+    width: calc(100% + 80px);
+    height: 320px;
     margin-top: -40px;
     margin-left: -40px;
     margin-bottom: 37px;
-    position: relative;
 }
 
     .event-det-page .event-det-title {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        padding: 24px 37px;;
-        margin: 0 0 9px 0;
+        display: table-cell;
+        font: 600 32px 'proximanova-semibold';
+        text-align: left;
+        vertical-align: bottom;
+        color: #ffffff;
+        padding: 30px 38px;
         color: #ffffff;
         background: -moz-linear-gradient(top, rgba(28,38,42,0.01) 0%,rgba(28,38,42,0.7) 62%,rgba(28,38,42,0.7) 100%);
         background: -webkit-linear-gradient(top, rgba(28,38,42,0.01) 0%,rgba(28,38,42,0.7) 62%,rgba(28,38,42,0.7) 100%);
@@ -2590,6 +2602,7 @@ img {
         -moz-transition-duration: 0.35s;
         transition-duration: 0.35s;
     }
+
     .event-det-page .event-info {
         overflow: hidden;
         display: inline-block;
