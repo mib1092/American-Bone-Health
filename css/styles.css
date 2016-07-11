@@ -1861,8 +1861,9 @@ img {
             .blog-bottom-box {
                 position: relative;
                 overflow: hidden;
-                padding-top: 30px;
+                padding-top: 40px;
                 padding-right: 25px;
+                margin-bottom: -10px;
             }
             .blog-bottom-box a.btn {
                 float: left;
@@ -1880,16 +1881,12 @@ img {
                 background-color: #e8e8e8;
             }
 
-    .blog-bottom-box {
-        margin-bottom: -10px;
-        position: relative;
-    }
         .blog-bottom-box .tag-after {
             overflow: hidden;
             display: table-cell;
             height: 40px;
             vertical-align: middle;
-            padding-top: 10px;
+            padding-top: 0;
         }
 
     .blog-bottom-box a.tags-box-link {
@@ -2852,65 +2849,32 @@ img {
     margin-top: 5px;
     margin-bottom: 20px;
     background: #ffffff;
-}  
-    .sidebar .avatar-wrap {
-        position: relative;
-        display: table;
+}
+    .sidebar .widget-guide .title-sidebar{
         width: 100%;
-        height: 80px;
-        padding: 14px 40px 9px 120px;
+        margin: 0;
+        padding: 20px 40px;
         background: #d0d9e0;
     }
-        .sidebar .widget-guide .avatar-info {
-            display: table-cell;
-            width: 100%;
-            padding-left: 20px;
-            vertical-align: bottom;
-            text-align: left;
-            font: 400 16px 'proximanova-regular';
-        }
-        .sidebar .widget-guide .avatar {
-            position: absolute;
-            overflow: hidden;
-            display: inline-block;
-            width: 80px;
-            height: 80px;
-            bottom: -40px;
-            left: 40px;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 80px;
-        }
-            .sidebar .widget-guide .avatar img {
-                max-width: 100%;
-                max-height: 100%;
-                vertical-align: middle;
-                line-height: normal;
-            }
-    .sidebar .widget-guide .guide-name {
-        display: block;
-        margin-top: 5px;
-        padding: 0 40px 0 140px;
-        font: 700 22px 'proximanova-bold';
+    .sidebar .widget-guide ul {
+        padding: 0 0 36px;
     }
-    .sidebar .guide-list-box {
-        padding: 32px 40px;
+    .sidebar .widget-guide li {
+
     }
-    .sidebar .guide-list-box li {
-        margin-bottom: 8px;
-    }
-    .sidebar .guide-list-box li:last-child {
+    .sidebar .widget-guide li:last-child {
         margin-bottom: 0;
     }
-        .sidebar .guide-list-box a {
+        .sidebar .widget-guide a {
             display: block;
+            width: 100%;
+            padding: 4px 40px;
             color: #191f22;
             text-decoration: none;
         }
-        .sidebar .guide-list-box a:hover {
-            color: #0097de;
+        .sidebar .widget-guide a:hover {
+            color: #ffffff;
+            background: #d0d9e0;
         }
 .sidebar .widget-search {
     margin-bottom: 34px;
