@@ -1884,24 +1884,14 @@ img {
         margin-bottom: -10px;
         position: relative;
     }
-        .blog-bottom-box .tagcloud {
+        .blog-bottom-box .tag-after {
             overflow: hidden;
             display: table-cell;
             height: 40px;
             vertical-align: middle;
+            padding-top: 10px;
         }
-            .blog-bottom-box .tagcloud a {
-                display: inline-block;
-                padding: 5px 10px;
-                font: 400 12px 'proximanova-regular';
-                color: #191f22;
-                background-color: #eaeceb;
-                text-decoration: none;
-            }
-            .blog-bottom-box .tagcloud a:hover {
-                color: #ffffff;
-                background-color: #0097de;
-            }
+
     .blog-bottom-box a.tags-box-link {
         position: absolute;
         top: 40px;
@@ -2704,7 +2694,11 @@ img {
         font: 400 48px 'proximanova-regular';
         color: #bfc4c8;
     }
+    .glossary-sub-list li {
+        padding: 34px 40px 0 40px;
+    }
     .glossary-sub-list li .article-content-wrap {
+        padding-bottom: 30px;
         border-bottom: 2px solid #ebedec;
     }
     .glossary-sub-list li:last-child .article-content-wrap {
@@ -2722,11 +2716,17 @@ img {
                 -moz-border-radius: 4px;
                 border-radius: 4px;
             }
-                .glossary-list .glossary-sub-list .article-content-wrap {
-                    padding-bottom: 10px;
-                }
+                    .glossary-sub-list .box-list-title {
+                        margin-bottom: 14px;
+                    }
+                    .glossary-sub-list .content :last-child {
+                        margin-bottom: 0;
+                    }
                     .glossary-sub-list .content a {
                         text-decoration: underline;
+                    }
+                    .glossary-sub-list .content a:hover {
+                        text-decoration: none;
                     }
                     .glossary-sub-list .content ul,
                     .glossary-sub-list .content ol {
@@ -2736,8 +2736,6 @@ img {
                     .glossary-sub-liste .content p:last-child {
                         margin-bottom: 0;
                     }
-
-
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
@@ -3058,11 +3056,12 @@ img {
     text-align: left;
     opacity: 0.8;
 }
-.sidebar .tagcloud {
+.tagcloud {
     padding-top: 18px;
     margin-bottom: 33px;
 }
-    .sidebar .tagcloud a{
+    .tagcloud a,
+    .tagcloud .tag-link {
         display: inline-block;
         padding: 5px 10px;
         font: 400 12px 'proximanova-regular';
@@ -3073,9 +3072,9 @@ img {
         -moz-border-radius: 4px;
         border-radius: 4px;
     }
-    .sidebar .tagcloud a:hover {
+     .tagcloud a:hover {
         color: #ffffff;
-        background-color: #0098de;
+        background-color: #0097de;
     }
 
 /*----------------------------------------------------------------------------------*/
