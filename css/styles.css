@@ -2669,6 +2669,9 @@ img {
 .exercise-list-page .article-content-box {
     padding: 24px 40px 21px 40px;
 }
+    .exercise-list-page .content-header {
+        margin-bottom: 13px;
+    }
     .box-list-sub-title {
         font: 400 16px 'proximanova-regular';
         color: #717171;
@@ -2682,10 +2685,13 @@ img {
         }
             .exercise-list-page .content ul,
             .exercise-list-page .content ol {
-                margin-top: 13px;
-                margin-bottom: 4px;
+                margin-top: 0;
+                margin-bottom: 10px;
             }
-            .exercise-list-page .content .repeat-pad {
+            .exercise-list-page .content p:last-child {
+                margin-bottom: 0;
+            }
+            .exercise-list-page .content p strong {
                 padding-left: 16px;
             }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
