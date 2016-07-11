@@ -1695,7 +1695,7 @@ img {
             }
             .addtoany_list {
                 margin-top: -12px;
-                margin-bottom: 26px;
+                margin-bottom: 20px;
             }
             .content h1 {
                 margin-top: 5px;
@@ -1820,8 +1820,8 @@ img {
         padding-bottom: 92px;
     }
     .post-info {
-        margin-top: -22px;
-        margin-bottom: 32px;
+        margin-top: -20px;
+        margin-bottom: 25px;
     }
     .post-info span {
         margin-right: 20px;
@@ -1901,9 +1901,18 @@ img {
         right: 0;
         color: #a6a7a9;
     }
-    .blog-bottom-box a.copy-permalink:hover {
+    a.copy-permalink:hover,
+    a.copy-permalink.hover {
         color: #0097de;
     }
+    .copy-permalink + .zclip {
+        width: 17px !important;
+    }
+        .copy-permalink + .zclip embed {
+            position: relative;
+            top: -5px;
+            width: 100%;
+        }
     .after-post-widget {
         padding-top: 15px;
     }
@@ -2877,7 +2886,7 @@ img {
             .sidebar .menu a:hover {
                 background: #d0d9e0;
                 text-decoration: none;
-                color: #0097de;
+                color: #fff;
             }
 .sidebar .widget-search {
     margin-bottom: 34px;

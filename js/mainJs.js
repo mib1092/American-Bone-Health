@@ -123,4 +123,19 @@ $(document).ready(function() {
     $('.bxslider').bxSlider({
         pagerCustom: '#bx-pager'
     });
+
+    // for copy post permalink
+    $("a.copy-permalink").on('click', function (e) {
+        e.preventDefault();
+    }).each(function () {
+        $(this).zclip({
+            path:'/wp-content/themes/americanbonehealth/assets/zclip/ZeroClipboard.swf',
+            copy: $(this).attr('href'),
+            beforeCopy:function(){},
+            afterCopy:function(){
+                // alert("Link has been copied to clipboard!");
+                swal({ title: "", text: "Link has been copied to clipboard!", type: "success"});
+            }
+        });
+    });
 });
