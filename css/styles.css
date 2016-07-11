@@ -1920,7 +1920,7 @@ img {
     .article-list > li,
     .volonteers-list > li,
     .event-list > li,
-    .exercise-list > li{
+    .exercise-list > li {
         margin-bottom: 20px;
         padding: 40px;
         background-color: #ffffff;
@@ -2694,6 +2694,50 @@ img {
             .exercise-list-page .content p strong {
                 padding-left: 16px;
             }
+/*-------------------------------------GLOSSARY-------------------------------------*/
+.glossary-list {
+    padding-top: 10px;
+}
+
+    .glossary-letter {
+        margin-bottom: 6px;
+        font: 400 48px 'proximanova-regular';
+        color: #bfc4c8;
+    }
+    .glossary-sub-list li .article-content-wrap {
+        border-bottom: 2px solid #ebedec;
+    }
+    .glossary-sub-list li:last-child .article-content-wrap {
+        border-bottom: none;
+    }
+        .glossary-list > li {
+            margin-bottom: 29px;
+        }
+        .glossary-list > li:last-child {
+            margin-bottom: 0;
+        }
+            .glossary-list .glossary-sub-list {
+               background: #ffffff;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+            }
+                .glossary-list .glossary-sub-list .article-content-wrap {
+                    padding-bottom: 10px;
+                }
+                    .glossary-sub-list .content a {
+                        text-decoration: underline;
+                    }
+                    .glossary-sub-list .content ul,
+                    .glossary-sub-list .content ol {
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                    }
+                    .glossary-sub-liste .content p:last-child {
+                        margin-bottom: 0;
+                    }
+
+
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
