@@ -62,7 +62,7 @@ $(document).ready(function() {
 
     // for pages with sidebar
     var sidebar = $('#sidebar');
-    $(sidebar).parent().css({'min-height': sidebar.height() + 24});
+    $(sidebar).parent().css({'min-height': sidebar.height()});
 
     // for Owl Carousel sliders
     $('.volunteers-slider').owlCarousel({

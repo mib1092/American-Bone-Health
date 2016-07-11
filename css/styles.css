@@ -1955,6 +1955,7 @@ img {
 .search-banner {
     margin-top: -20px;
     margin-bottom: 20px;
+    background-image: url(../img/header/banner.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3116,22 +3117,22 @@ img {
                     padding: 10px 15px 9px;
                 }
 
-        .content-article .addtoany_list {
+        .content-box .addtoany_list {
             overflow: hidden;
             display: block;
         }
-            .content-article .addtoany_list a {
+            .content-box .addtoany_list a {
                 font-size: 32px;
                 padding: 0 2px;
             }
-            .content-article .addtoany_list a:first-child {
+            .content-box .addtoany_list a:first-child {
                 padding-left: 0;
             }
-            .content-article .addtoany_list a:hover {
+            .content-box .addtoany_list a:hover {
                 opacity: 0.7;
             }
-                .a2a_kit_size_32.addtoany_override .a2a_svg,
-                .addtoany_list.a2a_kit_size_32 a > span {
+                .content-box .a2a_kit_size_32.addtoany_override .a2a_svg,
+                .content-box .addtoany_list.a2a_kit_size_32 a > span {
                     border-radius: 0;
                 }
 
