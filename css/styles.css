@@ -440,6 +440,9 @@ img {
     .linkedin a{
         color: #4498c7;
     }
+    .blue-text {
+        color: #0097de;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1726,6 +1729,9 @@ img {
                 margin-bottom: 42px;
                 counter-reset: num;
             }
+                .content ol li {
+                    display: table;
+                }
                 .content ol li:before {
                     content: counter(num) ') ';
                     counter-increment: num;
@@ -1741,6 +1747,7 @@ img {
             }
                 .content ul li {
                     position: relative;
+                    display: table;
                     padding-left: 16px;
                 }
                 .content ul li:before {
@@ -1912,7 +1919,8 @@ img {
     .search-list > li,
     .article-list > li,
     .volonteers-list > li,
-    .event-list > li{
+    .event-list > li,
+    .exercise-list > li{
         margin-bottom: 20px;
         padding: 40px;
         background-color: #ffffff;
@@ -1931,7 +1939,8 @@ img {
     .search-list > li:last-child,
     .article-list > li:last-child,
     .volonteers-list > li:last-child,
-    .event-list > li:last-child {
+    .event-list > li:last-child,
+    .exercise-list > li:last-child {
         margin-bottom: 0;
     }
     a.content-title-link {
@@ -2655,6 +2664,30 @@ img {
                     height: auto;
                     vertical-align: middle;
                 }
+
+/*-------------------------------------EXERCISE-LIST--------------------------------*/
+.exercise-list-page .article-content-box {
+    padding: 24px 40px 21px 40px;
+}
+    .box-list-sub-title {
+        font: 400 16px 'proximanova-regular';
+        color: #717171;
+    }
+        .exercise-list-page .article-img-box {
+            max-width: 268px;
+            border-right: 2px solid #eeeff1;
+        }
+        .exercise-list-page .box-list-title {
+            margin-bottom: 4px;
+        }
+            .exercise-list-page .content ul,
+            .exercise-list-page .content ol {
+                margin-top: 13px;
+                margin-bottom: 4px;
+            }
+            .exercise-list-page .content .repeat-pad {
+                padding-left: 16px;
+            }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
