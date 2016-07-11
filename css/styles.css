@@ -1336,13 +1336,14 @@ img {
 }
     .logos-list li {
         display: inline-table;
-        vertical-align: middle;
         width: 19.5%;
-        padding: 0 20px 15px;
+        padding: 0 20px;
+        margin-bottom: 15px;
     }
         .logos-list img {
             max-width: 100%;
             height: auto;
+            vertical-align: middle;
         }
 
 .section-join {
@@ -1861,7 +1862,7 @@ img {
             .blog-bottom-box {
                 position: relative;
                 overflow: hidden;
-                padding-top: 40px;
+                padding-top: 30px;
                 padding-right: 25px;
                 margin-bottom: -10px;
             }
@@ -1887,16 +1888,20 @@ img {
             height: 40px;
             vertical-align: middle;
             padding-top: 0;
+            margin-bottom: 0;
+        }
+        .blog-list .blog-bottom-box .tag-after {
+            position: relative;
+            top: -1px;
         }
 
-    .blog-bottom-box a.tags-box-link {
+    .blog-bottom-box a.copy-permalink {
         position: absolute;
-        top: 40px;
+        top: 38px;
         right: 0;
         color: #a6a7a9;
     }
-    .blog-bottom-box a.tags-box-link:hover {
-        background-color: #ffffff;
+    .blog-bottom-box a.copy-permalink:hover {
         color: #0097de;
     }
     .after-post-widget {
@@ -2843,39 +2848,37 @@ img {
     padding: 4px 20px 20px;
     background-color: #ffffff;
 }
-.sidebar .widget-guide{
+.widget-guide{
     overflow: hidden;
     position: relative;
     margin-top: 5px;
     margin-bottom: 20px;
     background: #ffffff;
 }
-    .sidebar .widget-guide .title-sidebar{
+    .widget-guide .title-sidebar{
         width: 100%;
         margin: 0;
-        padding: 20px 40px;
+        padding: 20px 40px 18px;
         background: #d0d9e0;
     }
-    .sidebar .widget-guide ul {
-        padding: 0 0 36px;
+    .sidebar .widget-guide .menu {
+        padding: 15px 0 30px;
     }
-    .sidebar .widget-guide li {
-
-    }
-    .sidebar .widget-guide li:last-child {
-        margin-bottom: 0;
-    }
-        .sidebar .widget-guide a {
-            display: block;
-            width: 100%;
-            padding: 4px 40px;
-            color: #191f22;
-            text-decoration: none;
+        .sidebar .menu li {
+            margin: 0;
         }
-        .sidebar .widget-guide a:hover {
-            color: #ffffff;
-            background: #d0d9e0;
-        }
+            .sidebar .menu a {
+                display: block;
+                width: 100%;
+                padding: 4px 40px;
+                color: #191f22;
+                text-decoration: none;
+            }
+            .sidebar .menu a:hover {
+                background: #d0d9e0;
+                text-decoration: none;
+                color: #0097de;
+            }
 .sidebar .widget-search {
     margin-bottom: 34px;
     padding-top: 16px;

@@ -406,7 +406,8 @@
     }
     .logos-list li {
         width: 24%;
-        padding: 0 10px 20px;
+        padding: 0 10px;
+        margin-bottom: 20px;
     }
 }
 
