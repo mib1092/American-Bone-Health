@@ -2810,7 +2810,64 @@ img {
     .take-action-page .section-events  .cell-location {
         margin-bottom: 12px;
     }
+/*-------------------------------------FINANCIALS-PAGE------------------------------*/
+    .financials-page .big-banner a.learn-more.big {
+        padding: 18px 33px 16px;
+    }
 
+    .section-download-list {
+        background: #ffffff;
+    }
+        .section-download-list .download-list {
+            overflow: hidden;
+            width: 100%;
+            padding-top: 52px;
+        }
+            .section-download-list .download-list > li{
+                float: left;
+                width: 33.33%;
+                text-align: left;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 20px;
+            }
+            .section-download-list .download-list > li:first-child,
+            .section-download-list .download-list > li:nth-child(3n+1) {
+                clear: both;
+            }
+                .section-download-list .download-year {
+                    margin-bottom: 15px;
+                    font: 600 24px 'proximanova-semibold';
+                }
+                    .section-download-list .download-list-year li {
+                        position: relative;
+                        padding-left: 29px;
+                    }
+                    .section-download-list .download-list-year li:before {
+                        content: '\f0ed';
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        margin-top: -9px;
+                        font: 17px FontAwesome;
+                        color: #0097de;
+
+                    }
+                        .section-download-list  .download-list-year a {
+                            font-size: 20px;
+                            text-decoration: none;
+                        }
+
+    .section-financials-logo .financials-logo-list {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        margin-top: 7px;
+    }
+        .section-financials-logo .financials-logo-list li {
+           display: table-cell;
+           vertical-align: middle;
+        }
 
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
