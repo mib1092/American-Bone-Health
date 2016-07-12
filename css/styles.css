@@ -1038,13 +1038,31 @@ img {
 
 /*---------------------------------------HOME---------------------------------------*/
 .big-banner {
+    position: relative;
     background-color: #324046;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    color: #ffffff;
 }
+    .big-banner:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: -moz-linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.1) 90%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0,0,0,0.6)), color-stop(90%, rgba(255,255,255,0.1))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.1) 90%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.1) 90%); /* opera 11.10+ */
+        background: -ms-linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.1) 90%); /* ie10+ */
+        background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.1) 90%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#FFFFFF',GradientType=1 ); /* ie6-9 */
+    }
     .banner-box {
+        position: relative;
         display: table-cell;
         width: 580px;
         height: 720px;
