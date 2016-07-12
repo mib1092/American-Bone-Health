@@ -2840,6 +2840,7 @@ img {
             overflow: hidden;
             width: 100%;
             padding-top: 52px;
+            margin-bottom: -22px;
         }
             .section-download-list .download-list > li{
                 float: left;
@@ -2847,33 +2848,41 @@ img {
                 text-align: left;
                 padding-left: 20px;
                 padding-right: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 50px;
             }
             .section-download-list .download-list > li:first-child,
             .section-download-list .download-list > li:nth-child(3n+1) {
                 clear: both;
             }
                 .section-download-list .download-year {
-                    margin-bottom: 15px;
+                    margin-bottom: 19px;
                     font: 600 24px 'proximanova-semibold';
                 }
                     .section-download-list .download-list-year li {
                         position: relative;
                         padding-left: 29px;
+                        margin-bottom: 16px;
+                        line-height: 1.2;
                     }
-                    .section-download-list .download-list-year li:before {
-                        content: '\f0ed';
-                        position: absolute;
-                        left: 0;
-                        top: 50%;
-                        margin-top: -9px;
-                        font: 17px FontAwesome;
-                        color: #0097de;
-
+                    .section-download-list .download-list-year li:last-child {
+                        margin-bottom: 0;
                     }
-                        .section-download-list  .download-list-year a {
+                        .section-download-list .download-list-year li:before {
+                            content: '\f0ed';
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            margin-top: -9px;
+                            font: 17px FontAwesome;
+                            color: #0097de;
+                        }
+                        .section-download-list .download-list-year a {
                             font-size: 20px;
                             text-decoration: none;
+                        }
+                        .section-download-list .download-list-year a:hover {
+                            text-decoration: none;
+                            border-bottom: 1px solid #0097de;
                         }
 
     .section-financials-logo .financials-logo-list {
