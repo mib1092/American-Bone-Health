@@ -1016,40 +1016,48 @@ img {
                 margin: 0;
                 line-height: normal;
             }
-/*---------------------------------------BREADCRUBS---------------------------------*/
-.breadcrumbs {
+/*----------------------------------BREADCRUMBS---------------------------------*/
+.breadcrumbs-box {
     margin: 0 0 11px;
 }
-    .breadcrumbs ul {
+    .breadcrumbs {
         overflow: hidden;
         display: inline-block;
         font: 600 13px 'proximanova-semibold';
         text-transform: uppercase;
         background-color: #ffffff;
+        padding: 3px 10px 11px;
     }
-        .breadcrumbs ul li {
-            float: left;
-            padding: 13px 10px 11px;
+        .breadcrumbs > span {
+            position: relative;
+            display: inline;
+            padding: 0 9px;
         }
-            .breadcrumbs a {
+        .breadcrumbs > span:first-child {
+            padding-left: 0;
+        }
+        .breadcrumbs > span:last-child {
+            padding-right: 0;
+        }
+            .breadcrumbs > span:after{
+                content: '\203A';
+                display: inline-block;
+                height: 16px;
                 position: relative;
+                top: 1px;
+                right: -10px;
+                font-size: 24px;
+                color: #0f191d;
+            }
+            .breadcrumbs > span:last-child:after{
+                display: none;
+            }
+            .breadcrumbs a {
                 color: #0f191d;
                 text-decoration: none;
             }
             .breadcrumbs a:hover {
                 color: #0097de;
-            }
-            .breadcrumbs a:after{
-                content: '\203A';
-                position: absolute;
-                margin-top: -17px;
-                top: 50%;
-                right: -14px;
-                font-size: 24px;
-                color: #0f191d;
-            }
-            .breadcrumbs li:last-child > a:after{
-                display: none;
             }
 
 /*----------------------------------------------------------------------------------*/
@@ -1729,10 +1737,9 @@ img {
             background-color: #ffffff;
         }
             .content-title {
-                margin-top: -17px;
+                margin-top: -7px;
                 margin-bottom: 20px;
-                font: 600 34px 'proximanova-semibold';
-                line-height: 1.35;
+                font: 600 34px/1.2 'proximanova-semibold';
             }
             .archive .content-title {
                 margin-top: 0;
@@ -1852,7 +1859,7 @@ img {
                 }
                 .content img.aligncenter{
                     display: block;
-                    margin: 0 auto;
+                    margin: 0 auto 40px;
                     clear: both;
                 }
 
@@ -1864,7 +1871,7 @@ img {
         padding-bottom: 92px;
     }
     .post-info {
-        margin-top: -20px;
+        margin-top: -18px;
         margin-bottom: 25px;
     }
     .post-info span {
@@ -1960,38 +1967,6 @@ img {
     .after-post-widget {
         padding-top: 15px;
     }
-    /*.type-list >li,*/
-    /*.blog-list > li,*/
-    /*.search-list > li,*/
-    /*.article-list > li,*/
-    /*.volonteers-list > li,*/
-    /*.event-list > li,*/
-    /*.exercise-list > li {*/
-        /*margin-bottom: 20px;*/
-        /*padding: 40px;*/
-        /*background-color: #ffffff;*/
-        /*-webkit-border-radius: 4px;*/
-        /*-moz-border-radius: 4px;*/
-        /*border-radius: 4px;*/
-    /*}*/
-    /*.type-list-overf >li,*/
-    /*.search-list > li,*/
-    /*.article-list > li,*/
-    /*.volonteers-list > li,*/
-    /*.event-list > li {*/
-        /*overflow: hidden;*/
-        /*padding: 0;*/
-    /*}*/
-
-    /*.type-list >li:last-child,*/
-    /*.blog-list > li:last-child,*/
-    /*.search-list > li:last-child,*/
-    /*.article-list > li:last-child,*/
-    /*.volonteers-list > li:last-child,*/
-    /*.event-list > li:last-child,*/
-    /*.exercise-list > li:last-child {*/
-        /*margin-bottom: 0;*/
-    /*}*/
     .type-list > li {
         overflow: hidden;
         margin-bottom: 20px;
@@ -2004,7 +1979,7 @@ img {
     .type-list > li:last-child {
         margin-bottom: 0;
     }
-    .blog-list > li {
+    .type-list.blog-list > li {
         overflow: visible;
         padding: 40px;
     }
@@ -2920,13 +2895,13 @@ img {
     .why-we-list {
         width: 100%;
         margin-top: 8px;
-        margin-bottom: -50px;
+        margin-bottom: -60px;
     }
         .why-we-list > li {
             display: inline-table;
             width: 32%;
             padding: 0 10px;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             vertical-align: top;
         }
              .why-we-img-wrap {
@@ -2958,7 +2933,7 @@ img {
                 line-height: 204px;
             }
             .why-we-list .who-our-money {
-                line-height: 199px;
+                line-height: 198px;
             }
             .why-we-list .why-we-title {
                 margin-bottom: 15px;
