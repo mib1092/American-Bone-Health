@@ -2748,6 +2748,23 @@ img {
                     .glossary-sub-liste .content p:last-child {
                         margin-bottom: 0;
                     }
+
+/*-------------------------------------TAKE-EVENT-PAGE------------------------------*/
+.take-action-page .take-event-list {
+    padding-top: 28px;
+}
+    .take-action-page .section-events .btn  {
+        min-width: 100px;
+        padding: 12px 22px 10px;
+    }
+    .take-action-page .section-events .cell-box {
+        padding: 16px 20px 20px;
+    }
+    .take-action-page .section-events  .cell-location {
+        margin-bottom: 12px;
+    }
+
+
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
