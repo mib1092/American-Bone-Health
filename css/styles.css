@@ -2753,6 +2753,13 @@ img {
 .take-action-page .take-event-list {
     padding-top: 28px;
 }
+    .take-action-page .home-banner a.learn-more {
+        margin-right: 6px;
+    }
+    .take-action-page .home-banner a.learn-more:last-child {
+        margin-right: 0;
+    }
+
     .take-action-page .section-events .btn  {
         min-width: 100px;
         padding: 12px 22px 10px;
