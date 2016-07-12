@@ -600,7 +600,11 @@ img {
                     .close-search:hover {
                         color: #191f22;
                     }
-
+    .btn-box {
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+    }
 /*--------------------------------------NAV-----------------------------------------*/
 .main-nav {
     float: right;
@@ -993,12 +997,12 @@ img {
                 line-height: normal;
             }
 /*---------------------------------------BREADCRUBS---------------------------------*/
-.breadcrumbs{
+.breadcrumbs {
+    margin: 0 0 11px;
 }
     .breadcrumbs ul {
         overflow: hidden;
         display: inline-block;
-        margin: 0 0 11px;
         font: 600 13px 'proximanova-semibold';
         text-transform: uppercase;
         background-color: #ffffff;
@@ -1033,7 +1037,7 @@ img {
 /*----------------------------------------------------------------------------------*/
 
 /*---------------------------------------HOME---------------------------------------*/
-.home-banner {
+.big-banner {
     background-color: #324046;
     background-position: center;
     background-repeat: no-repeat;
@@ -2095,10 +2099,6 @@ img {
             .article-content-box .content p:last-child {
                 margin-bottom: 20px;
             }
-            .search-page .btn-box {
-                width: 100%;
-                text-align: center;
-            }
             .search-page .btn-load-more {
                 padding: 12px 22px 10px;
                 margin-top: 40px;
@@ -2559,11 +2559,6 @@ img {
             font: 400 16px 'proximanova-regular';
             color: #0097de;
         }
-
-        .event-page .btn-box {
-            width: 100%;
-            text-align: center;
-        }
             .event-page .btn-load-more {
                 padding: 12px 22px 10px;
                 margin-top: 40px;
@@ -2753,10 +2748,10 @@ img {
 .take-action-page .take-event-list {
     padding-top: 28px;
 }
-    .take-action-page .home-banner a.learn-more {
+    .take-action-page .big-banner a.learn-more {
         margin-right: 6px;
     }
-    .take-action-page .home-banner a.learn-more:last-child {
+    .take-action-page .big-banner a.learn-more:last-child {
         margin-right: 0;
     }
 
