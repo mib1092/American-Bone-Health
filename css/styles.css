@@ -1914,7 +1914,7 @@ img {
             padding-top: 0;
             margin-bottom: 0;
         }
-        .blog-list .blog-bottom-box .tag-after {
+        .blog-list-page .blog-bottom-box .tag-after {
             position: relative;
             top: -1px;
         }
@@ -1940,33 +1940,53 @@ img {
     .after-post-widget {
         padding-top: 15px;
     }
-    .blog-list > li,
-    .search-list > li,
-    .article-list > li,
-    .volonteers-list > li,
-    .event-list > li,
-    .exercise-list > li {
+    /*.type-list >li,*/
+    /*.blog-list > li,*/
+    /*.search-list > li,*/
+    /*.article-list > li,*/
+    /*.volonteers-list > li,*/
+    /*.event-list > li,*/
+    /*.exercise-list > li {*/
+        /*margin-bottom: 20px;*/
+        /*padding: 40px;*/
+        /*background-color: #ffffff;*/
+        /*-webkit-border-radius: 4px;*/
+        /*-moz-border-radius: 4px;*/
+        /*border-radius: 4px;*/
+    /*}*/
+    /*.type-list-overf >li,*/
+    /*.search-list > li,*/
+    /*.article-list > li,*/
+    /*.volonteers-list > li,*/
+    /*.event-list > li {*/
+        /*overflow: hidden;*/
+        /*padding: 0;*/
+    /*}*/
+
+    /*.type-list >li:last-child,*/
+    /*.blog-list > li:last-child,*/
+    /*.search-list > li:last-child,*/
+    /*.article-list > li:last-child,*/
+    /*.volonteers-list > li:last-child,*/
+    /*.event-list > li:last-child,*/
+    /*.exercise-list > li:last-child {*/
+        /*margin-bottom: 0;*/
+    /*}*/
+    .type-list > li {
+        overflow: hidden;
         margin-bottom: 20px;
-        padding: 40px;
+        padding: 0;
         background-color: #ffffff;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         border-radius: 4px;
     }
-    .search-list > li,
-    .article-list > li,
-    .volonteers-list > li,
-    .event-list > li {
-        overflow: hidden;
-        padding: 0;
-    }
-    .blog-list > li:last-child,
-    .search-list > li:last-child,
-    .article-list > li:last-child,
-    .volonteers-list > li:last-child,
-    .event-list > li:last-child,
-    .exercise-list > li:last-child {
+    .type-list > li:last-child {
         margin-bottom: 0;
+    }
+    .blog-list > li {
+        overflow: visible;
+        padding: 40px;
     }
     a.content-title-link {
         color: #191f22;
@@ -2062,7 +2082,7 @@ img {
         .search-filter .filter-bottom a:hover {
             color: #0097de;
         }
-    .search-list article {
+    .search-page article {
         overflow: hidden;
     }
         .article-img-box {
@@ -2421,7 +2441,7 @@ img {
     margin-top: 30px;
     margin-bottom: 28px;
 }
-    .volonteers-list .volonteer-img-box {
+    .volonteers-page .volonteer-img-box {
             position: relative;
             overflow: hidden;
             display: inline-block;
@@ -2435,21 +2455,21 @@ img {
             text-align: center;
             line-height: 80px;
         }
-        .volonteers-list .volonteer-img-box img {
+        .volonteers-page .volonteer-img-box img {
             max-width: 100%;
             max-height: 100%;
             vertical-align: middle;
             line-height: normal;
         }
 
-    .volonteers-list .volonteer-content-box {
+    .volonteers-page .volonteer-content-box {
         padding: 30px 50px 40px 50px;
     }
         .volonteer-content-box .volonteer-list-title {
             font: 700 20px 'proximanova-bold';
             margin-bottom: 18px;
         }
-        .volonteers-list .volonteer-content-box .content p:last-child {
+        .volonteers-page .volonteer-content-box .content p:last-child {
             margin-bottom: 0;
         }
 
