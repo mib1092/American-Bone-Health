@@ -1026,7 +1026,7 @@ img {
         font: 600 13px 'proximanova-semibold';
         text-transform: uppercase;
         background-color: #ffffff;
-        padding: 3px 10px 11px;
+        padding: 3px 12px 11px;
     }
         .breadcrumbs > span {
             position: relative;
@@ -1622,7 +1622,7 @@ img {
 }
     .accordion-list {
     }
-        .accordion-list li{
+        .accordion-list > li{
             position: relative;
             margin-bottom: 20px;
             padding: 32px 75px 32px 40px;
@@ -1634,10 +1634,10 @@ img {
             -moz-transition-duration: 0.3s;
             transition: 0.3s;
         }
-        .accordion-list li:last-child{
+        .accordion-list > li:last-child{
             margin-bottom: 0;
         }
-        .accordion-list li.active{
+        .accordion-list > li.active{
             border-color: #0097de;
         }
             .accordion-list h2 {
@@ -1652,8 +1652,8 @@ img {
             .accordion-list .active h2 {
                 color: #0097de;
             }
-            .accordion-list li:before,
-            .accordion-list li:after {
+            .accordion-list > li:before,
+            .accordion-list > li:after {
                 content: '';
                 position: absolute;
                 background-color: #979fa2;
@@ -1665,26 +1665,26 @@ img {
                 -moz-transition: color 0.2s, transform 0.35s;
                 transition: color 0.2s, transform 0.35s;
             }
-            .accordion-list li:after{
+            .accordion-list > li:after{
                 width: 23px;
                 height: 3px;
                 right: 34px;
                 top: 44px;
             }
-            .accordion-list li:before{
+            .accordion-list > li:before{
                 width: 3px;
                 height: 23px;
                 right: 44px;
                 top: 34px;
             }
-            .accordion-list li:hover::after,
-            .accordion-list li:hover::before,
-            .accordion-list li.active:after,
-            .accordion-list li.active:before{
+            .accordion-list > li:hover::after,
+            .accordion-list > li:hover::before,
+            .accordion-list > li.active:after,
+            .accordion-list > li.active:before{
                 background-color: #0097de;
             }
 
-            .accordion-list li.active:before {
+            .accordion-list > li.active:before {
                 -moz-transform: rotate(15deg);
                 -ms-transform: rotate(15deg);
                 -webkit-transform: rotate(15deg);
@@ -1698,6 +1698,22 @@ img {
             }
                 .accordion-box-content p {
                     margin-bottom: 8px;
+                }
+                .accordion-box-content ul,
+                .accordion-box-content ol {
+                    padding-left: 20px;
+                    margin-bottom: 5px;
+                }
+                .accordion-box-content ul,
+                .accordion-box-content ul li {
+                    list-style-type: disc;
+                }
+                .accordion-box-content ol,
+                .accordion-box-content ol li {
+                    list-style-type: decimal;
+                }
+                .accordion-box-content li {
+                    margin-bottom: 5px;
                 }
 
 /*-------------------------------------STANDARD-PAGE--------------------------------*/
@@ -3036,7 +3052,7 @@ img {
             }
             .our-leader-position {
                 line-height: 1.25;
-                margin-bottom: 8px;
+                margin-bottom: 11px;
             }
             .leader-soc-profile {
                 display: table;
