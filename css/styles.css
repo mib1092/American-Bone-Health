@@ -3031,10 +3031,11 @@ img {
                     line-height: normal;
                 }
             .our-leader-name {
-                margin-bottom: 6px;
+                margin-bottom: 9px;
                 font: 600 22px 'proximanova-semibold';
             }
             .our-leader-position {
+                line-height: 1.25;
                 margin-bottom: 8px;
             }
             .leader-soc-profile {
@@ -3043,11 +3044,17 @@ img {
             }
                 .leader-soc-profile li {
                     display: table-cell;
-                    padding: 0 5px;
+                    padding: 0 6px;
                 }
                     .leader-soc-profile a {
                         color: #d6d6d6;
                     }
+                    .leader-soc-profile a:hover {
+                        color: #0097de;
+                    }
+                        .leader-soc-profile i.fa {
+                            font-size: 20px;
+                        }
     .emeritus-list {
         margin-top: 45px;
         margin-bottom: -12px;
