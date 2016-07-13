@@ -15,6 +15,8 @@
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
 </head>
 
 <body class="page inner">
@@ -93,19 +95,12 @@
             </div>
         </header>
 
-        <div class="breadcrumbs">
-            <div  class="container">
-                <ul class="radius">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <span>Articles</span>
-                    </li>
-                </ul>
+        <div class="breadcrumbs-box">
+            <div class="container">
+                <div class="breadcrumbs radius">
+                    <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to American Bone Health." href="index.html" class="home"><span property="name">Home</span></a><meta property="position" content="1"></span><span property="itemListElement" typeof="ListItem"><span property="name">Articles library</span><meta property="position" content="2"></span>            </div>
             </div>
         </div>
-
 
         <section class="standard-page article-page">
             <div class="container">
@@ -152,6 +147,14 @@
                                 <div class="slide-pager-wrap"></div>
                             </a>
                         </div>
+
+                        <script>
+                            $(document).ready(function() {
+                                $('.bxslider').bxSlider({
+                                    pagerCustom: '#bx-pager'
+                                });
+                            });
+                        </script>
                     </div>
 
                     <div class="page-name">
@@ -406,9 +409,7 @@
         </footer>
     </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="assets/owl.carousel/owl.carousel.min.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
 	<script src="js/scroll.js"></script>
     <script src="js/mainJs.js"></script>
 </body>

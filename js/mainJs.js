@@ -119,11 +119,6 @@ $(document).ready(function() {
         $(this).toggleClass('active').parent().siblings('.event-search-wrap').find(hideBlock).slideToggle(500);
     });
 
-    // Article slider
-    $('.bxslider').bxSlider({
-        pagerCustom: '#bx-pager'
-    });
-
     // for copy post permalink
     $("a.copy-permalink").on('click', function (e) {
         e.preventDefault();

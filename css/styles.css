@@ -2162,7 +2162,7 @@ img {
 }
     .article-slider-box .bx-wrapper {
         float: left;
-        width: 77%;
+        width: 76.9%;
         margin: 0 auto;
     }
         .article-slider-box .bx-wrapper .bx-viewport {
@@ -2186,7 +2186,7 @@ img {
     .article-slider-box #bx-pager {
         overflow: hidden;
         float: left;
-        width: 23%;
+        width: 23.1%;
         -webkit-border-radius: 0 4px 4px 0;
         -moz-border-radius: 0 4px 4px 0;
         border-radius: 0 4px 4px 0;
