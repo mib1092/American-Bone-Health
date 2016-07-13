@@ -2766,11 +2766,11 @@ img {
 .glossary-list {
     padding-top: 10px;
 }
-
     .glossary-letter {
         margin-bottom: 6px;
         font: 400 48px 'proximanova-regular';
         color: #bfc4c8;
+        text-transform: capitalize;
     }
     .glossary-sub-list li {
         padding: 34px 40px 0 40px;
@@ -2809,11 +2809,24 @@ img {
                     .glossary-sub-list .content ul,
                     .glossary-sub-list .content ol {
                         margin-top: 0;
+                        padding-left: 20px;
                         margin-bottom: 10px;
                     }
-                    .glossary-sub-liste .content p:last-child {
-                        margin-bottom: 0;
+                    .glossary-sub-list .content ul,
+                    .glossary-sub-list .content ul li {
+                        list-style-type: disc;
                     }
+                    .glossary-sub-list .content ol,
+                    .glossary-sub-list .content ol li {
+                        list-style-type: decimal;
+                    }
+                    .glossary-sub-list .content li {
+                        margin-bottom: 5px;
+                    }
+                    .glossary-sub-list .content p {
+                        margin-bottom: 12px;
+                    }
+
 
 /*-------------------------------------TAKE-EVENT-PAGE------------------------------*/
 .take-action-page .take-event-list {
