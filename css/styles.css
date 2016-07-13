@@ -2955,7 +2955,126 @@ img {
             }
 
 /*-------------------------------------OUR-LEADERS----------------------------------*/
+.section-board-emeritus {
+    background-image: url(../img/content/emeritus_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .our-leader-banner {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: #324046;
+    }
+        .our-leader-banner-box {
+            display: table;
+            text-align: center;
+            max-width: 780px;
+            margin: 0 auto;
+            height: 470px;
+            padding: 24px 0;
+        }
+            .our-leader-banner .our-leader-banner-wrap {
+                display: table-cell;
+                vertical-align: middle;
+                color: #ffffff;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+                .our-leader-banner-box .our-leader-banner-title {
+                    margin-bottom: 15px;
+                    font: 400 50px 'proximanova-regular';
+                }
+                .our-leader-banner .our-leader-banner-wrap p {
+                    margin-bottom: 8px;
+                }
+                .our-leader-banner .our-leader-banner-wrap > :last-child {
+                    margin-bottom: 0;
+                }
 
+.section-our-leaders {
+    background: #ffffff;
+}
+    .our-leaders-list {
+        overflow: hidden;
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: -98px;
+    }
+        .our-leaders-list > li {
+            float: left;
+            width: 25%;
+            padding: 0 22px;
+            margin-bottom: 90px;
+            vertical-align: top;
+        }
+        .our-leaders-list > li:first-child,
+        .our-leaders-list > li:nth-child(4n+1) {
+            clear: both;
+        }
+            .our-leader-img-wrap {
+                overflow: hidden;
+                display: inline-block;
+                width: 220px;
+                height: 220px;
+                margin-bottom: 15px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 220px;
+            }
+                .our-leader-img-wrap img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    vertical-align: middle;
+                    line-height: normal;
+                }
+            .our-leader-name {
+                margin-bottom: 6px;
+                font: 600 22px 'proximanova-semibold';
+            }
+            .our-leader-position {
+                margin-bottom: 8px;
+            }
+            .leader-soc-profile {
+                display: table;
+                margin: 0 auto;
+            }
+                .leader-soc-profile li {
+                    display: table-cell;
+                    padding: 0 5px;
+                }
+                    .leader-soc-profile a {
+                        color: #d6d6d6;
+                    }
+    .emeritus-list {
+        margin-top: 45px;
+        margin-bottom: -12px;
+        -webkit-columns: 220px 4;
+        -moz-columns: 220px 4;
+        columns: 220px 4;
+        -webkit-column-gap: 80px;
+        -moz-column-gap: 80px;
+        column-gap: 80px;
+        text-align: left;
+    }
+        .emeritus-list li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 16px;
+        }
+        .emeritus-list li:before {
+            content: '\f069';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -5px;
+            font: 8px FontAwesome;
+        }
+            .emeritus-list h3 {
+                font: 400 20px 'proximanova-regular';
+            }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
