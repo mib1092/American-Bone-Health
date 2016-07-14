@@ -950,6 +950,9 @@ img {
 .personal-box {
     text-align: center;
 }
+.main-nav .personal-box {
+    padding-bottom: 20px;
+}
     .widget-img-wrap {
         overflow: hidden;
         display: inline-block;
@@ -980,6 +983,7 @@ img {
     }
 
 .main-nav .social {
+    padding-bottom: 20px;
     text-align: center;
 }
     .main-nav .social li {
@@ -2321,8 +2325,8 @@ img {
             max-width: 100%;
             height: auto;
         }
-    .faces-details-page .content p:last-child {
-        margin-bottom: -10px;
+    .faces-details-page .content > :last-child {
+        margin-bottom: 0;
     }
     .faces-list-box {
         overflow: hidden;
@@ -2451,18 +2455,22 @@ img {
             max-width: 480px;
             margin: 0 auto 21px;
         }
-            .section-faces-bottom .section-content p {
-                font: 600 24px 'proximanova-semibold';
-                line-height: 1.35;
+            .section-faces-bottom .section-content p,
+            .section-faces-bottom .section-content .title-name {
+                font: 600 28px/1.3 'proximanova-semibold';
             }
         .section-faces-bottom .btn {
             padding: 11px 42px;
         }
-        .my-faces .faces-list {
-            padding-top: 39px;
+
+        .my-faces {
+            padding: 40px 0;
         }
-        .my-faces .faces-list.next-ul {
+        .my-faces .faces-list {
             padding-top: 18px;
+        }
+        .my-faces .faces-list:first-child {
+            padding-top: 0;
         }
         .my-faces > .container {
             max-width: 1600px;
