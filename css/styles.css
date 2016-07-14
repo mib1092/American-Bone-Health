@@ -237,10 +237,11 @@ input[type=submit], button,
 .input-style:focus:-moz-placeholder { opacity: 0; }
 
 .check-style input[type=checkbox],
-.check-style input[type=radio] {
+.radio-style input[type=radio] {
     display: none;
 }
-.check-style span {
+.check-style span,
+.radio-style span {
     position: relative;
     display: inline-block;
     padding-left: 35px;
@@ -265,9 +266,31 @@ input[type=submit], button,
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
-.check-style input[type=checkbox]:checked + span:before,
-.check-style input[type=radio]:checked + span:before {
+.check-style input[type=checkbox]:checked + span:before {
     content: '\f00c';
+}
+.radio-style span:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #CCCFD1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #0097de;
+    font: normal normal normal 16px/20px FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+.radio-style input[type=radio]:checked + span:before {
+    content: '\f111';
 }
 
 img {
@@ -3353,7 +3376,7 @@ img {
                     .select-volonteer-left-box .radio-type li input{
                         margin-right: 7px;
                     }
-.tab-content a.btn {
+.tab-content button.btn {
     padding: 22px 85px 21px;
     font-size: 22px;
 }
