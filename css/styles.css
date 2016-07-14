@@ -3376,6 +3376,38 @@ img {
                     .select-volonteer-left-box .radio-type li input{
                         margin-right: 7px;
                     }
+        .captcha-section {
+            overflow: hidden;
+        }
+            .captcha-box {
+                overflow: hidden;
+                float: left;
+                width: 50%;
+            }
+                .captcha-box .volonteer-label-name {
+                    display: inline-block;
+                    float: left;
+                }
+                .captcha-box .captcha-img-box {
+                    display: inline-block;
+                    float: right;
+                    width: 85px;
+                    height: 24px;
+                    vertical-align: middle;
+                }
+                    .captcha-box .captcha-img-box img {
+                        width: 100%;
+                        height: 100%;
+                    }
+            .captcha-section a.captcha-refresh {
+                display: inline-block;
+                margin-top: 44px;
+                margin-left: 20px;
+                text-decoration: underline;
+            }
+            .captcha-section a.captcha-refresh:hover {
+                text-decoration: none;
+            }
 .tab-content button.btn {
     padding: 22px 85px 21px;
     font-size: 22px;
