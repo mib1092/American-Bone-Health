@@ -519,6 +519,7 @@ img {
         .logo {
             float: left;
             margin-top: 31px;
+            max-width: 232px;
             -webkit-transition: 0.35s;
             -moz-transition: 0.35s;
             -o-transition: 0.35s;
