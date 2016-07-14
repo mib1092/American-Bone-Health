@@ -294,7 +294,7 @@ input[type=submit], button,
 }
 
 .select-wrap select {
-    padding: 9px 8px 8px 8px;
+    padding: 9px 12px 8px 8px;
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
@@ -307,16 +307,15 @@ input[type=submit], button,
 .select-wrap:after {
     content: '\f078';
     position: absolute;
-    width: 31px;
-    height: 34px;
-    right: 3px;
-    top: 3px;
+    width: 32px;
+    height: 38px;
+    right: 2px;
+    top: 2px;
     font: 14px FontAwesome;
     color: #0097de;
-    pointer-events: none;
     z-index: 3;
     text-align: center;
-    line-height: 34px;
+    line-height: 38px;
     background: #ffffff;
     pointer-events: none;
 }
