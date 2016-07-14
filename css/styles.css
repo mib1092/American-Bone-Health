@@ -3177,7 +3177,10 @@ img {
         width: 50%;
     }
     .becoming-vol-page .big-banner .banner-map-box {
+        overflow: hidden;
         display: table-cell;
+        width: 580px;
+        height: 340px;
         padding-top: 50px;
         padding-bottom: 50px;
         vertical-align: middle;
@@ -3185,6 +3188,8 @@ img {
         .becoming-vol-page .big-banner a.learn-more {
             padding: 18px 51px 16px;
         }
+
+
 .section-program-overview {
     background: #ffffff;
 }
@@ -3216,9 +3221,6 @@ img {
                 margin-bottom: 0;
             }
 
-.section-select-volonteer {
-
-}
     .select-volonteer-tabs {
         max-width: 99.999%;
         margin-top: 70px;
