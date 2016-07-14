@@ -3182,10 +3182,10 @@ img {
             font: 600 28px 'proximanova-semibold';
             color: #0097de;
         }
-        .select-volonteer-tabs input[type=radio] {
+        .select-volonteer-tabs > input[type=radio] {
             display:none;
         }
-        .select-volonteer-tabs label {
+        .select-volonteer-tabs > label {
             position: relative;
             display: block;
             float: left;
@@ -3195,20 +3195,17 @@ img {
             text-decoration: none;
             text-align: center;
             cursor: pointer;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            border-radius: 4px;
+            -webkit-border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+            border-radius: 4px 4px 0 0;
             -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
             transition: all 0.5s;
         }
-        .select-volonteer-tabs label span {
+        .select-volonteer-tabs > label span {
             display: none;
         }
-        .select-volonteer-tabs label i {
-            padding: 5px;
-            margin-right: 0;
-        }
-        .select-volonteer-tabs label:hover {
+
+        .select-volonteer-tabs > label:hover {
 
         }
         .tab-content {
@@ -3268,13 +3265,97 @@ img {
                 -moz-animation: scale 0.7s ease-in-out;
                 animation: scale 0.7s ease-in-out;
             }
-
             #tab1:checked ~ #tab-content1,
             #tab2:checked ~ #tab-content2,
             #tab3:checked ~ #tab-content3 {
                 display: block;
             }
+.tab-content {
+    padding: 60px 30px 64px;
+}
+.select-volonteer-wrap {
+    overflow: hidden;
+    margin-bottom: 45px;
+}
+    .select-volonteer-right-box,
+    .select-volonteer-left-box {
+        float: left;
+        width: 50%;
+        padding: 0 70px;
+    }
+    .select-volonteer-left-box {
+        margin-right: -1px;
+        border-right: 2px solid #eaeceb;
+    }
+    .select-volonteer-right-box {
+        margin-left: -1px;
+        border-left: 2px solid #eaeceb;
+    }
 
+        .select-volonteer-right-box .volonteer-right-box-title {
+            font: 600 24px 'proximanova-semibold';
+        }
+        .select-volonteer-right-box .volonteer-right-box-list {
+            margin-top: 66px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+            .select-volonteer-right-box .volonteer-right-box-list li {
+                position: relative;
+                margin-bottom: 28px;
+                padding-left: 40px;
+            }
+            .select-volonteer-right-box .volonteer-right-box-list li:last-child {
+                margin-bottom: 0;
+            }
+            .select-volonteer-right-box .volonteer-right-box-list li:before {
+                content: '\f05d';
+                position: absolute;
+                left: 0;
+                top: 3px;
+                font: 29px FontAwesome;
+                color: #d8d9db;
+            }
+
+        .select-volonteer-left-box .volonteer-left-box-list {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+            .select-volonteer-left-box .volonteer-left-box-list > li {
+                margin-bottom: 36px;
+            }
+            .select-volonteer-left-box .volonteer-left-box-list > li:last-child {
+                margin-bottom: 0;
+            }
+                .select-volonteer-left-box .volonteer-left-box-list  .volonteer-label-name {
+                    margin-bottom: 14px;
+                    font: 700 18px 'proximanova-bold';
+                }
+                    .select-volonteer-left-box .volonteer-left-box-list  .volonteer-label-name span {
+                        color: #d02e7a;
+                    }
+                .select-volonteer-left-box .volonteer-left-box-list .input-style {
+                    color: #0097de;
+                }
+            .select-volonteer-left-box .radio-type{
+                display: table;
+                margin-bottom: -9px;
+            }
+                .select-volonteer-left-box .radio-type li {
+                    display: inline-block;
+                    float: left;
+                    margin-right: 15px;
+                }
+                .select-volonteer-left-box .radio-type li:last-child {
+                    margin-right: 0;
+                }
+                    .select-volonteer-left-box .radio-type li input{
+                        margin-right: 7px;
+                    }
+.tab-content a.btn {
+    padding: 22px 85px 21px;
+    font-size: 22px;
+}
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
