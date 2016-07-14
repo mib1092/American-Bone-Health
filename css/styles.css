@@ -294,31 +294,38 @@ input[type=submit], button,
 }
 
 .select-wrap select {
-    color: #a7a7a7;
-    padding: 9px 33px 8px 8px;
+    padding: 9px 8px 8px 8px;
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
     cursor:pointer;
+    color: #a7a7a7;
+    background: #ffffff;
 }
 
 .select-wrap { position:relative; }
 .select-wrap:after {
-    content:'\f078';
+    content: '\f078';
     position: absolute;
-    right: 12px;
-    top: 50%;
-    margin-top: -7px ;
+    width: 31px;
+    height: 34px;
+    right: 3px;
+    top: 3px;
     font: 14px FontAwesome;
     color: #0097de;
     pointer-events: none;
+    z-index: 3;
+    text-align: center;
+    line-height: 34px;
+    background: #ffffff;
+    pointer-events: none;
 }
+
 option:checked,
 option:hover {
     background: #0097de;
     color: #ffffff;
 }
-
 
 img {
     -webkit-user-select: none;
@@ -2581,7 +2588,7 @@ img {
     }
     .event-search-box select.input-style {
         color: #191f22;
-        padding: 8px 33px 7px 8px;
+        padding: 9px 8px 8px 8px;
     }
         .event-search-wrap {
             display: table;
