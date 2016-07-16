@@ -2905,9 +2905,8 @@ img {
         margin-right: 0;
     }
 
-    .take-action-page .section-events .btn  {
+     .section-events a.btn  {
         min-width: 100px;
-        padding: 12px 22px 10px;
     }
     .take-action-page .section-events .cell-box {
         padding: 16px 20px 20px;
@@ -2916,9 +2915,6 @@ img {
         margin-bottom: 12px;
     }
 /*-------------------------------------FINANCIALS-PAGE------------------------------*/
-    .financials-page .big-banner a.learn-more.big {
-        padding: 18px 33px 16px;
-    }
 
     .section-download-list {
         background: #ffffff;
