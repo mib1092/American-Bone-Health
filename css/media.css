@@ -210,6 +210,17 @@
         float: none;
         display: inline-block;
     }
+
+    .our-leaders-list > li {
+        width: 33%;
+    }
+    .our-leaders-list > li:nth-child(4n+1) {
+        clear: none;
+    }
+    .our-leaders-list > li:nth-child(3n+1) {
+        clear: both;
+    }
+
 }
 
 @media all and (max-width: 960px) {
@@ -356,6 +367,16 @@
     .footer-social a {
         font-size: 40px;
     }
+
+    .our-leaders-list > li {
+        width: 50%;
+    }
+    .our-leaders-list > li:nth-child(3n+1) {
+        clear: none;
+    }
+    .our-leaders-list > li:nth-child(2n+1) {
+        clear: both;
+    }
 }
 
 @media all and (max-width: 782px) {
@@ -500,6 +521,13 @@
     }
     .donate-checks {
         text-align: left;
+    }
+
+    .our-leaders-list > li {
+        width: 100%;
+    }
+    .our-leaders-list > li:nth-child(2n+1) {
+        clear: none;
     }
 }
 
