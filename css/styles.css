@@ -2182,6 +2182,7 @@ img {
             }
         .article-video-box .video-time {
             position: absolute;
+            left: 10px;
             right: 5px;
             bottom: 10px;
             padding: 3px 6px 1px;

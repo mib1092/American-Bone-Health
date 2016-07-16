@@ -561,19 +561,27 @@
     }
 
     .accordion-list > li {
-        padding: 20px 65px 20px 22px;
+        padding: 20px;
+    }
+    .accordion-list  li h2 {
+        padding-right: 40px;
     }
     .accordion-list > li:after{
-        width: 23px;
+        width: 19px;
         height: 3px;
-        right: 34px;
-        top: 34px;
+        right: 33px;
+        top: 29px;
     }
     .accordion-list > li:before{
         width: 3px;
-        height: 23px;
-        right: 44px;
-        top: 24px;
+        height: 19px;
+        right: 41px;
+        top: 21px;
+    }
+
+    .glossary-sub-list > li {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
@@ -606,6 +614,9 @@
 
     .accordion-list h2 {
         font-size: 21px;
+    }
+    .accordion-box-content p {
+        font-size: 17px;
     }
 }
 
