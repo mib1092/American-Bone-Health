@@ -93,6 +93,10 @@
         width: 213px;
         height: 362px;
     }
+
+    .why-we-list > li {
+
+    }
 }
 
 @media all and (max-width: 991px) {
@@ -221,6 +225,9 @@
         clear: both;
     }
 
+    .why-we-list > li {
+        width: 48%;
+    }
 }
 
 @media all and (max-width: 960px) {
@@ -255,6 +262,21 @@
     }
     .join-box {
         margin-left: 0;
+    }
+
+    .section-download-list .download-list > li {
+        width: 50%;
+    }
+    .section-download-list .download-list > li:nth-child(3n+1) {
+        clear: none;
+    }
+    .section-download-list .download-list > li:nth-child(2n+1) {
+        clear: both;
+    }
+
+    .section-financials-logo .financials-logo-list img {
+        max-width: 90%;
+        height: auto;
     }
 }
 
@@ -377,6 +399,7 @@
     .our-leaders-list > li:nth-child(2n+1) {
         clear: both;
     }
+
 }
 
 @media all and (max-width: 782px) {
@@ -501,6 +524,17 @@
         width: 100%;
         padding-bottom: 20px;
     }
+
+    .section-download-list .why-we-list > li {
+        width: 100%;
+    }
+
+    .section-download-list .download-list > li {
+        width: 100%;
+    }
+    .section-download-list .download-list > li:nth-child(2n+1) {
+        clear: none;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -529,6 +563,7 @@
     .our-leaders-list > li:nth-child(2n+1) {
         clear: none;
     }
+
 }
 
 @media all and (max-width: 480px) {
