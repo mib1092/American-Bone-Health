@@ -568,20 +568,20 @@
     }
     .accordion-list > li:after{
         width: 19px;
-        height: 3px;
-        right: 33px;
+        right: 20px;
         top: 29px;
     }
     .accordion-list > li:before{
-        width: 3px;
         height: 19px;
-        right: 41px;
+        right: 28px;
         top: 21px;
     }
 
     .glossary-sub-list > li {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding: 25px 20px 0;
+    }
+    .glossary-sub-list li .article-content-wrap {
+        padding-bottom: 25px;
     }
 }
 
@@ -810,19 +810,6 @@
 
     .accordion-list h2 {
         font-size: 20px;
-    }
-
-    .accordion-list > li:after{
-        width: 23px;
-        height: 3px;
-        right: 24px;
-        top: 34px;
-    }
-    .accordion-list > li:before{
-        width: 3px;
-        height: 23px;
-        right: 34px;
-        top: 24px;
     }
 }
 
