@@ -101,6 +101,28 @@
         width: 50%;
         padding: 0 15px;
     }
+
+    .content-box {
+        padding-right: 320px;
+    }
+        .image-box {
+            margin-left: -50px;
+        }
+    .sidebar {
+        max-width: 300px;
+    }
+    .sidebar .newsletter-box li {
+        margin-bottom: 10px;
+        display: block;
+    }
+    .sidebar .newsletter-box li:last-child {
+        margin-bottom: 0;
+    }
+    .newsletter-btn {
+        width: 100%;
+        padding-left: 0;
+    }
+
 }
 
 @media all and (max-width: 991px) {
@@ -261,6 +283,8 @@
             padding-left: 15px;
             margin-bottom: 30px;
         }
+
+
 }
 
 @media all and (max-width: 860px) {
@@ -294,6 +318,27 @@
         clear: both;
     }
 
+    .content-box {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+        .wp-pagenavi {
+            float: none;
+        }
+    .sidebar {
+        position: relative;
+        left: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+    .sidebar .newsletter-box li {
+        margin-bottom: 0;
+        display: table-cell;
+    }
+    .newsletter-btn {
+        width: 130px;
+        padding-left: 10px;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -420,6 +465,9 @@
         clear: both;
     }
 
+    .wp-pagenavi {
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 782px) {
@@ -583,8 +631,36 @@
     .glossary-sub-list li .article-content-wrap {
         padding-bottom: 25px;
     }
-}
 
+    .type-list.blog-list > li {
+        padding: 20px;
+    }
+        .image-box {
+            width: -webkit-calc(100% + 40px);
+            width: -moz-calc(100% + 40px);
+            width: calc(100% + 40px);
+            margin-left: -30px;
+        }
+        .blog-bottom-box {
+            padding-top: 20px
+        }
+        .blog-bottom-box a.copy-permalink {
+            top: 20px;
+        }
+        .wp-pagenavi a {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+    .post-info span {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .post-info span:last-child {
+        margin-bottom: 0;
+    }
+}
 @media all and (max-width: 600px) {
     #wpadminbar { display: none; }
     html[lang] { margin-top: 0 !important; }
@@ -713,6 +789,23 @@
     .section-financials-logo .financials-logo-list li {
         width: 100%;
     }
+
+    .blog-bottom-box {
+        padding-right: 0;
+    }
+
+    .blog-bottom-box a.btn {
+        float: none;
+        margin-bottom: 15px;
+    }
+
+    .wp-pagenavi a {
+        margin-right: 0;
+    }
+    .wp-pagenavi .current, .wp-pagenavi .extend {
+        margin-right: 0;
+        padding: 0 2px;
+    }
 }
 
 @media all and (max-width: 420px) {
@@ -835,6 +928,19 @@
     .subscribe-btn {
         width: 110px;
     }
+
+    .sidebar .newsletter-box li {
+        margin-bottom: 10px;
+        display: block;
+    }
+    .sidebar .newsletter-box li:last-child {
+        margin-bottom: 0;
+    }
+        .newsletter-btn {
+            width: 100%;
+            padding-left: 0;
+        }
+
 }
 
 @media all and (max-width: 340px) {
