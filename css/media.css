@@ -301,9 +301,7 @@
     .cell-list > li:first-child,
     .cell-list > li:nth-child(2n+1),
     .sidebar .trand-list > li:first-child,
-    .sidebar .trand-list > li:nth-child(2n+1),
-    .after-popular-article .cell-list > li:first-child,
-    .after-popular-article .cell-list > li:nth-child(2n+1){
+    .sidebar .trand-list > li:nth-child(2n+1){
         clear: both;
     }
 
@@ -326,10 +324,11 @@
 
     .content-box {
         padding-right: 0;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
         .wp-pagenavi {
             float: none;
+            padding-bottom: 20px;
         }
     .sidebar {
         position: relative;
@@ -353,9 +352,14 @@
     .sidebar .related-article {
         padding-bottom: 0;
     }
-
+    .standard-page.blog-list-page,
+    .standard-page.blog-page,
     .standard-page {
         padding-bottom: 60px;
+    }
+
+    .after-popular-article {
+        margin-bottom: -20px;
     }
 }
 
@@ -679,11 +683,6 @@
         .blog-bottom-box a.copy-permalink {
             top: 20px;
         }
-        .wp-pagenavi a {
-            width: 34px;
-            height: 34px;
-            line-height: 34px;
-        }
 
     .post-info span {
         display: inline-block;
@@ -712,7 +711,7 @@
     }
 
 
-    .blog-bottom-box {
+    .type-list .blog-bottom-box {
         padding-right: 0;
     }
 
@@ -877,6 +876,9 @@
         margin-bottom: -10px;
     }
     .wp-pagenavi a {
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
         margin-bottom: 10px;
     }
     .wp-pagenavi .current, .wp-pagenavi .extend {
@@ -891,7 +893,7 @@
     }
 
     .sidebar .trand-list > li,
-    .after-popular-article .cell-list{
+    .after-popular-article .cell-list > li{
         width: 100%;
         float: none;
         clear: both;
@@ -969,7 +971,8 @@
     }
 
     .cell-list > li,
-    .sidebar .trand-list > li {
+    .sidebar .trand-list > li,
+    .after-popular-article .cell-list > li{
         width: 100%;
         float: none;
         clear: both;
