@@ -932,6 +932,10 @@
         .article-banner .banner-title {
             font-size: 40px;
         }
+
+        .type-list > li,
+        .accordion-list > li,
+        .glossary-list > li,
         .type-list.blog-list,
         .breadcrumbs,
         .content-article,
