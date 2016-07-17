@@ -2739,6 +2739,9 @@ img {
     -webkit-border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
     .event-det-page .event-det-title {

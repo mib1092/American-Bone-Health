@@ -719,6 +719,11 @@
         float: none;
         margin-bottom: 15px;
     }
+
+    .type-list .article-video-box,
+    .type-list .article-img-box {
+        max-width: 240px;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -758,15 +763,19 @@
     .type-list .article-video-box,
     .type-list .article-img-box {
         float: none;
-        margin: 20px;
+        margin: 0;
+        padding-right: 0;
         max-width: 100%;
+    }
+    .type-list .article-video-box img {
+        margin: 0;
     }
 
     .exercise-list-page .article-img-box {
         border: none;
     }
     .exercise-list-page .article-img-box img {
-        margin: 10px auto 0;
+        margin: 0 auto;
     }
 
     .content img.alignleft,
