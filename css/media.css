@@ -486,6 +486,20 @@
     .wp-pagenavi {
         text-align: center;
     }
+
+    .leader-soc-profile i.fa {
+        font-size: 24px;
+    }
+
+    .leader-soc-profile i.fa {
+         font-size: 24px;
+     }
+    .leader-soc-profile li {
+         padding: 0 10px;
+     }
+    .leader-soc-profile {
+        margin-top: 15px;
+    }
 }
 
 @media all and (max-width: 782px) {
@@ -666,9 +680,9 @@
             top: 20px;
         }
         .wp-pagenavi a {
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
+            width: 34px;
+            height: 34px;
+            line-height: 34px;
         }
 
     .post-info span {
@@ -691,6 +705,20 @@
     .exercise-list-page .article-content-box {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .our-leader-banner-box .our-leader-banner-title {
+        font-size: 38px;
+        line-height: 1;
+    }
+
+
+    .blog-bottom-box {
+        padding-right: 0;
+    }
+
+    .blog-bottom-box a.btn {
+        float: none;
+        margin-bottom: 15px;
     }
 }
 
@@ -845,21 +873,21 @@
         width: 100%;
     }
 
-    .blog-bottom-box {
-        padding-right: 0;
+    .wp-pagenavi {
+        margin-bottom: -10px;
     }
-
-    .blog-bottom-box a.btn {
-        float: none;
-        margin-bottom: 15px;
-    }
-
     .wp-pagenavi a {
-        margin-right: 0;
+        margin-bottom: 10px;
     }
     .wp-pagenavi .current, .wp-pagenavi .extend {
-        margin-right: 0;
-        padding: 0 2px;
+        padding: 0 4px;
+    }
+    .wp-pagenavi .first:before,
+    .wp-pagenavi .last:before,
+    .wp-pagenavi .previouspostslink:before,
+    .wp-pagenavi .nextpostslink:before {
+        margin-top: -15px;
+        font: 28px FontAwesome;
     }
 
     .sidebar .trand-list > li,
