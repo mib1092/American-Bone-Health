@@ -105,9 +105,6 @@
     .content-box {
         padding-right: 320px;
     }
-        .image-box {
-            margin-left: -50px;
-        }
     .sidebar {
         max-width: 300px;
     }
@@ -288,16 +285,25 @@
 }
 
 @media all and (max-width: 860px) {
-    .cell-list {
+    .cell-list,
+    .sidebar .trand-list,
+    .after-popular-article .cell-list {
         padding-top: 20px;
     }
-    .cell-list > li {
+    .cell-list > li,
+    .sidebar .trand-list > li,
+    .after-popular-article .cell-list > li{
+        float: left;
         width: 50%;
         padding-bottom: 20px;
         margin: 0;
     }
     .cell-list > li:first-child,
-    .cell-list > li:nth-child(2n+1) {
+    .cell-list > li:nth-child(2n+1),
+    .sidebar .trand-list > li:first-child,
+    .sidebar .trand-list > li:nth-child(2n+1),
+    .after-popular-article .cell-list > li:first-child,
+    .after-popular-article .cell-list > li:nth-child(2n+1){
         clear: both;
     }
 
@@ -320,7 +326,7 @@
 
     .content-box {
         padding-right: 0;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
         .wp-pagenavi {
             float: none;
@@ -338,6 +344,18 @@
     .newsletter-btn {
         width: 130px;
         padding-left: 10px;
+    }
+    .sidebar .trand-list > li {
+        float: left;
+        /*width: 100%;*/
+        margin-bottom: 0;
+    }
+    .sidebar .related-article {
+        padding-bottom: 0;
+    }
+
+    .standard-page {
+        padding-bottom: 60px;
     }
 }
 
@@ -639,7 +657,7 @@
             width: -webkit-calc(100% + 40px);
             width: -moz-calc(100% + 40px);
             width: calc(100% + 40px);
-            margin-left: -30px;
+            margin-left: -40px;
         }
         .blog-bottom-box {
             padding-top: 20px
@@ -660,7 +678,22 @@
     .post-info span:last-child {
         margin-bottom: 0;
     }
+
+    .article-content-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .content-article {
+        padding: 20px;
+    }
+
+    .exercise-list-page .article-content-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
+
 @media all and (max-width: 600px) {
     #wpadminbar { display: none; }
     html[lang] { margin-top: 0 !important; }
@@ -694,6 +727,28 @@
     .accordion-box-content p {
         font-size: 17px;
     }
+
+    .type-list .article-video-box,
+    .type-list .article-img-box {
+        float: none;
+        margin: 20px;
+        max-width: 100%;
+    }
+
+    .exercise-list-page .article-img-box {
+        border: none;
+    }
+    .exercise-list-page .article-img-box img {
+        margin: 10px auto 0;
+    }
+
+    .content img.alignleft,
+    .content img.alignright {
+        display: block;
+        float: none;
+        margin: 0 auto 40px;
+        clear: both;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -702,7 +757,7 @@
         padding: 14px 30px 12px;
     }
     .btn, a.btn {
-        padding: 11px 20px 9px;
+        /*padding: 11px 20px 9px;*/
     }
     .section .btn {
         min-width: 180px;
@@ -806,11 +861,18 @@
         margin-right: 0;
         padding: 0 2px;
     }
+
+    .sidebar .trand-list > li,
+    .after-popular-article .cell-list{
+        width: 100%;
+        float: none;
+        clear: both;
+    }
 }
 
 @media all and (max-width: 420px) {
     .input-style { padding: 6px 6px 5px; }
-    .btn, a.btn { padding: 10px 15px 8px; }
+    /*.btn, a.btn { padding: 10px 15px 8px; }*/
     .mar-b-60 { margin-bottom: 40px; }
 
     .wrapper { padding-top: 65px; }
@@ -878,7 +940,8 @@
         padding-bottom: 0;
     }
 
-    .cell-list > li {
+    .cell-list > li,
+    .sidebar .trand-list > li {
         width: 100%;
         float: none;
         clear: both;
