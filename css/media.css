@@ -120,6 +120,15 @@
         padding-left: 0;
     }
 
+    .faces-list-box li {
+        width: 20%;
+    }
+    .faces-list-box li:nth-child(7n+1) {
+        clear: none;
+    }
+    .faces-list-box li:nth-child(5n+1) {
+        clear: both;
+    }
 }
 
 @media all and (max-width: 991px) {
@@ -281,7 +290,15 @@
             margin-bottom: 30px;
         }
 
-
+    .faces-list-box li {
+        width: 25%;
+    }
+    .faces-list-box li:nth-child(5n+1) {
+        clear: none;
+    }
+    .faces-list-box li:nth-child(4n+1) {
+        clear: both;
+    }
 }
 
 @media all and (max-width: 860px) {
@@ -360,6 +377,24 @@
 
     .after-popular-article {
         margin-bottom: -20px;
+    }
+
+
+    .event-det-page .event-sponsor-list li {
+        width: 32%;
+    }
+
+    .faces-list-box li {
+        width: 20%;
+    }
+    .faces-list-box li:nth-child(4n+1) {
+        clear: none;
+    }
+    .faces-list-box li:nth-child(5n+1) {
+        clear: both;
+    }
+    .faces-details-page .after-post-widget {
+        margin-bottom: -16px;
     }
 }
 
@@ -559,6 +594,18 @@
     }
 }
 
+@media all and (max-width: 680px) {
+    .faces-list-box li {
+        width: 25%;
+    }
+    .faces-list-box li:nth-child(5n+1) {
+        clear: none;
+    }
+    .faces-list-box li:nth-child(4n+1) {
+        clear: both;
+    }
+}
+
 @media all and (max-width: 640px) {
     .search-box {
         left: 0;
@@ -724,10 +771,24 @@
     .type-list .article-img-box {
         max-width: 240px;
     }
+    .volonteers-page .volonteer-img-box {
+        width: 140px;
+        height: 140px;
+        margin: 20px;
+    }
 
-    .content-title {
+    .volonteers-page .volonteer-content-box {
+        padding: 20px;
+    }
+
+    .content-title,
+    .event-det-page .event-det-title {
         font-size: 30px;
     }
+    .event-det-page .event-det-title {
+        padding: 20px;
+    }
+
     .content h1 {
         font-size: 30px;
     }
@@ -741,6 +802,18 @@
         font-size: 20px;
     }
 
+    .event-det-page .image-box {
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    .event-det-page .event-sponsor-list li {
+        width: 49%;
+    }
+
+    .faces-details-page .content .face-thubm {
+        width: 200px;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -794,12 +867,33 @@
     .exercise-list-page .article-img-box img {
         margin: 0 auto;
     }
+    .volonteers-page .volonteer-img-box {
+        float: none;
+        display: block;
+        width: 160px;
+        height: 160px;
+        margin: 10px auto;
+        padding-right: 0;
+    }
+    .volonteer-content-box .volonteer-list-title {
+        text-align: center;
+    }
 
     .content img.alignleft,
     .content img.alignright {
         display: block;
         float: none;
         margin: 0 auto 40px;
+        clear: both;
+    }
+
+    .faces-list-box li {
+        width: 33.333%;
+    }
+    .faces-list-box li:nth-child(4n+1) {
+        clear: none;
+    }
+    .faces-list-box li:nth-child(3n+1) {
         clear: both;
     }
 }
@@ -933,10 +1027,10 @@
             font-size: 40px;
         }
 
-        .type-list > li,
-        .accordion-list > li,
-        .glossary-list > li,
+        .type-list,
         .type-list.blog-list,
+        .accordion-list,
+        .glossary-list,
         .breadcrumbs,
         .content-article,
         .sidebar .sidebar-wrap-box {
@@ -945,6 +1039,18 @@
         }
     .image-box {
         margin-left: -30px;
+    }
+
+    .event-det-page .event-sponsor-list li {
+        width: 100%;
+    }
+
+    .faces-details-page .content .face-thubm {
+        float: none;
+        margin: 0 0 7px;
+        max-width: 100%;
+        width: auto;
+        text-align: center;
     }
 }
 
@@ -1049,6 +1155,16 @@
 
     .article-content-box .post-info {
         margin-bottom: 15px;
+    }
+
+    .faces-list-box li {
+        width: 50%;
+    }
+    .faces-list-box li:nth-child(3n+1) {
+        clear: none;
+    }
+    .faces-list-box li:nth-child(2n+1) {
+        clear: both;
     }
 }
 
