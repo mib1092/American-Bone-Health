@@ -472,6 +472,17 @@
         display: none;
     }
 
+    .my-faces .faces-list > .small-faces {
+        width: 50%;
+    }
+    .my-faces .faces-list > li {
+        width: 25%;
+        margin-bottom: 15px;
+    }
+    .my-faces .faces-list {
+        margin-bottom: -15px;
+    }
+
     .section-calculator:before {
         width: 104px;
         height: 161px;
@@ -646,6 +657,21 @@
     .faces-list > .small-faces li:last-child {
         padding-top: 10px;
         padding-bottom: 0;
+    }
+
+
+    .my-faces .faces-list > li:nth-child(odd) {
+        width: 66.666%;
+    }
+    .my-faces .faces-list > li.small-faces {
+        width: 33.333%;
+    }
+
+    .my-faces .faces-list > li {
+        margin-bottom: 0;
+    }
+    .my-faces .faces-list {
+        margin-bottom: 0;
     }
 
     .volunteers-slider .owl-stage-outer {
