@@ -129,6 +129,11 @@
     .faces-list-box li:nth-child(5n+1) {
         clear: both;
     }
+
+    .event-search-top-box > li,
+    .event-search-bottom-box > li {
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 991px) {
@@ -395,6 +400,10 @@
     }
     .faces-details-page .after-post-widget {
         margin-bottom: -16px;
+    }
+
+    .event-page .btn-load-more {
+        margin-top: 0;
     }
 }
 
@@ -896,6 +905,18 @@
     .faces-list-box li:nth-child(3n+1) {
         clear: both;
     }
+
+    .event-search-date-box > li,
+    .event-search-select-box > li {
+        width: 100%;
+        padding-right: 0;
+    }
+    .event-search-date-box > li {
+        margin-bottom: -15px;
+    }
+    .event-search-date-box > li:last-child {
+        margin-bottom: 13px;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -1027,6 +1048,7 @@
             font-size: 40px;
         }
 
+        .event-search-box,
         .type-list,
         .type-list.blog-list,
         .accordion-list,
