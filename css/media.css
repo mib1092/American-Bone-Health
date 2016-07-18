@@ -874,6 +874,16 @@
                         -moz-border-radius: 0;
                         border-radius: 0;
                     }
+
+    .article-slider-box .bx-wrapper {
+        width: 100%;
+    }
+    .article-slider-box #bx-pager {
+        display: none;
+    }
+    .slide-info-box {
+        font-size: 21px;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -1123,6 +1133,7 @@
         .glossary-list,
         .breadcrumbs,
         .content-article,
+        .widget-guide,
         .sidebar .sidebar-wrap-box {
             margin-left: -10px;
             margin-right: -10px;
