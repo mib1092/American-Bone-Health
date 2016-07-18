@@ -823,6 +823,31 @@
     .faces-details-page .content .face-thubm {
         width: 200px;
     }
+
+    .search-filter {
+        display: table;
+        width: 100%;
+    }
+        .filter-top,
+        .filter-bottom {
+            display: table-cell;
+            width: 50%;
+            vertical-align: middle;
+        }
+            .filter-top .container,
+            .filter-bottom .container {
+                padding: 0;
+            }
+                 .search-filter .filter-top ul li,
+                 .search-filter .filter-bottom ul li {
+                    display: block;
+                    margin: 0;
+                 }
+                    .search-filter .filter-top li.active {
+                        -webkit-border-radius: 0;
+                        -moz-border-radius: 0;
+                        border-radius: 0;
+                    }
 }
 
 @media all and (max-width: 600px) {
@@ -917,6 +942,23 @@
     .event-search-date-box > li:last-child {
         margin-bottom: 13px;
     }
+
+    .search-banner-box {
+        display: block;
+        padding: 48px 0 40px 0;
+    }
+        .search-banner-box li {
+             float: none;
+             margin-right: 0;
+             margin-bottom: 10px;
+        }
+            .search-banner-box .input-style {
+                width: 100%;
+            }
+            .search-banner-box .btn {
+                display: block;
+                width: 100%;
+            }
 }
 
 @media all and (max-width: 480px) {
