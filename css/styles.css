@@ -2340,11 +2340,13 @@ img {
         .article-slider-box .bx-wrapper .bx-next:hover {
             right: 5px;
             background: url(../img/content/arrow_next.png) no-repeat;
+            background-size: contain;
         }
         .article-slider-box .bx-wrapper .bx-prev,
         .article-slider-box .bx-wrapper .bx-prev:hover {
             left: 0;
             background: url(../img/content/arrow_prew.png) no-repeat;
+            background-size: contain;
         }
         .article-slider-box #bx-pager img {
             display: block;
