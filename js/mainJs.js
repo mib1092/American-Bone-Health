@@ -133,6 +133,18 @@ $(document).ready(function() {
         $(this).toggleClass('active').parent().siblings('.event-search-wrap').find(hideBlock).slideToggle(500);
     });
 
+    // for Tabs
+    $('ul.tabs').delegate('li:not(.current)', 'click', function() {
+        $(this).addClass('current').siblings().removeClass('current')
+            .parents('div.select-volonteer-tabs').find('div.box').hide().eq($(this).index()).fadeIn(150);
+    });
+
+    // for Sub tabs
+    $('ul.sub-tabs').delegate('li:not(.sub-current)', 'click', function() {
+        $(this).addClass('sub-current').siblings().removeClass('sub-current')
+            .parents('div.select-volonteer-wrap').find('div.sub-box').hide().eq($(this).index()).fadeIn(150);
+    });
+
     // for copy post permalink
     $("a.copy-permalink").on('click', function (e) {
         e.preventDefault();
