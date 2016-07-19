@@ -399,6 +399,26 @@
     .btn-load-more {
         margin-bottom: 40px;
     }
+
+    .select-volonteer-right-box, .select-volonteer-left-box {
+        float: none;
+        width: 100%;
+        border: none;
+        margin: 0;
+    }
+
+    .becoming-vol-page .big-banner .banner-box {
+        max-width: 100%;
+    }
+    .becoming-vol-page .big-banner .banner-map-box {
+        display: block;
+        margin: 0 auto;
+        padding: 0 0 20px 0;
+    }
+    .section-program-overview .program-video-wrap {
+        float: none;
+        margin: 0 auto 46px;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -926,6 +946,13 @@
         -moz-border-top-right-radius: 0;
         border-top-right-radius: 0;
         margin-bottom: -5px;
+    }
+
+    .select-volonteer-right-box, .select-volonteer-left-box {
+        padding: 0;
+    }
+    .captcha-box {
+        width: 75%;
     }
 }
 

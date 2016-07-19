@@ -3188,7 +3188,7 @@ img {
         overflow: hidden;
         position: relative;
         display: table-cell;
-        width: 580px;
+        max-width: 580px;
         height: 340px;
         padding: 160px 0 140px 20px;
         vertical-align: middle;
