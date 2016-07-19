@@ -490,7 +490,14 @@
         /*Sub tabs */
         .sub-tabs {
             display: block;
+            overflow: hidden;
+            margin-bottom: 20px;
         }
+            .sub-tabs li {
+                float: left;
+                width: 50%;
+                padding: 5px 10px;
+            }
         .sub-box {
             display: none;
         }
