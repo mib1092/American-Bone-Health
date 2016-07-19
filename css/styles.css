@@ -3222,13 +3222,12 @@ img {
     .section-program-overview .program-overview-wrap {
         overflow: hidden;
         margin-top: 50px;
-        margin-bottom: -45px
     }
         .section-program-overview .program-video-wrap {
             float: left;
             max-width: 580px;
             width: 50%;
-            margin: 0 60px 46px 0;
+            margin-right: 60px;
         }
                 .videoWrapper {
                     position: relative;
@@ -3247,7 +3246,6 @@ img {
             overflow: hidden;
             padding-top: 7px;
             text-align: left;
-            margin-bottom: 36px;
         }
             .section-program-overview content p {
                 margin-bottom: 25px;
@@ -3266,19 +3264,30 @@ img {
         display: table;
         clear: both;
     }
+
+    .tabs-list {
+        display: table;
+        table-layout: fixed;
+    }
+        .tabs-list > li {
+            display: table-cell;
+            vertical-align: top;
+        }
+
         .select-volonteer-tabs .volonteer-tab-name {
             margin-bottom: 15px;
             font: 600 28px 'proximanova-semibold';
             color: #0097de;
         }
-        .select-volonteer-tabs > input[type=radio] {
+        .select-volonteer-tabs  input[type=radio] {
             display:none;
         }
-        .select-volonteer-tabs > label {
+        .tabs-list  label {
             position: relative;
             display: block;
             float: left;
-            width: 33.333%;
+            width: 100%;
+            height: 100%;
             padding: 32px 35px 31px;
             font-weight: normal;
             text-decoration: none;
@@ -3290,13 +3299,7 @@ img {
             -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
             transition: all 0.5s;
         }
-        .select-volonteer-tabs > label span {
-            display: none;
-        }
 
-        .select-volonteer-tabs > label:hover {
-
-        }
         .tab-content {
             display: none;
             width: 100%;
@@ -3327,10 +3330,10 @@ img {
                     opacity: 1;
                 }
             }
-            .select-volonteer-tabs [id^="tab"]:checked + label {
-                background: #FFF;
+            .tabs-list [id^="tab"]:checked + label {
+                background: #ffffff;
             }
-            .select-volonteer-tabs [id^="tab"]:checked + label:before {
+            .tabs-list [id^="tab"]:checked + label:before {
                 content: '';
                 position: absolute;
                 width: 5px;
@@ -3342,7 +3345,7 @@ img {
                 -moz-animation: scale 0.7s ease-in-out;
                 animation: scale 0.7s ease-in-out;
             }
-            .select-volonteer-tabs [id^="tab"]:checked + label:after {
+            .tabs-list [id^="tab"]:checked + label:after {
                 content: '';
                 position: absolute;
                 width: 5px;

@@ -80,6 +80,9 @@
     .btn.donate {
         margin-left: 25px;
     }
+    .select-volonteer-right-box, .select-volonteer-left-box {
+        padding: 0 50px;
+    }
 }
 
 @media all and (max-width: 1024px) {
@@ -137,6 +140,10 @@
     .event-search-top-box > li,
     .event-search-bottom-box > li {
         width: 100%;
+    }
+
+    .section-program-overview .program-video-wrap {
+        margin-right: 40px;
     }
 }
 
@@ -434,6 +441,7 @@
     }
     .section-program-overview .program-video-wrap {
         float: none;
+        width: 100%;
         margin: 0 auto 46px;
     }
 }

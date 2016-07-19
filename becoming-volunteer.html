@@ -138,156 +138,169 @@
                 <h2 class="title">Select Volunteer Type and Fill the Form</h2>
                 <div class="select-volonteer-tabs">
 
-                    <input type="radio" name="tabs" id="tab1" >
-                    <label for="tab1">
-                        <h3 class="volonteer-tab-name">Volunteer Type 1</h3>
-                        <p>Lorem ipsum dolor sitconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                    </label>
+                    <ul class="tabs-list">
+                        <li>
+                            <input type="radio" name="tabs" id="tab1">
+                            <label for="tab1">
+                                <h3 class="volonteer-tab-name">Volunteer Type 1</h3>
+                                <p>Lorem ipsum dolor sitconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="tabs" id="tab2" checked>
+                            <label for="tab2">
+                                <h3 class="volonteer-tab-name">Volunteer Type 2</h3>
+                                <p>Lorem ipsum dolor sitconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="tabs" id="tab3">
+                            <label for="tab3">
+                                <h3 class="volonteer-tab-name">Volunteer Type 3</h3>
+                                <p>Lorem ipsum dolor sitconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            </label>
+                        </li>
+                    </ul>
 
-                    <input type="radio" name="tabs" id="tab2" checked>
-                    <label for="tab2">
-                        <h3 class="volonteer-tab-name">Volunteer Type 2</h3>
-                        <p>Lorem ipsum dolor sitconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                    </label>
-
-                    <input type="radio" name="tabs" id="tab3">
-                    <label for="tab3">
-                        <h3 class="volonteer-tab-name">Volunteer Type 3</h3>
-                        <p>Lorem ipsum dolor sitconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                    </label>
-                    <div id="tab-content1" class="tab-content">
-                        <h3>Tab #1</h3>
-
-                    </div>
-                    <div id="tab-content2" class="tab-content">
-                        <form>
-                            <div class="select-volonteer-wrap">
-                                <div class="select-volonteer-left-box">
-                                    <ul class="volonteer-left-box-list">
-                                        <li>
-                                            <label>
-                                                <p class="volonteer-label-name">Contact Name <span>*</span></p>
-                                                <input type="text" class="input-style" id="volonteer-f-name">
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <p class="volonteer-label-name">Email <span>*</span></p>
-                                                <input type="email" class="input-style" id="volonteer-f-email">
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <p class="volonteer-label-name">Phone number <span>*</span></p>
-                                                <input type="tel" class="input-style" id="volonteer-f-tell">
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <p class="volonteer-label-name">Have you had volunteer experience in the past? <span>*</span></p>
-                                            <ul class="radio-type">
-                                                <li>
-                                                    <label class="radio-style">
-                                                    <input type="radio" name="volonteer-experience" value="yes">
-                                                    <span>Yes</span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label class="radio-style">
-                                                    <input type="radio" name="volonteer-experience" value="no">
-                                                    <span>No</span>
-                                                    </label>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <p class="volonteer-label-name">If so, at what capacity? </p>
-                                                <input type="text" class="input-style" id="volonteer-f-capacity">
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <p class="volonteer-label-name">Occupational Background </p>
-                                                <input type="text" class="input-style" id="volonteer-f-occupational">
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <p class="volonteer-label-name">How did you hear about us? <span>*</span></p>
-                                            <ul class="radio-type">
-                                                <li>
-                                                    <label class="radio-style"><input type="radio" name="volonteer-about" value="family">
-                                                        <span>Family</span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label class="radio-style"><input type="radio" name="volonteer-about" value="friend">
-                                                        <span>Friend</span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label class="radio-style"><input type="radio" name="volonteer-about" value="website">
-                                                        <span>Website</span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label class="radio-style"><input type="radio" name="volonteer-about" value="other">
-                                                        <span>Other</span>
-                                                    </label>
-                                                </li>
-                                            </ul>
-
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <p class="volonteer-label-name">If other, please explain </p>
-                                                <input type="text" class="input-style" id="volonteer-f-explain">
-                                            </label>
-                                        </li>
-                                        <li class="captcha-section">
-                                            <label>
-                                                <div class="captcha-box">
-                                                    <p class="volonteer-label-name">Captcha </p>
-                                                    <div class="captcha-img-box">
-                                                        <img src="img/content/captcha_img.png">
-                                                    </div>
-                                                    <input type="text" class="input-style" id="volonteer-f-captcha">
-                                                </div>
-                                                <a href="#" class="captcha-refresh">Refresh</a>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="select-volonteer-right-box">
-                                   <h3 class="volonteer-right-box-title">Eligibility Requirements</h3>
-                                   <ul class="volonteer-right-box-list">
-                                       <li><strong>AMERICAN BONE HEALTH</strong> Leaders must be able to speak, read and write in English.</li>
-
-                                       <li><strong>AMERICAN BONE HEALTH</strong> Leaders must have access to a computer and the internet.</li>
-
-
-                                       <li><strong>AMERICAN BONE HEALTH</strong> Leaders are required to fundraise a minimum of $1000 for
-                                           the Foundation.</li>
-
-                                       <li><strong>AMERICAN BONE HEALTH</strong> Leaders are required to complete online training.</li>
-
-                                       <li><strong>AMERICAN BONE HEALTH</strong> Leaders are required to participate in and/or promote
-                                           American Bone Health advocacy actions and/or promotion of American Bone Health
-                                           community programs.</li>
-
-                                       <li><strong>AMERICAN BONE HEALTH</strong>  Leaders are required to participate in Team American
-                                           Bone Health events (including satellite participation) and/or host a community
-                                           fundraising event.</li>
-                                   </ul>
-                                </div>
+                    <ul class="tab-content">
+                        <li>
+                            <div id="tab-content1" class="tab-content">
+                             <h3>Tab #1</h3>
                             </div>
-                            <button type="submit" class="btn red">Sign Up</button>
-                        </form>
-                    </div>
-                    <div id="tab-content3" class="tab-content">
-                        <h3>Tab #3</h3>
+                        </li>
+                        <li>
+                            <div id="tab-content2" class="tab-content">
+                                <form>
+                                    <div class="select-volonteer-wrap">
+                                        <div class="select-volonteer-left-box">
+                                            <ul class="volonteer-left-box-list">
+                                                <li>
+                                                    <label>
+                                                        <p class="volonteer-label-name">Contact Name <span>*</span></p>
+                                                        <input type="text" class="input-style" id="volonteer-f-name">
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <p class="volonteer-label-name">Email <span>*</span></p>
+                                                        <input type="email" class="input-style" id="volonteer-f-email">
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <p class="volonteer-label-name">Phone number <span>*</span></p>
+                                                        <input type="tel" class="input-style" id="volonteer-f-tell">
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <p class="volonteer-label-name">Have you had volunteer experience in the past? <span>*</span></p>
+                                                    <ul class="radio-type">
+                                                        <li>
+                                                            <label class="radio-style">
+                                                            <input type="radio" name="volonteer-experience" value="yes">
+                                                            <span>Yes</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label class="radio-style">
+                                                            <input type="radio" name="volonteer-experience" value="no">
+                                                            <span>No</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <p class="volonteer-label-name">If so, at what capacity? </p>
+                                                        <input type="text" class="input-style" id="volonteer-f-capacity">
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <p class="volonteer-label-name">Occupational Background </p>
+                                                        <input type="text" class="input-style" id="volonteer-f-occupational">
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <p class="volonteer-label-name">How did you hear about us? <span>*</span></p>
+                                                    <ul class="radio-type">
+                                                        <li>
+                                                            <label class="radio-style"><input type="radio" name="volonteer-about" value="family">
+                                                                <span>Family</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label class="radio-style"><input type="radio" name="volonteer-about" value="friend">
+                                                                <span>Friend</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label class="radio-style"><input type="radio" name="volonteer-about" value="website">
+                                                                <span>Website</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label class="radio-style"><input type="radio" name="volonteer-about" value="other">
+                                                                <span>Other</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
 
-                    </div>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <p class="volonteer-label-name">If other, please explain </p>
+                                                        <input type="text" class="input-style" id="volonteer-f-explain">
+                                                    </label>
+                                                </li>
+                                                <li class="captcha-section">
+                                                    <label>
+                                                        <div class="captcha-box">
+                                                            <p class="volonteer-label-name">Captcha </p>
+                                                            <div class="captcha-img-box">
+                                                                <img src="img/content/captcha_img.png">
+                                                            </div>
+                                                            <input type="text" class="input-style" id="volonteer-f-captcha">
+                                                        </div>
+                                                        <a href="#" class="captcha-refresh">Refresh</a>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="select-volonteer-right-box">
+                                           <h3 class="volonteer-right-box-title">Eligibility Requirements</h3>
+                                           <ul class="volonteer-right-box-list">
+                                               <li><strong>AMERICAN BONE HEALTH</strong> Leaders must be able to speak, read and write in English.</li>
+
+                                               <li><strong>AMERICAN BONE HEALTH</strong> Leaders must have access to a computer and the internet.</li>
+
+
+                                               <li><strong>AMERICAN BONE HEALTH</strong> Leaders are required to fundraise a minimum of $1000 for
+                                                   the Foundation.</li>
+
+                                               <li><strong>AMERICAN BONE HEALTH</strong> Leaders are required to complete online training.</li>
+
+                                               <li><strong>AMERICAN BONE HEALTH</strong> Leaders are required to participate in and/or promote
+                                                   American Bone Health advocacy actions and/or promotion of American Bone Health
+                                                   community programs.</li>
+
+                                               <li><strong>AMERICAN BONE HEALTH</strong>  Leaders are required to participate in Team American
+                                                   Bone Health events (including satellite participation) and/or host a community
+                                                   fundraising event.</li>
+                                           </ul>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn red">Sign Up</button>
+                                </form>
+                             </div>
+                        </li>
+                        <li>
+                            <div id="tab-content3" class="tab-content">
+                                <h3>Tab #3</h3>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
