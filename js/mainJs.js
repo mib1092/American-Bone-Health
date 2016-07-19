@@ -60,9 +60,23 @@ $(document).ready(function() {
         $(this).toggleClass('active').find('.accordion-box-content').slideToggle(500);
     });
 
+
     // for pages with sidebar
-    var sidebar = $('#sidebar');
-    $(sidebar).parent().css({'min-height': sidebar.height()});
+    function contentMinHeight(){
+        var sidebar = $('#sidebar');
+        $(sidebar).parent().css({'min-height': sidebar.height()});
+    }
+    $(window).on('load resize', function() {
+        if (document.body.clientWidth > '860') {
+            contentMinHeight();
+            setTimeout(contentMinHeight, 2000);
+            setTimeout(contentMinHeight, 5000);
+        }
+    });
+
+
+    $("#es_txt_email").attr("placeholder", "Email");
+
 
     // for Owl Carousel sliders
     $('.volunteers-slider').owlCarousel({

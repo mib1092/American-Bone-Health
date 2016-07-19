@@ -108,14 +108,18 @@
     .sidebar {
         max-width: 300px;
     }
-    .sidebar .newsletter-box li {
+    .sidebar .newsletter-box li,
+    .sidebar .es_textbox,
+    .sidebar .es_button {
         margin-bottom: 10px;
         display: block;
     }
-    .sidebar .newsletter-box li:last-child {
+    .sidebar .newsletter-box li:last-child,
+    .sidebar .es_button {
         margin-bottom: 0;
     }
-    .newsletter-btn {
+    .newsletter-btn,
+    .sidebar .es_button {
         width: 100%;
         padding-left: 0;
     }
@@ -358,14 +362,25 @@
         margin: 0;
         max-width: 100%;
     }
-    .sidebar .newsletter-box li {
+    .sidebar .newsletter-box li,
+    .sidebar .es_textbox,
+    .sidebar .es_button {
         margin-bottom: 0;
         display: table-cell;
     }
-    .newsletter-btn {
+    .newsletter-btn,
+    .sidebar .es_button {
         width: 130px;
         padding-left: 10px;
     }
+    .sidebar .es_textbox {
+        width: 100%;
+    }
+    .sidebar .es_textbox_button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .sidebar .trand-list > li {
         float: left;
         /*width: 100%;*/
@@ -692,7 +707,6 @@
     .my-faces .faces-list > li:nth-child(odd) {
         width: 66.666%;
     }
-
     .my-faces .faces-list > li:nth-child(3) {
         width: 100%;
     }
@@ -1280,6 +1294,7 @@
     }
 
     .article-slider-box {
+        padding-top: 0;
         margin-left: -10px;
         margin-right: -10px;
     }
@@ -1433,16 +1448,24 @@
         width: 110px;
     }
 
-    .sidebar .newsletter-box li {
+    .sidebar .newsletter-box li,
+    .sidebar .es_textbox,
+    .sidebar .es_button {
         margin-bottom: 10px;
         display: block;
     }
-    .sidebar .newsletter-box li:last-child {
+    .sidebar .newsletter-box li:last-child,
+    .sidebar .es_button {
         margin-bottom: 0;
     }
-        .newsletter-btn {
+        .newsletter-btn,
+        .sidebar .es_button {
             width: 100%;
             padding-left: 0;
+        }
+        .sidebar .es_textbox_button {
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
 }
