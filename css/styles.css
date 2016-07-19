@@ -3189,7 +3189,7 @@ img {
         overflow: hidden;
         position: relative;
         display: table-cell;
-        max-width: 580px;
+        width: 580px;
         height: 340px;
         padding: 160px 0 140px 20px;
         vertical-align: middle;
@@ -3223,17 +3223,26 @@ img {
         margin-bottom: -45px
     }
         .section-program-overview .program-video-wrap {
-            overflow: hidden;
             float: left;
-            width: 580px;
-            height: 325px;
+            max-width: 580px;
+            width: 50%;
             margin: 0 60px 46px 0;
         }
-            .section-program-overview .program-video-wrap iframe {
-                width: 100%;
-                height: 100%;
-            }
+                .videoWrapper {
+                    position: relative;
+                    padding-bottom: 56.25%; /* 16:9 */
+                    padding-top: 25px;
+                    height: 0;
+                }
+                .videoWrapper iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
         .section-program-overview .content {
+            overflow: hidden;
             padding-top: 7px;
             text-align: left;
             margin-bottom: 36px;
