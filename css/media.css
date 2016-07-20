@@ -491,7 +491,6 @@
         .sub-tabs {
             display: block;
             overflow: hidden;
-            margin-bottom: 20px;
         }
             .sub-tabs li {
                 float: left;
@@ -501,8 +500,11 @@
         .sub-box {
             display: none;
         }
+        .sub-tabs li {
+            background: #e4e9ed;
+        }
         .sub-tabs li.sub-current {
-            background: #0097de;
+            background: #ffffff;
         }
 }
 
