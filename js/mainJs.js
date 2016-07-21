@@ -132,28 +132,36 @@ $(document).ready(function() {
         $(this).text(hideBlock.is(':visible') ? 'Show Advanced Search' : 'Hide Advanced Search');
         $(this).toggleClass('active').parent().siblings('.event-search-wrap').find(hideBlock).slideToggle(500);
     });
-    // for Tabs <= 640
-    $('.box-tabs-list li').each(function(index){
-        var boxtabs = $('.box-tabs-list li').eq(index);
-        $('.tabs li').each(function(index){
-            var tabs = $('.tabs li').eq(index);
-
-        });
-    });
 
     // for Tabs
-    $('ul.tabs').delegate('li:not(.current)', 'click', function() {
-        $(this).addClass('current').siblings().removeClass('current')
-            .parents('div.select-volonteer-tabs').find('div.box').hide().eq($(this).index()).fadeIn(150);
-    });
+    $(window).on('load resize', function() {
+        if (document.body.clientWidth > '640') {
+            $('ul.tabs').delegate('li:not(.current)', 'click', function() {
+                $(this).addClass('current').siblings().removeClass('current')
+                    .parents('div.select-volonteer-tabs').find('div.box').hide().eq($(this).index()).fadeIn(150);
+            });
+        } else {
+             //for mini tabs
+            //$('.box-tabs-list li').each(function(index){
+            //    var face = $('.box-tabs-list li').eq(index);
+            //    face.find('div.box').attr('style', '');
+            //});
+            $('.tabs-mini').on('click', function() {
+                $(this).next().toggleClass('visible');
+            });
+            //$('ul.box-tabs-list').delegate('li:not(.mini-visible)', 'click', function() {
+            //    $(this).addClass('mini-visible').siblings().removeClass('mini-visible');
+            //});
 
+        };
+    });
     // for Sub tabs
     $('ul.sub-tabs').delegate('li:not(.sub-current)', 'click', function() {
         $(this).addClass('sub-current').siblings().removeClass('sub-current')
             .parents('div.select-volonteer-wrap').find('div.sub-box').hide().eq($(this).index()).fadeIn(150);
     });
 
-    // move sing-volonteer bnt
+    // move sing-volonteer btn
     $(window).on('load resize', function() {
         if (document.body.clientWidth > '1024') {
             $('.select-volunteer-left-box input[type=submit], .select-volunteer-left-box button[type=submit]').each(function(index){

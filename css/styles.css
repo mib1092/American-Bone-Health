@@ -3284,6 +3284,13 @@ img {
             vertical-align: top;
             padding: 34px 35px;
         }
+        .tabs >li,
+        .tabs-mini {
+            cursor: pointer;
+        }
+        .tabs-mini {
+            display: none;
+        }
         .tabs li.current {
             -webkit-border-radius: 4px 4px 0 0;
             -moz-border-radius: 4px 4px 0 0;
@@ -3357,14 +3364,6 @@ img {
                     opacity: 1;
                 }
             }
-
-li div.opanlich {
-    display: none;
-}
-
-li.current div.opanlich {
-    display: block;
-}
 
 .select-volunteer-wrap {
     overflow: hidden;

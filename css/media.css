@@ -1085,20 +1085,27 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
         .tabs .volonteer-tab-name {
             font-size: 26px;
         }
     .select-volonteer-tabs {
         display: block;
     }
-        .tabs {
-            display: block;
-            width: 100%;
-        }
         .box-tabs-list {
             display: block;
             width: 100%;
         }
+    .tabs {
+        display: none;
+    }
+    .box-tabs-list .tabs-mini {
+        display: block;
+    }
+
+    li.mini-visible .box{
+        display: block;
+    }
 }
 
 @media all and (max-width: 600px) {
