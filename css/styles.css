@@ -3317,6 +3317,9 @@ img {
                 font: 600 28px 'proximanova-semibold';
                 color: #0097de;
             }
+            .sub-tabs .volonteer-tab-name {
+                color: #0097de;
+            }
 
         .box {
             display: none;
@@ -3355,6 +3358,13 @@ img {
                 }
             }
 
+li div.opanlich {
+    display: none;
+}
+
+li.current div.opanlich {
+    display: block;
+}
 
 .select-volonteer-wrap {
     overflow: hidden;

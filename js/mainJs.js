@@ -132,6 +132,14 @@ $(document).ready(function() {
         $(this).text(hideBlock.is(':visible') ? 'Show Advanced Search' : 'Hide Advanced Search');
         $(this).toggleClass('active').parent().siblings('.event-search-wrap').find(hideBlock).slideToggle(500);
     });
+    // for Tabs <= 640
+    $('.box-tabs-list li').each(function(index){
+        var boxtabs = $('.box-tabs-list li').eq(index);
+        $('.tabs li').each(function(index){
+            var tabs = $('.tabs li').eq(index);
+
+        });
+    });
 
     // for Tabs
     $('ul.tabs').delegate('li:not(.current)', 'click', function() {
@@ -143,6 +151,15 @@ $(document).ready(function() {
     $('ul.sub-tabs').delegate('li:not(.sub-current)', 'click', function() {
         $(this).addClass('sub-current').siblings().removeClass('sub-current')
             .parents('div.select-volonteer-wrap').find('div.sub-box').hide().eq($(this).index()).fadeIn(150);
+    });
+
+    // move sing-volonteer bnt
+    $(window).on('load resize', function() {
+        if (document.body.clientWidth > '1024') {
+            $('.sign-volon').appendTo('.move-sign-volon');
+        } else {
+                $('.sign-volon').appendTo('.volonter-reg-form');
+        };
     });
 
     // for copy post permalink
