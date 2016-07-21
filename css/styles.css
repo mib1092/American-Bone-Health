@@ -250,6 +250,7 @@ input:focus:-moz-placeholder { opacity: 0; }
     font: normal normal normal 18px/20px FontAwesome;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
 }
 .check-style input[type=checkbox]:checked + span:before {
     content: '\f00c';

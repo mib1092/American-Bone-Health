@@ -97,6 +97,7 @@
         height: 362px;
     }
     .why-we-list {
+        width: auto;
         margin-left: -15px;
         margin-right: -15px;
     }
