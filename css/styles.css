@@ -165,7 +165,8 @@ input[type=submit], button,
 
 
 .input-style,
-.es_textbox_class {
+.es_textbox_class,
+.search-field {
     display: block;
     width: 100%;
     margin: 0;
@@ -874,11 +875,11 @@ img {
                 padding-top: 14px;
             }
             .mobile-menu li a:hover,
-            .mobile-menu .current-menu-item a,
-            .mobile-menu .current_page_item a,
-            .mobile-menu .current-menu-parent a,
-            .mobile-menu .current-menu-ancestor a,
-            .mobile-menu .current-page-ancestor a {
+            .mobile-menu .current-menu-item > a,
+            .mobile-menu .current_page_item > a,
+            .mobile-menu .current-menu-parent > a,
+            .mobile-menu .current-menu-ancestor > a,
+            .mobile-menu .current-page-ancestor > a {
                 background: #f5f8fa;
                 color: #0097de;
                 text-decoration: none;
@@ -2196,7 +2197,8 @@ img {
             .article-content-box .content p:last-child {
                 margin-bottom: 20px;
             }
-            .btn-load-more {
+            a.btn-load-more {
+                margin-top: 40px;
                 padding: 12px 22px 10px;
             }
             .btn-load-more .fa-refresh{
@@ -2555,7 +2557,13 @@ img {
             font: 700 20px 'proximanova-bold';
             margin-bottom: 18px;
         }
-        .volonteers-page .volonteer-content-box .content p:last-child {
+        .volonteers-page .volonteer-content-box .content > * {
+            margin-bottom: 12px;
+        }
+        .volonteers-page .volonteer-content-box .content > :first-child {
+            margin-top: 0;
+        }
+        .volonteers-page .volonteer-content-box .content > :last-child {
             margin-bottom: 0;
         }
 
@@ -2685,10 +2693,7 @@ img {
             font: 400 16px 'proximanova-regular';
             color: #0097de;
         }
-            .event-page .btn-load-more {
-                padding: 12px 22px 10px;
-                margin-top: 40px;
-            }
+
     .hide-adv-wrap {
         width: 100%;
         margin-top: 7px;
@@ -3570,6 +3575,7 @@ img {
     right: 20px;
     margin: 0 0 0 20px;
     max-width: 380px;
+    width: 100%;
 }
 .sidebar .sidebar-wrap-box {
     padding: 4px 20px 20px;
@@ -3578,9 +3584,11 @@ img {
 .widget-guide{
     overflow: hidden;
     position: relative;
-    margin-top: 5px;
     margin-bottom: 20px;
     background: #ffffff;
+}
+.article-page .widget-guide{
+    margin-top: 5px;
 }
     .widget-guide .title-sidebar{
         width: 100%;
@@ -3606,7 +3614,8 @@ img {
                 text-decoration: none;
                 color: #fff;
             }
-.sidebar .widget-search {
+.sidebar .widget-search,
+.sidebar .widget_search {
     margin-bottom: 34px;
     padding-top: 16px;
 }
@@ -3633,6 +3642,36 @@ img {
         left: 0;
         opacity: 0;
     }
+
+    .sidebar .widget_search > form {
+        position: relative;
+    }
+        .sidebar .widget_search .screen-reader-text {
+            display: none;
+        }
+        .sidebar .widget_search label:before {
+            content: '\f002';
+            position: absolute;
+            z-index: 3;
+            left: 10px;
+            top: 50%;
+            margin-top: -8px;
+            font: 16px FontAwesome;
+            color: #c5c7c8;
+        }
+        .sidebar .widget_search .search-submit {
+            position: absolute;
+            z-index: 5;
+            width: 30px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        .sidebar .widget_search .search-field {
+            padding-left: 30px;
+        }
+
 .sidebar .related-article {
     padding-bottom: 14px;
 }

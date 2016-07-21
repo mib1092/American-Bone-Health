@@ -70,7 +70,7 @@ $(document).ready(function() {
         if (document.body.clientWidth > '860') {
             contentMinHeight();
             setTimeout(contentMinHeight, 2000);
-            setTimeout(contentMinHeight, 5000);
+            setTimeout(contentMinHeight, 4000);
         }
     });
 
