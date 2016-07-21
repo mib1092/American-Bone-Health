@@ -80,7 +80,7 @@
     .btn.donate {
         margin-left: 25px;
     }
-    .select-volonteer-right-box, .select-volonteer-left-box {
+    .select-volonteer-right-box, .select-volunteer-left-box {
         padding: 0 50px;
     }
 }
@@ -150,7 +150,7 @@
         display: table;
         max-width: 100%;
     }
-    .select-volonteer-right-box, .select-volonteer-left-box {
+    .select-volonteer-right-box, .select-volunteer-left-box {
         float: none;
         width: 100%;
         border: none;
@@ -234,7 +234,7 @@
         background: #ffffff;
     }
 
-    .select-volonteer-wrap {
+    .select-volunteer-wrap {
         overflow: visible;
     }
 }
@@ -1080,7 +1080,7 @@
         border-top-right-radius: 0;
     }
 
-    .select-volonteer-left-box,
+    .select-volunteer-left-box,
     .select-volonteer-right-box {
         padding-left: 20px;
         padding-right: 20px;

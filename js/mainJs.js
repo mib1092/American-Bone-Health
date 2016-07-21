@@ -156,10 +156,20 @@ $(document).ready(function() {
     // move sing-volonteer bnt
     $(window).on('load resize', function() {
         if (document.body.clientWidth > '1024') {
-            $('.sign-volon').appendTo('.move-sign-volon');
+            $('.select-volunteer-left-box input[type=submit], .select-volunteer-left-box button[type=submit]').each(function(index){
+                var submit = $(this).eq(index),
+                    parentBox = submit.parents('.move-sign-volun');
+
+                submit.appendTo(parentBox);
+            });
         } else {
-                $('.sign-volon').appendTo('.volonter-reg-form');
-        };
+            $('.select-volonteer-wrap + input[type=submit], .select-volonteer-wrap + button[type=submit]').each(function(index){
+                var submit = $(this).eq(index),
+                    parentBox = submit.parent().find('.select-volonteer-left-box > form');
+
+                submit.appendTo(parentBox);
+            });
+        }
     });
 
     // for copy post permalink

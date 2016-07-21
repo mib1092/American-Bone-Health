@@ -2518,7 +2518,7 @@ img {
             padding-top: 0;
         }
         .my-faces > .container {
-            max-width: 1600px;
+            max-width: 1920px;
         }
 
 /*-------------------------------------VOLONTEERS-PAGE------------------------------*/
@@ -3366,17 +3366,17 @@ li.current div.opanlich {
     display: block;
 }
 
-.select-volonteer-wrap {
+.select-volunteer-wrap {
     overflow: hidden;
     margin-bottom: 45px;
 }
     .select-volonteer-right-box,
-    .select-volonteer-left-box {
+    .select-volunteer-left-box {
         float: left;
         width: 50%;
         padding: 0 70px;
     }
-    .select-volonteer-left-box {
+    .select-volunteer-left-box {
         margin-right: -1px;
         border-right: 2px solid #eaeceb;
     }
@@ -3410,38 +3410,38 @@ li.current div.opanlich {
                 color: #d8d9db;
             }
 
-        .select-volonteer-left-box .volonteer-left-box-list {
+        .select-volunteer-left-box .volonteer-left-box-list {
             text-align: left;
             margin-bottom: 20px;
         }
-            .select-volonteer-left-box .volonteer-left-box-list > li {
+            .select-volunteer-left-box .volonteer-left-box-list > li {
                 margin-bottom: 36px;
             }
-            .select-volonteer-left-box .volonteer-left-box-list > li:last-child {
+            .select-volunteer-left-box .volonteer-left-box-list > li:last-child {
                 margin-bottom: 0;
             }
-                .select-volonteer-left-box .volonteer-left-box-list  .volonteer-label-name {
+                .select-volunteer-left-box .volonteer-left-box-list  .volonteer-label-name {
                     margin-bottom: 14px;
                     font: 700 18px 'proximanova-bold';
                 }
-                    .select-volonteer-left-box .volonteer-left-box-list  .volonteer-label-name span {
+                    .select-volunteer-left-box .volonteer-left-box-list  .volonteer-label-name span {
                         color: #d02e7a;
                     }
-                .select-volonteer-left-box .volonteer-left-box-list .input-style {
+                .select-volunteer-left-box .volonteer-left-box-list .input-style {
                     color: #0097de;
                 }
-            .select-volonteer-left-box .radio-type{
+            .select-volunteer-left-box .radio-type{
                 margin-bottom: -9px;
             }
-                .select-volonteer-left-box .radio-type li {
+                .select-volunteer-left-box .radio-type li {
                     display: inline-block;
                     margin-right: 15px;
                     margin-bottom: 6px;
                 }
-                .select-volonteer-left-box .radio-type li:last-child {
+                .select-volunteer-left-box .radio-type li:last-child {
                     margin-right: 0;
                 }
-                    .select-volonteer-left-box .radio-type li input{
+                    .select-volunteer-left-box .radio-type li input{
                         margin-right: 7px;
                     }
         .captcha-section {
