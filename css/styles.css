@@ -3300,9 +3300,9 @@ img {
             -moz-border-radius: 4px 4px 0 0;
             border-radius: 4px 4px 0 0;
             background: #ffffff;
-            -webkit-animation: scale 0.7s ease-in-out;
-            -moz-animation: scale 0.7s ease-in-out;
-            animation: scale 0.7s ease-in-out;
+            -webkit-animation: scale 0.5s ease-in-out;
+            -moz-animation: scale 0.5s ease-in-out;
+            animation: scale 0.5s ease-in-out;
         }
         .tabs li.current:before,
         .tabs li.current:after {

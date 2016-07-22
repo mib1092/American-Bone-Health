@@ -141,6 +141,7 @@ $(document).ready(function() {
                 var face = $(this).eq(index);
                 face.find('.box').attr('style', '');
             });
+            $('.box-tabs-list > li').find('.visible').css({'display': 'none'});
             $('.box-tabs-list').delegate('li:not(.current)', 'click', function() {
                 $(this).addClass('current').siblings().removeClass('current')
                     .parent().find('.box').hide().eq($(this).index()).fadeIn(150);
