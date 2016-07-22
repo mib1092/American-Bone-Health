@@ -1103,6 +1103,7 @@
         }
     .select-volonteer-tabs {
         display: block;
+        margin-top: 50px;
     }
         .box-tabs-list {
             display: block;
@@ -1275,6 +1276,12 @@
 }
 
 @media all and (max-width: 480px) {
+    .title {
+        max-width: 100%;
+        margin-bottom: 18px;
+        font-size: 32px;
+        line-height: 1.2;
+    }
     .learn-more.big {
         font-size: 18px;
         padding: 14px 30px 12px;
