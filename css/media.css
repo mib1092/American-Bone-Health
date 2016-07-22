@@ -253,7 +253,9 @@
         width: 100%;
         text-align: center;
     }
-
+    .take-action-page .banner-box a {
+        margin-bottom: 10px;
+    }
     .wrapper { padding-top: 106px; }
     .home .wrapper{ padding-top: 96px; }
     .inner .wrapper { padding-top: 126px; }
