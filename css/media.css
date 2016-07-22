@@ -207,6 +207,9 @@
     }
     .tabs .volonteer-tab-name {
         font-size: 25px;
+        margin-bottom: 0;
+    }
+    .tabs .current .volonteer-tab-name {
         margin-bottom: 10px;
     }
     .sub-tabs .volonteer-tab-name {
@@ -1128,7 +1131,7 @@
     }
     .box-tabs-list li {
         overflow: hidden;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
         .box-tabs-list > li.current .tabs-mini {
             margin-bottom: 10px;
