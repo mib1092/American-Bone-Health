@@ -3311,9 +3311,9 @@ img {
             width: 5px;
             height: 10px;
             background: #ffffff;
-            -webkit-animation: scale 0.7s ease-in-out;
-            -moz-animation: scale 0.7s ease-in-out;
-            animation: scale 0.7s ease-in-out;
+            -webkit-animation: scale 0.5s ease-in-out;
+            -moz-animation: scale 0.5s ease-in-out;
+            animation: scale 0.5s ease-in-out;
         }
         .tabs li.current:before {
             left: 0;
@@ -3369,6 +3369,9 @@ img {
                 }
             }
 
+            .sub-tabs .volonteer-tab-name {
+                font-size: 22px;
+            }
 .select-volunteer-wrap {
     overflow: hidden;
     margin-bottom: 45px;
@@ -3392,7 +3395,7 @@ img {
             font: 600 24px 'proximanova-semibold';
         }
         .select-volonteer-right-box .volonteer-right-box-list {
-            margin-top: 66px;
+            margin-top: 40px;
             margin-bottom: 20px;
             text-align: left;
         }
@@ -3415,7 +3418,7 @@ img {
 
         .select-volunteer-left-box .volonteer-left-box-list {
             text-align: left;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
             .select-volunteer-left-box .volonteer-left-box-list > li {
                 margin-bottom: 36px;
@@ -3479,7 +3482,7 @@ img {
             .captcha-section a.captcha-refresh:hover {
                 text-decoration: none;
             }
-.tab-content button.btn {
+.sign-volon {
     padding: 22px 85px 21px;
     font-size: 22px;
 }
