@@ -1162,6 +1162,9 @@
     .tabs-mini .volonteer-tab-name {
         font-size: 24px;
     }
+    .box.visible {
+        display: none;
+    }
 }
 
 @media all and (max-width: 600px) {
