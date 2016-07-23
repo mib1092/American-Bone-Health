@@ -212,7 +212,7 @@
     .tabs .current .volonteer-tab-name {
         margin-bottom: 10px;
     }
-    .sub-tabs .volonteer-tab-name {
+    .sub-tabs .sub-volonteer-tab-name {
         font-size: 20px;
     }
     .sub-tabs {
@@ -1149,10 +1149,10 @@
             margin-bottom: 10px;
         }
         .box-tabs-list li.current .volonteer-tab-name,
-        .sub-tabs li.sub-current .volonteer-tab-name {
+        .sub-tabs li.sub-current .sub-volonteer-tab-name {
             color: #0097de;
         }
-            .sub-tabs .volonteer-tab-name {
+            .sub-tabs .sub-volonteer-tab-name {
                 color: #191f22;
             }
         .tabs-mini {
