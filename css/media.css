@@ -257,6 +257,14 @@
         width: 100%;
         text-align: center;
     }
+
+    .becoming-vol-page .big-banner .banner-map-box,.becoming-vol-page .big-banner .banner-box {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
     .take-action-page .banner-box a {
         margin-bottom: 10px;
     }
@@ -524,13 +532,13 @@
     .becoming-vol-page .big-banner .banner-box {
         max-width: 100%;
     }
-    .becoming-vol-page .big-banner .banner-map-box {
-        display: block;
-        margin: 0 auto;
-        max-width: 580px;
-        width: auto;
-        padding: 0 0 20px 0;
-    }
+    /*.becoming-vol-page .big-banner .banner-map-box {*/
+        /*display: block;*/
+        /*margin: 0 auto;*/
+        /*max-width: 580px;*/
+        /*width: auto;*/
+        /*padding: 0 0 20px 0;*/
+    /*}*/
     .section-program-overview .program-video-wrap {
         float: none;
         width: 100%;
