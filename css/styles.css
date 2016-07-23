@@ -3205,9 +3205,6 @@ img {
         display: table-cell;
         padding-left: 20px;
         width: 50%;
-        /*height: 340px;*/
-        /*padding: 160px 0 140px 20px;*/
-        /*padding: 20px;*/
         vertical-align: middle;
     }
             #map {
@@ -3218,7 +3215,7 @@ img {
             }
             .map-wrapper {
                 position: relative;
-                padding-top: 50%;
+                padding-top: 60%;
                 z-index: 5;
             }
 #save-widget {
