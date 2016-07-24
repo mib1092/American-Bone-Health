@@ -242,9 +242,6 @@
     .select-volunteer-wrap {
         overflow: visible;
     }
-    .map-wrapper {
-        padding-top: 40%;
-    }
 }
 
 @media all and (max-width: 991px) {
@@ -389,6 +386,9 @@
     .why-we-list > li {
         width: 48%;
     }
+    .map-wrapper {
+        padding-top: 40%;
+    }s
 }
 
 @media all and (max-width: 960px) {

@@ -3517,9 +3517,11 @@ img {
 }
     .calculator-list > li {
         display: table;
+        position: relative;
         width: 100%;
-        padding: 40px 25px 40px 80px;
+        padding: 52px 25px 54px 80px;
         border-bottom: 2px solid #cbd3d6;
+        font: 700 20px 'proximanova-bold';
     }
     .calculator-list > li:first-child {
         border-top: 2px solid #cbd3d6;
@@ -3528,6 +3530,8 @@ img {
         content: counter(num);
         counter-increment: num;
         display: inline-block;
+        position: absolute;
+        top: 40px;
         width: 41px;
         height: 41px;
         margin-left: -80px;
@@ -3543,7 +3547,15 @@ img {
     .calculator-list > li:hover {
         background-color: #dfe4eb;
     }
-
+        .section-calculator-risk .input-style {
+            max-width: 180px;
+        }
+        .calculator-list span {
+            font: 400 18px 'proximanova-regular';
+        }
+        .calculator-right {
+            float: right;
+        }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
