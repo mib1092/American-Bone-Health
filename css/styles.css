@@ -3522,6 +3522,10 @@ img {
         padding: 52px 25px 54px 80px;
         border-bottom: 2px solid #cbd3d6;
         font: 700 20px 'proximanova-bold';
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
     }
     .calculator-list > li:first-child {
         border-top: 2px solid #cbd3d6;
@@ -3544,8 +3548,18 @@ img {
         -moz-border-radius: 50%;
         border-radius: 50%;
     }
+    .calculator-list > li:hover:before {
+        color: #ffffff;
+        background: #0097de;
+    }
     .calculator-list > li:hover {
-        background-color: #dfe4eb;
+        background: -moz-linear-gradient(358deg, rgba(223,228,235,0.35) 0%, rgba(223,228,235,1) 15%, rgba(223,228,235,1) 85%, rgba(223,228,235,0) 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(223,228,235,0.35)), color-stop(15%, rgba(223,228,235,1)), color-stop(85%, rgba(223,228,235,1)), color-stop(100%, rgba(223,228,235,0))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(358deg, rgba(223,228,235,0.35) 0%, rgba(223,228,235,1) 15%, rgba(223,228,235,1) 85%, rgba(223,228,235,0) 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(358deg, rgba(223,228,235,0.35) 0%, rgba(223,228,235,1) 15%, rgba(223,228,235,1) 85%, rgba(223,228,235,0) 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(358deg, rgba(223,228,235,0.35) 0%, rgba(223,228,235,1) 15%, rgba(223,228,235,1) 85%, rgba(223,228,235,0) 100%); /* ie10+ */
+        background: linear-gradient(92deg, rgba(223,228,235,0.35) 0%, rgba(223,228,235,1) 15%, rgba(223,228,235,1) 85%, rgba(223,228,235,0) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe4eb', endColorstr='#dfe4eb',GradientType=1 ); /* ie6-9 */
     }
         .section-calculator-risk .input-style {
             max-width: 180px;
@@ -3553,7 +3567,7 @@ img {
         .calculator-list span {
             font: 400 18px 'proximanova-regular';
         }
-        .calculator-right {
+        .calculator-right-box {
             float: right;
         }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/

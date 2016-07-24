@@ -106,37 +106,47 @@
                     <form>
                         <ul class="calculator-list">
                             <li>
-                                <p>Whom are you using this calculator for?</p>
-                                <ul class="radio-type calculator-right">
-                                    <li>
-                                        <label class="radio-style">
-                                            <input type="radio" name="ques-1" value="yourself">
-                                            <span>Yourself</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="radio-style">
-                                            <input type="radio" name="ques-1" value="family-memeber">
-                                            <span>Family memeber</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="radio-style">
-                                            <input type="radio" name="ques-1" value="friend">
-                                            <span>Friend</span>
-                                        </label>
-                                    </li>
-                                </ul>
+                                <div class="calculator-right-box">
+                                    <ul class="radio-type">
+                                        <li>
+                                            <label class="radio-style">
+                                                <input type="radio" name="ques-1" value="yourself">
+                                                <span>Yourself</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="radio-style">
+                                                <input type="radio" name="ques-1" value="family-memeber">
+                                                <span>Family memeber</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="radio-style">
+                                                <input type="radio" name="ques-1" value="friend">
+                                                <span>Friend</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="calculator-left-box">
+                                    <p>Whom are you using this calculator for?</p>
+                                </div>
                              </li>
 
                             <li>
-                                <p>How old are you? (nearest year)</p>
-                                <input type="text" class="input-style calculator-right">
+                                <div class="calculator-right-box">
+                                    <input type="text" class="input-style">
+                                </div>
+
+                                <div class="calculator-left-box">
+                                    <p>How old are you? (nearest year)</p>
+                                </div>
                             </li>
 
                             <li>
-                                <p>How tall are you?</p>
-                                <ul class="calculator-right">
+                                <div class="calculator-right-box">
+                                    <ul>
                                     <li>
                                         <input type="text" class="input-style">
                                     </li>
@@ -144,17 +154,24 @@
                                         <input type="text" class="input-style">
                                     </li>
                                 </ul>
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>How tall are you?</p>
+                                </div>
                             </li>
 
                             <li>
-                                <p>How much do you weigh?</p>
-                                <input type="text" class="input-style calculator-right">
+                                <div class="calculator-right-box">
+                                    <input type="text" class="input-style">
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>How much do you weigh?</p>
+                                </div>
                             </li>
 
                             <li>
-                                <p>Are you taking a drug for osteoporosis?</p>
-                                <a href="#">List of drugs used for osteoporosis</a>
-                                <ul class="radio-type calculator-right">
+                                <div class="calculator-right-box">
+                                    <ul class="radio-type">
                                     <li>
                                         <label class="radio-style">
                                             <input type="radio" name="ques-5" value="yes">
@@ -168,11 +185,16 @@
                                         </label>
                                     </li>
                                 </ul>
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>Are you taking a drug for osteoporosis?</p>
+                                    <a href="#">List of drugs used for osteoporosis</a>
+                                </div>
                             </li>
 
                             <li>
-                                <p>Do you smoke now?</p>
-                                <ul class="radio-type calculator-right">
+                                <div class="calculator-right-box">
+                                    <ul class="radio-type">
                                     <li>
                                         <label class="radio-style">
                                             <input type="radio" name="ques-6" value="yes">
@@ -186,11 +208,15 @@
                                         </label>
                                     </li>
                                 </ul>
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>Do you smoke now?</p>
+                                </div>
                             </li>
 
                             <li>
-                                <p>Do you drink alcohol more than a little?</p>
-                                <ul class="radio-type calculator-right">
+                                <div class="calculator-right-box">
+                                    <ul class="radio-type">
                                     <li>
                                         <label class="radio-style">
                                             <input type="radio" name="ques-7" value="yes">
@@ -204,11 +230,15 @@
                                         </label>
                                     </li>
                                 </ul>
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>Do you drink alcohol more than a little?</p>
+                                </div>
                             </li>
 
                             <li>
-                                <p>Have you taken prednisone or steroid pills?</p>
-                                <ul class="radio-type calculator-right">
+                                <div class="calculator-right-box">
+                                    <ul class="radio-type">
                                     <li>
                                         <label class="radio-style">
                                             <input type="radio" name="ques-8" value="yes">
@@ -222,15 +252,15 @@
                                         </label>
                                     </li>
                                 </ul>
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>Have you taken prednisone or steroid pills?</p>
+                                </div>
                             </li>
 
                             <li>
-                                <p>Do you have rheumatoid arthritis?</p>
-                                <div class="calculator-help-block">
-                                    <p>Enter “Yes” if you have Rheumatoid Arthritis. Enter “No“ if you have other kinds of
-                                        arthritis, such as osteoarthritis.</p>
-                                </div>
-                                <ul class="radio-type calculator-right">
+                                <div class="calculator-right-box">
+                                    <ul class="radio-type">
                                     <li>
                                         <label class="radio-style">
                                             <input type="radio" name="ques-9" value="yes">
@@ -244,11 +274,19 @@
                                         </label>
                                     </li>
                                 </ul>
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>Do you have rheumatoid arthritis?</p>
+                                    <div class="calculator-help-block">
+                                        <p>Enter “Yes” if you have Rheumatoid Arthritis. Enter “No“ if you have other kinds of
+                                            arthritis, such as osteoarthritis.</p>
+                                    </div>
+                                </div>
                             </li>
 
                             <li>
-                                <p>Have you broken bones with little injury since age 45?</p>
-                                <ul class="radio-type calculator-right">
+                                <div class="calculator-right-box">
+                                    <ul class="radio-type">
                                     <li>
                                         <label class="radio-style">
                                             <input type="radio" name="ques-10" value="yes">
@@ -262,11 +300,15 @@
                                         </label>
                                     </li>
                                 </ul>
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>Have you broken bones with little injury since age 45?</p>
+                                </div>
                             </li>
 
                             <li>
-                                <p>Has your mother or father had a hip fracture?</p>
-                                <ul class="radio-type calculator-right">
+                                <div class="calculator-right-box">
+                                    <ul class="radio-type">
                                     <li>
                                         <label class="radio-style">
                                             <input type="radio" name="ques-11" value="yes">
@@ -280,11 +322,17 @@
                                         </label>
                                     </li>
                                 </ul>
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>Has your mother or father had a hip fracture?</p>
+                                </div>
                             </li>
 
                             <li>
-                                <p>Do you have any of the following serious chronic medical conditions? Check all that apply.</p>
-                                <ul class="checkbox-type ">
+                                <div class="calculator-left-box">
+                                    <p>Do you have any of the following serious chronic medical conditions? Check all that apply.</p>
+                                </div>
+                                <ul class="checkbox-type">
                                     <li>
                                         <label class="check-style">
                                             <input type="checkbox" name="ques-12" value="check-1">
@@ -334,11 +382,12 @@
                                         </label>
                                     </li>
                                 </ul>
+
                             </li>
 
                             <li>
-                                <p>Are you a man or a woman?</p>
-                                <ul class="radio-type calculator-right">
+                                <div class="calculator-right-box">
+                                    <ul class="radio-type">
                                     <li>
                                         <label class="radio-style">
                                             <input type="radio" name="ques-13" value="man">
@@ -352,11 +401,15 @@
                                         </label>
                                     </li>
                                 </ul>
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>Are you a man or a woman?</p>
+                                </div>
                             </li>
 
                             <li>
-                                <p>What race and ethnicity do you most consider fits you? </p>
-                                <div class="select-wrap calculator-right">
+                                <div class="calculator-right-box">
+                                    <div class="select-wrap">
                                     <select class="select-style input-style" id="check-ans">
                                         <option selected="">Select</option>
                                         <option>Category 1</option>
@@ -365,11 +418,15 @@
                                         <option>Category 4</option>
                                     </select>
                                 </div>
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>What race and ethnicity do you most consider fits you? </p>
+                                </div>
                             </li>
 
                             <li>
-                                <p>Have you ever had a bone density test?</p>
-                                <ul class="radio-type calculator-right">
+                                <div class="calculator-right-box">
+                                    <ul class="radio-type">
                                     <li>
                                         <label class="radio-style">
                                             <input type="radio" name="ques-15" value="yes">
@@ -383,18 +440,30 @@
                                         </label>
                                     </li>
                                 </ul>
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>Have you ever had a bone density test?</p>
+                                </div>
                             </li>
 
                             <li>
-                                <p>This calculator will give results WITH OR WITHOUT a bone density test score result.
+                                <div class="calculator-right-box">
+                                    <input type="text" class="input-style">
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>This calculator will give results WITH OR WITHOUT a bone density test score result.
                                     If you want to add your bone density result, enter yourfemoral neck T-score
                                     (include the minus (?) sign if it is on the report).</p>
-                                <input type="text" class="input-style calculator-right">
+                                </div>
                             </li>
 
                             <li>
-                                <p>If you would like a copy of your report emailed to you, enter your email address. </p>
-                                <input type="email" class="input-style calculator-right">
+                                <div class="calculator-right-box">
+                                    <input type="email" class="input-style">
+                                </div>
+                                <div class="calculator-left-box">
+                                    <p>If you would like a copy of your report emailed to you, enter your email address. </p>
+                                </div>
                             </li>
 
                         </ul>
