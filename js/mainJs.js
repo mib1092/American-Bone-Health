@@ -152,7 +152,7 @@ $(document).ready(function() {
         } else {
             $('.select-volunteer-wrap + input[type=submit], .select-volunteer-wrap + button[type=submit]').each(function(index){
                 var submit = $(this).eq(index),
-                    parentBox = submit.parent().find('.select-volunteer-left-box > form');
+                    parentBox = submit.parent().find('.select-volunteer-left-box').children('form');
 
                 submit.appendTo(parentBox);
             });
