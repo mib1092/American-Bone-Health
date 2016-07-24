@@ -74,8 +74,14 @@ $(document).ready(function() {
         }
     });
 
-
+    // for Subscribe widget
     $("#es_txt_email").attr("placeholder", "Email");
+
+    // for single video page (for responsive of iframe-videos)
+    $(".content-article").find('.content').find('iframe').wrap("<div class='videoWrapper'></div>");
+
+    // for Event Booking form
+    $(".em-booking").find('select').wrap("<div class='select-wrap'></div>");
 
 
     // for Owl Carousel sliders
@@ -133,6 +139,7 @@ $(document).ready(function() {
         $(this).toggleClass('active').parent().siblings('.event-search-wrap').find(hideBlock).slideToggle(500);
     });
 
+
     // move sing-volonteer btn
     $(window).on('load resize', function() {
         if (document.body.clientWidth > '1024') {
@@ -155,13 +162,13 @@ $(document).ready(function() {
     // for Tabs
     $(window).on('load resize', function() {
         var tabs = $('.tabs'),
-            tabsLi = $('.tabs > li'),
+            tabsLi = tabs.children('li'),
             subTabs = $('.sub-tabs'),
             tabsMini = $('.tabs-mini'),
             boxTabsList = $('.box-tabs-list'),
-            boxTabsListLi = $('.box-tabs-list > li'),
+            boxTabsListLi = boxTabsList.children('li'),
             subBoxTabsList = $('.sub-box-tabs-list'),
-            subBoxTabsListLi = $('.sub-box-tabs-list > li'),
+            subBoxTabsListLi = subBoxTabsList.children('li'),
             miniBox = tabsMini.next('.box'),
             selectVolonteerTabs = $('.select-volonteer-tabs'),
             miniTabParent = tabsMini.parent(),
@@ -266,6 +273,7 @@ $(document).ready(function() {
         $(this).addClass('sub-current').siblings().removeClass('sub-current')
             .parents('div.select-volunteer-wrap').find('div.sub-box').hide().eq($(this).index()).fadeIn(150);
     });
+
 
     // for copy post permalink
     $("a.copy-permalink").on('click', function (e) {
