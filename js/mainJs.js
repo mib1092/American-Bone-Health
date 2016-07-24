@@ -133,145 +133,6 @@ $(document).ready(function() {
         $(this).toggleClass('active').parent().siblings('.event-search-wrap').find(hideBlock).slideToggle(500);
     });
 
-    // for Tabs
-    //$(window).on('load resize', function() {
-    //    if (document.body.clientWidth <= '640') {
-    //        //for mini tabs
-    //        $('.box-tabs-list > li').each(function(index){
-    //            var face = $(this).eq(index);
-    //            face.find('.box').attr('style', '');
-    //        });
-    //
-    //        $('.box-tabs-list').delegate('li:not(.current)', 'click', function() {
-    //            $(this).addClass('current').siblings().removeClass('current')
-    //                .parent().find('.box').hide().eq($(this).index()).fadeIn(150);
-    //        });
-    //    } if (document.body.clientWidth <= '1024'){
-    //        $('.tabs').delegate('li:not(.current)', 'click', function() {
-    //            $(this).addClass('current').siblings('li').removeClass('current')
-    //                .parents('.select-volonteer-tabs').find('.box').hide().eq($(this).index()).fadeIn(150);
-    //        });
-    //    } else {
-    //        $('.sub-box-tabs-list > li').each(function(index){
-    //            var face = $(this).eq(index);
-    //            face.find('.sub-box').attr('style', '');
-    //        });
-    //        $('.tabs').delegate('li:not(.current)', 'click', function() {
-    //            $(this).addClass('current').siblings().removeClass('current')
-    //                .parents('.select-volonteer-tabs').find('.box').hide().eq($(this).index()).fadeIn(150);
-    //        });
-    //    }
-    //});
-
-    $(window).on('load resize', function() {
-        if (document.body.clientWidth <= '640') {
-            $('.sub-box-tabs-list > li').children('.sub-box').attr('style', '');
-
-            var miniTabParent = $('.tabs-mini').parent(),
-                miniBox = $('.tabs-mini').next('.box');
-
-            var allSubTabs = $('.box-tabs-list').find('.sub-tabs');
-            allSubTabs.each(function (index) {
-                $('.sub-tabs').eq(index).find('li').removeClass('sub-current');
-                $('.sub-tabs').eq(index).find('li').first().addClass('sub-current');
-            });
-            var allSubBoxes = $('.box-tabs-list').find('.sub-box-tabs-list');
-            allSubBoxes.each(function (index) {
-                $('.sub-box-tabs-list').eq(index).find('li').children('.sub-box').removeClass('visible');
-                $('.sub-box-tabs-list').eq(index).find('li').first().children('.sub-box').addClass('visible');
-            });
-            var allTabs = $('.select-volonteer-tabs').find('.tabs');
-            allTabs.each(function (index) {
-                $('.tabs').eq(index).find('li').removeClass('current');
-            });
-            var allBoxes = $('.select-volonteer-tabs').find('.box-tabs-list');
-            allBoxes.each(function (index) {
-                $('.box-tabs-list').eq(index).find('li').children('.box').removeClass('visible');
-            });
-
-            $('.tabs-mini').on('click', function() {
-                var liId = $(this).parent().index();
-                if (miniTabParent.eq(liId).hasClass('current')){
-                    miniTabParent.eq(liId).toggleClass('current');
-                    miniBox.eq(liId).toggleClass('visible');
-                } else {
-                    miniTabParent.removeClass('current');
-                    miniBox.removeClass('visible');
-                    miniTabParent.eq(liId).addClass('current');
-                    miniBox.eq(liId).addClass('visible');
-                }
-            });
-
-        } if (document.body.clientWidth > '640') {
-            $('.sub-box-tabs-list > li').children('.sub-box').attr('style', '');
-
-            var allSubTabs = $('.box-tabs-list').find('.sub-tabs');
-            allSubTabs.each(function (index) {
-                $('.sub-tabs').eq(index).find('li').removeClass('sub-current');
-                $('.sub-tabs').eq(index).find('li').first().addClass('sub-current');
-            });
-            var allSubBoxes = $('.box-tabs-list').find('.sub-box-tabs-list');
-            allSubBoxes.each(function (index) {
-                $('.sub-box-tabs-list').eq(index).find('li').children('.sub-box').removeClass('visible');
-                $('.sub-box-tabs-list').eq(index).find('li').first().children('.sub-box').addClass('visible');
-            });
-            var allTabs = $('.select-volonteer-tabs').find('.tabs');
-            allTabs.each(function (index) {
-                $('.tabs').eq(index).find('li').removeClass('current');
-                $('.tabs').eq(index).find('li').first().addClass('current');
-            });
-            var allBoxes = $('.select-volonteer-tabs').find('.box-tabs-list');
-            allBoxes.each(function (index) {
-                $('.box-tabs-list').eq(index).find('li').children('.box').removeClass('visible');
-                $('.box-tabs-list').eq(index).find('li').first().children('.box').addClass('visible');
-            });
-
-            $('.tabs > li').on('click', function() {
-                var tabId = $(this).index();
-
-                if ($(this).hasClass('current')){
-                } else {
-                    $('.tabs > li').removeClass('current');
-                    $('.tabs > li').eq(tabId).addClass('current');
-                    $('.box-tabs-list > li').children('.box').removeClass('visible');
-                    $('.box-tabs-list > li').eq(tabId).children('.box').addClass('visible');
-                };
-            });
-        } if (document.body.clientWidth > '1024') {
-            // for Sub tabs
-            $('.sub-box-tabs-list > li').children('.sub-box').attr('style', '');
-
-            var allTabs = $('.select-volonteer-tabs').find('.tabs');
-            allTabs.each(function (index) {
-                $('.tabs').eq(index).find('li').removeClass('current');
-                $('.tabs').eq(index).find('li').first().addClass('current');
-            });
-            var allBoxes = $('.select-volonteer-tabs').find('.box-tabs-list');
-            allBoxes.each(function (index) {
-                $('.box-tabs-list').eq(index).find('li').children('.box').removeClass('visible');
-                $('.box-tabs-list').eq(index).find('li').first().children('.box').addClass('visible');
-            });
-            // for Tabs
-            $('.tabs > li').on('click', function() {
-                var tabId = $(this).index();
-
-                if ($(this).hasClass('current')){
-                } else {
-                    $('.tabs > li').removeClass('current');
-                    $('.tabs > li').eq(tabId).addClass('current');
-                    $('.box-tabs-list > li').children('.box').removeClass('visible');
-                    $('.box-tabs-list > li').eq(tabId).children('.box').addClass('visible');
-                };
-
-            });
-        };
-    });
-    // for Sub tabs
-    $('ul.sub-tabs').delegate('li:not(.sub-current)', 'click', function() {
-        $(this).addClass('sub-current').siblings().removeClass('sub-current')
-            .parents('div.select-volunteer-wrap').find('div.sub-box').hide().eq($(this).index()).fadeIn(150);
-    });
-
     // move sing-volonteer btn
     $(window).on('load resize', function() {
         if (document.body.clientWidth > '1024') {
@@ -289,6 +150,121 @@ $(document).ready(function() {
                 submit.appendTo(parentBox);
             });
         }
+    });
+
+    // for Tabs
+    $(window).on('load resize', function() {
+        var tabs = $('.tabs'),
+            tabsLi = $('.tabs > li'),
+            subTabs = $('.sub-tabs'),
+            tabsMini = $('.tabs-mini'),
+            boxTabsList = $('.box-tabs-list'),
+            boxTabsListLi = $('.box-tabs-list > li'),
+            subBoxTabsList = $('.sub-box-tabs-list'),
+            subBoxTabsListLi = $('.sub-box-tabs-list > li'),
+            miniBox = tabsMini.next('.box'),
+            selectVolonteerTabs = $('.select-volonteer-tabs'),
+            miniTabParent = tabsMini.parent(),
+            allSubTabs = boxTabsList.find('.sub-tabs'),
+            allSubBoxes = boxTabsList.find('.sub-box-tabs-list'),
+            allTabs = selectVolonteerTabs.find('.tabs'),
+            allBoxes = selectVolonteerTabs.find('.box-tabs-list');
+
+        if (document.body.clientWidth <= '640') {
+            subBoxTabsListLi.children('.sub-box').attr('style', '');
+
+            allSubTabs.each(function (index) {
+                subTabs.eq(index).find('li').removeClass('sub-current');
+                subTabs.eq(index).find('li').first().addClass('sub-current');
+            });
+            allSubBoxes.each(function (index) {
+                subBoxTabsList.eq(index).find('li').children('.sub-box').removeClass('visible');
+                subBoxTabsList.eq(index).find('li').first().children('.sub-box').addClass('visible');
+            });
+            allTabs.each(function (index) {
+                tabs.eq(index).find('li').removeClass('current');
+            });
+            allBoxes.each(function (index) {
+                boxTabsList.eq(index).find('li').children('.box').removeClass('visible');
+            });
+
+            tabsMini.on('click', function() {
+                var liId = $(this).parent().index();
+                if (miniTabParent.eq(liId).hasClass('current')){
+                    miniTabParent.eq(liId).toggleClass('current');
+                    miniBox.eq(liId).toggleClass('visible');
+                } else {
+                    miniTabParent.removeClass('current');
+                    miniBox.removeClass('visible');
+                    miniTabParent.eq(liId).addClass('current');
+                    miniBox.eq(liId).addClass('visible');
+                }
+            });
+
+        } if (document.body.clientWidth > '640') {
+            subBoxTabsListLi.children('.sub-box').attr('style', '');
+
+            allSubTabs.each(function (index) {
+                subTabs.eq(index).find('li').removeClass('sub-current');
+                subTabs.eq(index).find('li').first().addClass('sub-current');
+            });
+            allSubBoxes.each(function (index) {
+                subBoxTabsList.eq(index).find('li').children('.sub-box').removeClass('visible');
+                subBoxTabsList.eq(index).find('li').first().children('.sub-box').addClass('visible');
+            });
+            allTabs.each(function (index) {
+                tabs.eq(index).find('li').removeClass('current');
+                tabs.eq(index).find('li').first().addClass('current');
+            });
+            allBoxes.each(function (index) {
+                boxTabsList.eq(index).find('li').children('.box').removeClass('visible');
+                boxTabsList.eq(index).find('li').first().children('.box').addClass('visible');
+            });
+
+            tabsLi.on('click', function() {
+                var tabId = $(this).index();
+
+                if ($(this).hasClass('current')){
+                } else {
+                    tabsLi.removeClass('current');
+                    tabsLi.eq(tabId).addClass('current');
+                    boxTabsListLi.children('.box').removeClass('visible');
+                    boxTabsListLi.eq(tabId).children('.box').addClass('visible');
+                }
+            });
+        } if (document.body.clientWidth > '1024') {
+            // for Sub tabs
+            subBoxTabsListLi.children('.sub-box').attr('style', '');
+
+            allTabs.each(function (index) {
+                tabs.eq(index).find('li').removeClass('current');
+                tabs.eq(index).find('li').first().addClass('current');
+            });
+            allBoxes.each(function (index) {
+                boxTabsList.eq(index).find('li').children('.box').removeClass('visible');
+                boxTabsList.eq(index).find('li').first().children('.box').addClass('visible');
+            });
+
+            // for Tabs
+            tabsLi.on('click', function() {
+                var tabId = $(this).index();
+
+                if ($(this).hasClass('current')){
+                } else {
+                    tabsLi.removeClass('current');
+                    tabsLi.eq(tabId).addClass('current');
+                    boxTabsListLi.children('.box').removeClass('visible');
+                    boxTabsListLi.eq(tabId).children('.box').addClass('visible');
+                }
+
+            });
+        }
+    });
+
+    // for Sub tabs
+    $('ul.sub-tabs').delegate('li:not(.sub-current)', 'click', function() {
+        $(this).addClass('sub-current').siblings().removeClass('sub-current')
+            .parents('div.select-volunteer-wrap').find('div.sub-box').hide().eq($(this).index()).fadeIn(150);
     });
 
     // for copy post permalink
