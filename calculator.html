@@ -95,289 +95,290 @@
         <section class="section-calculator-risk">
             <div class="container">
                 <h2 class="title">10-Year Fracture Risk Calculator version 2.0</h2>
+                <div class="calculator-wrap">
+                    <div class="about-calculator radius">
+                        <h3 class="about-calculator-title">About the Fracture Risk Calculator</h3>
+                        <p>The FORE Fracture Risk Calculator (TM) estimates fracture risk for postmenopausal women and men
+                            over age 45. Take the test to determine your risk of bone fracture or help someone you love
+                            learn their risk.</p>
+                    </div>
 
-                <div class="about-calculator">
-                    <h3 class="about-calculator-title">About the Fracture Risk Calculator</h3>
-                    <p>The FORE Fracture Risk Calculator (TM) estimates fracture risk for postmenopausal women and men
-                        over age 45. Take the test to determine your risk of bone fracture or help someone you love
-                        learn their risk.</p>
+                    <form>
+                        <ul class="calculator-list">
+                            <li>
+                                <p>Whom are you using this calculator for?</p>
+                                <ul class="radio-type">
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-1" value="yourself">
+                                            <span>Yourself</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-1" value="family-memeber">
+                                            <span>Family memeber</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-1" value="friend">
+                                            <span>Friend</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                             </li>
+
+                            <li>
+                                <p>How old are you? (nearest year)</p>
+                                <input type="text" class="input-style">
+                            </li>
+
+                            <li>
+                                <p>How tall are you?</p>
+                                <ul>
+                                    <li>
+                                        <input type="text" class="input-style">
+                                    </li>
+                                    <li>
+                                        <input type="text" class="input-style">
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>How much do you weigh?</p>
+                                <input type="text" class="input-style">
+                            </li>
+
+                            <li>
+                                <p>Are you taking a drug for osteoporosis?</p>
+                                <a href="#">List of drugs used for osteoporosis</a>
+                                <ul class="radio-type">
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-5" value="yes">
+                                            <span>Yes</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-5" value="no">
+                                            <span>No</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>Do you smoke now?</p>
+                                <ul class="radio-type">
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-6" value="yes">
+                                            <span>Yes</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-6" value="no">
+                                            <span>No</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>Do you drink alcohol more than a little?</p>
+                                <ul class="radio-type">
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-7" value="yes">
+                                            <span>Yes</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-7" value="no">
+                                            <span>No</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>Have you taken prednisone or steroid pills?</p>
+                                <ul class="radio-type">
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-8" value="yes">
+                                            <span>Yes</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-8" value="no">
+                                            <span>No</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>Do you have rheumatoid arthritis?</p>
+                                <div class="calculator-help-block">
+                                    <p>Enter “Yes” if you have Rheumatoid Arthritis. Enter “No“ if you have other kinds of
+                                        arthritis, such as osteoarthritis.</p>
+                                </div>
+                                <ul class="radio-type">
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-9" value="yes">
+                                            <span>Yes</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-9" value="no">
+                                            <span>No</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>Have you broken bones with little injury since age 45?</p>
+                                <ul class="radio-type">
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-10" value="yes">
+                                            <span>Yes</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-10" value="no">
+                                            <span>No</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>Has your mother or father had a hip fracture?</p>
+                                <ul class="radio-type">
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-11" value="yes">
+                                            <span>Yes</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-11" value="no">
+                                            <span>No</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>Do you have any of the following serious chronic medical conditions? Check all that apply.</p>
+                                <!--<ul class="radio-type">-->
+                                    <!--<li>-->
+                                        <!--<label class="radio-style">-->
+                                            <!--<input type="radio" name="ques-11" value="yes">-->
+                                            <!--<span>Yes</span>-->
+                                        <!--</label>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<label class="radio-style">-->
+                                            <!--<input type="radio" name="ques-11" value="no">-->
+                                            <!--<span>No</span>-->
+                                        <!--</label>-->
+                                    <!--</li>-->
+                                <!--</ul>-->
+                            </li>
+
+                            <li>
+                                <p>Are you a man or a woman?</p>
+                                <ul class="radio-type">
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-13" value="man">
+                                            <span>Man</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-13" value="woman">
+                                            <span>Woman</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>What race and ethnicity do you most consider fits you? </p>
+                                <!--<ul class="radio-type">-->
+                                <!--<li>-->
+                                <!--<label class="radio-style">-->
+                                <!--<input type="radio" name="ques-11" value="yes">-->
+                                <!--<span>Yes</span>-->
+                                <!--</label>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<label class="radio-style">-->
+                                <!--<input type="radio" name="ques-11" value="no">-->
+                                <!--<span>No</span>-->
+                                <!--</label>-->
+                                <!--</li>-->
+                                <!--</ul>-->
+                            </li>
+
+                            <li>
+                                <p>Have you ever had a bone density test?</p>
+                                <ul class="radio-type">
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-15" value="yes">
+                                            <span>Yes</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-style">
+                                            <input type="radio" name="ques-15" value="no">
+                                            <span>No</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>This calculator will give results WITH OR WITHOUT a bone density test score result.
+                                    If you want to add your bone density result, enter yourfemoral neck T-score
+                                    (include the minus (?) sign if it is on the report).</p>
+                                <input type="text" class="input-style">
+                            </li>
+
+                            <li>
+                                <p>If you would like a copy of your report emailed to you, enter your email address. </p>
+                                <input type="email" class="input-style">
+                            </li>
+
+                        </ul>
+
+                        <label class="check-style">
+                            <input type="checkbox" name="calculator-receive" value="yes">
+                            <span>Check if you do not want to receive additional information from American Bone Health.</span>
+                        </label>
+                        <button type="submit" class="btn grey">Reset</button>
+                        <button type="submit" class="btn red">Calculate Risk</button>
+                    </form>
+                    <p class="note">Do you have a question about how the calculator works for you? Try our FORE Fracture
+                        Risk Calculator Frequently Asked Questions (FAQs) Don't forget to print our free list of questions
+                        to help you talk to your doctor about your results. FORE Fracture Risk Calculator (TM)</p>
                 </div>
-
-                <form>
-                    <ul class="calculator-list">
-                        <li>
-                            <p>Whom are you using this calculator for?</p>
-                            <ul class="radio-type">
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-1" value="yourself">
-                                        <span>Yourself</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-1" value="family-memeber">
-                                        <span>Family memeber</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-1" value="friend">
-                                        <span>Friend</span>
-                                    </label>
-                                </li>
-                            </ul>
-                         </li>
-
-                        <li>
-                            <p>How old are you? (nearest year)</p>
-                            <input type="text" class="input-style">
-                        </li>
-
-                        <li>
-                            <p>How tall are you?</p>
-                            <ul>
-                                <li>
-                                    <input type="text" class="input-style">
-                                </li>
-                                <li>
-                                    <input type="text" class="input-style">
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <p>How much do you weigh?</p>
-                            <input type="text" class="input-style">
-                        </li>
-
-                        <li>
-                            <p>Are you taking a drug for osteoporosis?</p>
-                            <a href="#">List of drugs used for osteoporosis</a>
-                            <ul class="radio-type">
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-5" value="yes">
-                                        <span>Yes</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-5" value="no">
-                                        <span>No</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <p>Do you smoke now?</p>
-                            <ul class="radio-type">
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-6" value="yes">
-                                        <span>Yes</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-6" value="no">
-                                        <span>No</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <p>Do you drink alcohol more than a little?</p>
-                            <ul class="radio-type">
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-7" value="yes">
-                                        <span>Yes</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-7" value="no">
-                                        <span>No</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <p>Have you taken prednisone or steroid pills?</p>
-                            <ul class="radio-type">
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-8" value="yes">
-                                        <span>Yes</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-8" value="no">
-                                        <span>No</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <p>Do you have rheumatoid arthritis?</p>
-                            <div class="calculator-help-block">
-                                <p>Enter “Yes” if you have Rheumatoid Arthritis. Enter “No“ if you have other kinds of
-                                    arthritis, such as osteoarthritis.</p>
-                            </div>
-                            <ul class="radio-type">
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-9" value="yes">
-                                        <span>Yes</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-9" value="no">
-                                        <span>No</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <p>Have you broken bones with little injury since age 45?</p>
-                            <ul class="radio-type">
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-10" value="yes">
-                                        <span>Yes</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-10" value="no">
-                                        <span>No</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <p>Has your mother or father had a hip fracture?</p>
-                            <ul class="radio-type">
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-11" value="yes">
-                                        <span>Yes</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-11" value="no">
-                                        <span>No</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <p>Do you have any of the following serious chronic medical conditions? Check all that apply.</p>
-                            <!--<ul class="radio-type">-->
-                                <!--<li>-->
-                                    <!--<label class="radio-style">-->
-                                        <!--<input type="radio" name="ques-11" value="yes">-->
-                                        <!--<span>Yes</span>-->
-                                    <!--</label>-->
-                                <!--</li>-->
-                                <!--<li>-->
-                                    <!--<label class="radio-style">-->
-                                        <!--<input type="radio" name="ques-11" value="no">-->
-                                        <!--<span>No</span>-->
-                                    <!--</label>-->
-                                <!--</li>-->
-                            <!--</ul>-->
-                        </li>
-
-                        <li>
-                            <p>Are you a man or a woman?</p>
-                            <ul class="radio-type">
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-13" value="man">
-                                        <span>Man</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-13" value="woman">
-                                        <span>Woman</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <p>What race and ethnicity do you most consider fits you? </p>
-                            <!--<ul class="radio-type">-->
-                            <!--<li>-->
-                            <!--<label class="radio-style">-->
-                            <!--<input type="radio" name="ques-11" value="yes">-->
-                            <!--<span>Yes</span>-->
-                            <!--</label>-->
-                            <!--</li>-->
-                            <!--<li>-->
-                            <!--<label class="radio-style">-->
-                            <!--<input type="radio" name="ques-11" value="no">-->
-                            <!--<span>No</span>-->
-                            <!--</label>-->
-                            <!--</li>-->
-                            <!--</ul>-->
-                        </li>
-
-                        <li>
-                            <p>Have you ever had a bone density test?</p>
-                            <ul class="radio-type">
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-15" value="yes">
-                                        <span>Yes</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="radio-style">
-                                        <input type="radio" name="ques-15" value="no">
-                                        <span>No</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <p>This calculator will give results WITH OR WITHOUT a bone density test score result.
-                                If you want to add your bone density result, enter yourfemoral neck T-score
-                                (include the minus (?) sign if it is on the report).</p>
-                            <input type="text" class="input-style">
-                        </li>
-
-                        <li>
-                            <p>If you would like a copy of your report emailed to you, enter your email address. </p>
-                            <input type="email" class="input-style">
-                        </li>
-
-                    </ul>
-
-                    <label class="check-style">
-                        <input type="checkbox" name="calculator-receive" value="yes">
-                        <span>Check if you do not want to receive additional information from American Bone Health.</span>
-                    </label>
-                    <button type="submit" class="btn grey">Reset</button>
-                    <button type="submit" class="btn red">Calculate Risk</button>
-                </form>
-                <p class="note">Do you have a question about how the calculator works for you? Try our FORE Fracture
-                    Risk Calculator Frequently Asked Questions (FAQs) Don't forget to print our free list of questions
-                    to help you talk to your doctor about your results. FORE Fracture Risk Calculator (TM)</p>
             </div>
         </section>
 

@@ -1,24 +1,34 @@
-// The following example creates complex markers to indicate beaches near
-// Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
-// to the base of the flagpole.
+//
+//function initMap() {
+//    var map = new google.maps.Map(document.getElementById('map'), {
+//        zoom: 10,
+//        center: {lat: -33.9, lng: 151.2},
+//        zoomControl: false,
+//        mapTypeControl: false,
+//        scaleControl: false,
+//        streetViewControl: false,
+//        rotateControl: false
+//
+//    });
+//
+//    setMarkers(map);
+//}
 
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
+function initialize() {
+    var myOptions = {
         zoom: 10,
-        center: {lat: -33.9, lng: 151.2},
+        center:  {lat: -33.9, lng: 151.2},
         zoomControl: false,
         mapTypeControl: false,
         scaleControl: false,
         streetViewControl: false,
-        rotateControl: false
-
-    });
-
+        rotateControl: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
     setMarkers(map);
 }
 
-// Data for the markers consisting of a name, a LatLng and a zIndex for the
-// order in which these markers should display on top of each other.
 var beaches = [
     ['Bondi Beach', -33.890542, 151.274856, 4],
     ['Coogee Beach', -33.923036, 151.259052, 5],
