@@ -170,8 +170,24 @@ $(document).ready(function() {
             var miniTabParent = $('.tabs-mini').parent(),
                 miniBox = $('.tabs-mini').next('.box');
 
-            miniTabParent.removeClass('current');
-            miniBox.removeClass('visible');
+            var allSubTabs = $('.box-tabs-list').find('.sub-tabs');
+            allSubTabs.each(function (index) {
+                $('.sub-tabs').eq(index).find('li').removeClass('sub-current');
+                $('.sub-tabs').eq(index).find('li').first().addClass('sub-current');
+            });
+            var allSubBoxes = $('.box-tabs-list').find('.sub-box-tabs-list');
+            allSubBoxes.each(function (index) {
+                $('.sub-box-tabs-list').eq(index).find('li').children('.sub-box').removeClass('visible');
+                $('.sub-box-tabs-list').eq(index).find('li').first().children('.sub-box').addClass('visible');
+            });
+            var allTabs = $('.select-volonteer-tabs').find('.tabs');
+            allTabs.each(function (index) {
+                $('.tabs').eq(index).find('li').removeClass('current');
+            });
+            var allBoxes = $('.select-volonteer-tabs').find('.box-tabs-list');
+            allBoxes.each(function (index) {
+                $('.box-tabs-list').eq(index).find('li').children('.box').removeClass('visible');
+            });
 
             $('.tabs-mini').on('click', function() {
                 var liId = $(this).parent().index();
@@ -186,7 +202,7 @@ $(document).ready(function() {
                 }
             });
 
-        } if (document.body.clientWidth <= '1024') {
+        } if (document.body.clientWidth > '640') {
             $('.sub-box-tabs-list > li').children('.sub-box').attr('style', '');
 
             var allSubTabs = $('.box-tabs-list').find('.sub-tabs');
@@ -221,7 +237,7 @@ $(document).ready(function() {
                     $('.box-tabs-list > li').eq(tabId).children('.box').addClass('visible');
                 };
             });
-        } else {
+        } if (document.body.clientWidth > '1024') {
             // for Sub tabs
             $('.sub-box-tabs-list > li').children('.sub-box').attr('style', '');
 
