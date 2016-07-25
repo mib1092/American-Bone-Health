@@ -3568,6 +3568,12 @@ img {
     font-size: 22px;
 }
 /*-------------------------------------CALCULATOR----------------------------------*/
+.inner-calc .wrapper {
+    padding-top: 247px;
+}
+.section-calculator-risk .title {
+    margin-bottom: 50px;
+}
 .calculator-wrap {
     padding: 0 100px;
 }
@@ -3575,7 +3581,7 @@ img {
         padding: 29px 90px 30px;
         text-align: center;
         background: #ffffff;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
         .about-calculator-title {
             font: 700 20px 'proximanova-bold';
@@ -3590,6 +3596,7 @@ img {
             }
 .calculator-list {
     counter-reset: num;
+    margin-bottom: 65px;
 }
     .calculator-list > li {
         display: table;
@@ -3603,9 +3610,7 @@ img {
         -o-transition: 0.2s;
         transition: 0.2s;
     }
-    .calculator-list > li:first-child {
-        border-top: 2px solid #cbd3d6;
-    }
+
     .calculator-list > li:before {
         content: counter(num);
         counter-increment: num;
@@ -3646,6 +3651,22 @@ img {
         .calculator-right-box {
             float: right;
         }
+
+
+        .bottom-calc-box {
+            text-align: center;
+            margin-bottom: 47px;
+        }
+            .bottom-calc-box label {
+                display: block;
+                margin-bottom: 42px;
+            }
+            .bottom-calc-box button {
+                margin-right: 11px;
+            }
+            .bottom-calc-box button:last-child {
+                margin-right: 0;
+            }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
