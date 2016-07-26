@@ -147,10 +147,10 @@
                             <li>
                                 <div class="calculator-right-box">
                                     <ul>
-                                    <li>
+                                    <li class="sbl-ft">
                                         <input type="text" class="input-style" placeholder="e.g. 3">
                                     </li>
-                                    <li>
+                                    <li class="sbl-in">
                                         <input type="text" class="input-style" placeholder="e.g. 7">
                                     </li>
                                 </ul>
@@ -162,7 +162,11 @@
 
                             <li>
                                 <div class="calculator-right-box">
-                                    <input type="text" class="input-style" placeholder="e.g. 100">
+                                    <ul>
+                                        <li class="sbl-lbs">
+                                            <input type="text" class="input-style" placeholder="e.g. 100">
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="calculator-left-box">
                                     <p>How much do you weigh?</p>
@@ -188,7 +192,7 @@
                                 </div>
                                 <div class="calculator-left-box">
                                     <p>Are you taking a drug for osteoporosis?</p>
-                                    <a href="#">List of drugs used for osteoporosis</a>
+                                    <a href="#" class="more-info-w">List of drugs used for osteoporosis</a>
                                 </div>
                             </li>
 
@@ -277,10 +281,7 @@
                                 </div>
                                 <div class="calculator-left-box">
                                     <p>Do you have rheumatoid arthritis?</p>
-                                    <div class="calculator-help-block">
-                                        <p>Enter “Yes” if you have Rheumatoid Arthritis. Enter “No“ if you have other kinds of
-                                            arthritis, such as osteoarthritis.</p>
-                                    </div>
+                                    <span class="jQtooltip mini" title="Enter Yes">?</span>
                                 </div>
                             </li>
 
@@ -303,6 +304,7 @@
                                 </div>
                                 <div class="calculator-left-box">
                                     <p>Have you broken bones with little injury since age 45?</p>
+                                    <span class="jQtooltip mini" title="Enter if you have Rheumatoid Arthritis. Enter No if you have other kinds of arthritis, such as osteoarthritis.">?</span>
                                 </div>
                             </li>
 
@@ -459,7 +461,7 @@
 
                             <li>
                                 <div class="calculator-right-box">
-                                    <input type="email" class="input-style" placeholder="Email">
+                                    <input type="email" class="input-style calc-email" placeholder="Email">
                                 </div>
                                 <div class="calculator-left-box">
                                     <p>If you would like a copy of your report emailed to you, enter your email address. </p>
@@ -476,10 +478,12 @@
                             <button type="submit" class="btn red">Calculate Risk</button>
                         </div>
                     </form>
-                    <p class="note">Do you have a question about how the calculator works for you? Try our
-                        <a href="#">FORE Fracture Risk Calculator Frequently Asked Questions (FAQs)</a> Don't forget to
-                        <a href="#"> print our free list of questions</a> to help you talk to your doctor about your
-                        results. FORE Fracture Risk Calculator (TM)</p>
+                    <div class="block-note">
+                         <p>Do you have a question about how the calculator works for you? Try our <a href="#">FORE
+                             Fracture Risk Calculator Frequently Asked Questions (FAQs)</a></p>
+                        <p>Don't forget to <a href="#"> print our free list of questions</a> to help you talk to your
+                            doctor about your results.<br> FORE Fracture Risk Calculator (TM)</p>
+                    </div>
                 </div>
             </div>
         </section>

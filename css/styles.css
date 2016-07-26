@@ -3573,6 +3573,9 @@ img {
 .inner-calc .wrapper {
     padding-top: 247px;
 }
+.section-calculator-risk {
+    margin-bottom: 55px;
+}
 .section-calculator-risk .title {
     margin-bottom: 50px;
 }
@@ -3591,7 +3594,6 @@ img {
         }
             .about-calculator p {
                 font-size: 16px;
-                margin-bottom: 20px;
             }
             .about-calculator > :last-child {
                 margin-bottom: 0;
@@ -3604,7 +3606,7 @@ img {
         display: table;
         position: relative;
         width: 100%;
-        padding: 52px 0 18px 80px;
+        padding: 52px 0 41px 80px;
         border-bottom: 2px solid #cbd3d6;
         font: 700 20px 'proximanova-bold';
         -webkit-transition: 0.2s;
@@ -3655,14 +3657,40 @@ img {
             margin-left: 80px;
         }
         .calculator-right-box li {
+            position: relative;
             float: left;
+            margin-top: -7px;
             margin-left: 20px;
+        }
+        .calculator-right-box .radio-type {
+            margin-top: 7px;
+        }
+        .calculator-right-box .select-wrap {
+            width: 180px;
         }
         .calculator-right-box li:last-child {
             float: left;
             margin-left: 20px;
         }
+            .sbl-ft:after, .sbl-in:after, .sbl-lbs:after {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                top: 6px;
+                padding-left: 10px;
+                font: 400 18px 'proximanova-regular';
+                color: #0097de;
+                border-left: 2px solid #c5c7c8;
+                line-height: 28px;
+                background: #ffffff;
+                z-index: 5;
+            }
+            .sbl-ft:after { content: 'ft.'; }
+            .sbl-in:after { content: 'in.'; }
+            .sbl-lbs:after { content: 'lbs.'; }
+
             .check-two-row {
+                padding-top: 31px;
                 margin-bottom: 8px;
                 -webkit-columns: 2;
                 -moz-columns:  2;
@@ -3674,14 +3702,24 @@ img {
                 .check-two-row li {
                     margin-bottom: 20px;
                 }
-
+    .calculator-left-box {
+        display: table;
+    }
         .calculator-left-box p {
-            margin-bottom: 32px;
+            display: inline-block;
+            margin-bottom: 2px;
         }
-        .calculator-left-box a {
+        .calculator-left-box a.more-info-w {
+            display: block;
             font: 400  15px 'proximanova-regular';
+            text-decoration: underline;
         }
-
+        .calculator-left-box a.more-info-w:hover {
+            text-decoration: none;
+        }
+    .section-calculator-risk .input-style.calc-email {
+            max-width: 220px;
+        }
         .bottom-calc-box {
             text-align: center;
             margin-bottom: 47px;
@@ -3696,6 +3734,54 @@ img {
             .bottom-calc-box button:last-child {
                 margin-right: 0;
             }
+
+            .block-note {
+                font: 400 16px 'proximanova-regular';
+                text-align: center;
+            }
+            .block-note p {
+                margin-bottom: 21px;
+            }
+            .block-note > :last-child {
+                margin-bottom: 0;
+            }
+            /*---help---*/
+                .jQtooltip {
+                    position: relative;
+                    cursor: help;
+                }
+                .jQtooltip div {
+                    display: none;
+                    position: absolute;
+                    bottom: -1px;
+                    left: -1px;
+                    z-index: 1000;
+                    width: 220px;
+                    height: 100%;
+                    padding: 15px;
+                    text-align: left;
+                    font: 400 14px 'proximanova-regular';
+                    line-height: 16px;
+                    color: #ffffff;
+                    background: #565b5f;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    border-radius: 4px;
+                }
+                .jQtooltip.mini {
+                    display: inline-block;
+                    vertical-align: bottom;
+                    font: 700 15px 'proximanova-bold';
+                    width: 17px;
+                    height: 17px;
+                    line-height: 17px;
+                    text-align: center;
+                    margin-left: 6px;
+                    top: -5px;
+                    color: #0097de;
+                    border: 1px solid #0097de;
+                    border-radius: 50%;
+                }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi {
     float: right;
