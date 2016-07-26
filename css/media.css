@@ -250,6 +250,9 @@
     .select-volunteer-wrap {
         overflow: visible;
     }
+    .calculator-wrap {
+        padding: 0 50px;
+    }
 }
 
 @media all and (max-width: 991px) {
@@ -561,6 +564,24 @@
     .map-wrapper {
         padding-top: 60%;
     }
+    .calculator-list > li {
+        font-size: 18px;
+    }
+    .calculator-list span {
+        font-size: 16px;
+    }
+    .calculator-left-box a.more-info-w {
+        font-size: 13px;
+    }
+    .block-note {
+        font-size: 15px;
+    }
+    .ques-1 li {
+        float: none;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
 }
 
 @media all and (min-width: 768px) and (max-width: 860px) {
@@ -781,6 +802,23 @@
         width: 24%;
         padding: 0 10px;
         margin-bottom: 20px;
+    }
+    .calculator-right-box {
+        float: left;
+        display: table-footer-group;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .calculator-right-box  li {
+        margin-left: 0;
+    }
+    .calculator-left-box {
+        display: table-header-group;
+    }
+    .ques-1 li {
+        float: left;
+        margin-top: 0;
+        margin-bottom: 5px;
     }
 }
 

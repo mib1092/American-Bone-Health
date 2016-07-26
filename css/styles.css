@@ -3609,6 +3609,12 @@ img {
 .section-calculator-risk {
     margin-bottom: 55px;
 }
+.section-calculator-risk:before {
+
+}
+.section-calculator-risk:after {
+
+}
 .section-calculator-risk .title {
     margin-bottom: 50px;
 }
@@ -3665,6 +3671,10 @@ img {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
     }
     .calculator-list > li:hover:before {
         color: #ffffff;
@@ -3721,7 +3731,11 @@ img {
             .sbl-ft:after { content: 'ft.'; }
             .sbl-in:after { content: 'in.'; }
             .sbl-lbs:after { content: 'lbs.'; }
-
+            .sbl-ft .input-style,
+            .sbl-in .input-style,
+            .sbl-lbs .input-style {
+                padding-right: 35px;
+            }
             .check-two-row {
                 padding-top: 31px;
                 margin-bottom: 8px;
@@ -3790,7 +3804,7 @@ img {
                     left: -1px;
                     z-index: 1000;
                     width: 220px;
-                    height: 100%;
+                    height: 0;
                     padding: 15px;
                     text-align: left;
                     font: 400 14px 'proximanova-regular';
@@ -3815,6 +3829,7 @@ img {
                     border: 1px solid #0097de;
                     border-radius: 50%;
                 }
+
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi,
 .em-pagination {

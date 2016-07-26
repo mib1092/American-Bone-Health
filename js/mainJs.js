@@ -275,7 +275,7 @@ $(document).ready(function() {
     });
 
     // for help
-    $('.jQtooltip').each(function() {
+    $('span.jQtooltip').each(function() {
         var el = $(this);
         var title = el.attr('title');
         if (title && title != '') {
@@ -299,7 +299,7 @@ $(document).ready(function() {
                     if (el.children().is(':hidden')) el.find('div').clearQueue();
                 });
         }
-    })
+    });
 
     // for copy post permalink
     $("a.copy-permalink").on('click', function (e) {
