@@ -302,14 +302,14 @@ input:focus:-moz-placeholder { opacity: 0; }
     content: '\f078';
     position: absolute;
     width: 32px;
-    height: 38px;
+    height: 36px;
     right: 2px;
     top: 2px;
     font: 14px FontAwesome;
     color: #0097de;
     z-index: 3;
     text-align: center;
-    line-height: 38px;
+    line-height: 36px;
     background: #ffffff;
     pointer-events: none;
 }
@@ -2586,7 +2586,7 @@ img {
     padding: 20px 20px 12px;
     background: #ffffff;
 }
-    .event-search-box .input-style {
+    .event-search-box .input-style:not(.select-style) {
         padding-left: 30px;
     }
     .event-search-box .event-in-near {
@@ -2595,7 +2595,7 @@ img {
     select.input-style,
     .select-wrap > select {
         color: #191f22;
-        padding: 9px 8px 8px 8px;
+        padding: 8px 8px 7px 8px;
     }
         .event-search-wrap {
             display: table;
@@ -2640,17 +2640,20 @@ img {
                                 padding-right: 10px;
                                 margin-bottom: 12px;
                             }
-                            .event-search-bottom-box > li {
+                            .event-search-bottom-box > li:not(:nth-child(2n)) {
                                 padding-right: 10px;
                             }
-                                .event-search-date-box >li,
+                                .event-search-date-box > li,
                                 .event-search-select-box > li {
                                     padding-right: 10px;
                                     margin-bottom: 13px;
                                 }
-                                .event-search-date-box >li:last-child,
+                                .event-search-date-box > li:last-child,
                                 .event-search-select-box > li:last-child {
                                     padding-right: 0;
+                                }
+                                .event-search-select-box > li.em-search-geo-units {
+                                    padding-right: 10px;
                                 }
 
                         .event-in-search+i.fa,
@@ -2673,15 +2676,45 @@ img {
                         }
                         .event-in-date+i.fa {
                             left: 12px;
-                            bottom: 14px;
+                            bottom: 13px;
                         }
                         .event-in-date-t-h {
                             opacity: 0;
                         }
-                #event-in-date-t,
-                #event-in-date-f {
-                    padding: 6px 7px 5px 30px;
-                }
+
+                        .two-select {
+                            overflow: hidden;
+                            margin-left: -10px;
+                        }
+                            .two-select > li {
+                                float: left;
+                                width: 50%;
+                                padding-left: 10px;
+                            }
+                                .two-select .select-wrap:after {
+                                    width: 22px;
+                                    text-align: left;
+                                }
+                    div.em-search-location-meta {
+                        margin-top: 10px;
+                    }
+                        .em-search-location-meta > div:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+    #ui-datepicker-div {
+        z-index: 2000 !important;
+        max-width: 280px;
+    }
+        #ui-datepicker-div .ui-datepicker-header {
+            padding: 0 0 0.1em;
+        }
+        #ui-datepicker-div table {
+            font-size: 0.75em;
+        }
+        #ui-datepicker-div th {
+            padding: 0.5em 0.3em 0.4em;
+        }
+
 
     .event-info {
         margin-bottom: 7px;
@@ -3783,8 +3816,10 @@ img {
                     border-radius: 50%;
                 }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
-.wp-pagenavi {
+.wp-pagenavi,
+.em-pagination {
     float: right;
+    display: block;
     margin-top: 22px;
     text-align: right;
     -webkit-user-select: none;
@@ -3793,7 +3828,8 @@ img {
     -khtml-user-select: none;
     user-select: none;
 }
-    .wp-pagenavi a {
+    .wp-pagenavi a,
+    .em-pagination a {
         display: inline-block;
         width: 40px;
         height: 40px;
@@ -3807,23 +3843,38 @@ img {
         color: #8B9499;
         text-decoration: none;
     }
+    .wp-pagenavi a:last-child,
+    .em-pagination a:last-child {
+        margin-right: 0;
+    }
+    .wp-pagenavi a:hover,
+    .em-pagination a:hover {
+        color: #0097de;
+        border-color: #0097de;
+    }
     .wp-pagenavi a.first,
     .wp-pagenavi a.previouspostslink,
     .wp-pagenavi a.nextpostslink,
-    .wp-pagenavi a.last {
-        color: rgba(255, 255, 255, 0);;
+    .wp-pagenavi a.last,
+    .em-pagination a.prev,
+    .em-pagination a.next {
+        color: rgba(255, 255, 255, 0);
         position: relative;
     }
     .wp-pagenavi a.first:hover,
     .wp-pagenavi a.previouspostslink:hover,
     .wp-pagenavi a.nextpostslink:hover,
-    .wp-pagenavi a.last:hover {
-        color: rgba(255, 255, 255, 0);;
+    .wp-pagenavi a.last:hover,
+    .em-pagination a.prev:hover,
+    .em-pagination a.next:hover {
+        color: rgba(255, 255, 255, 0);
     }
     .wp-pagenavi .first:before,
     .wp-pagenavi .last:before,
     .wp-pagenavi .previouspostslink:before,
-    .wp-pagenavi .nextpostslink:before {
+    .wp-pagenavi .nextpostslink:before,
+    .em-pagination .prev:before,
+    .em-pagination .next:before {
         display: inline-block;
         position: absolute;
         top: 50%;
@@ -3837,31 +3888,30 @@ img {
         -o-transition: 0.2s;
         transition: 0.2s;
     }
-    .wp-pagenavi .first:before { content: '\f100'; }
-    .wp-pagenavi .last:before { content: '\f101'; margin-left: -7px; }
-    .wp-pagenavi .previouspostslink:before { content: '\f104'; margin-left: -8px; }
-    .wp-pagenavi .nextpostslink:before { content: '\f105'; margin-left: -4px; }
+    .wp-pagenavi .first:before, .em-pagination .prev + .prev:before { content: '\f100'; }
+    .wp-pagenavi .last:before, .em-pagination .next + .next:before { content: '\f101'; margin-left: -7px; }
+    .wp-pagenavi .previouspostslink:before, .em-pagination .prev:before { content: '\f104'; margin-left: -8px; }
+    .wp-pagenavi .nextpostslink:before, .em-pagination .next:before { content: '\f105'; margin-left: -4px; }
     .wp-pagenavi .first:hover:before,
     .wp-pagenavi .last:hover:before,
     .wp-pagenavi .previouspostslink:hover:before,
-    .wp-pagenavi .nextpostslink:hover:before{
+    .wp-pagenavi .nextpostslink:hover:before,
+    .em-pagination .prev:hover:before,
+    .em-pagination .next:hover:before {
         color: #0097de;
-    }
-    .wp-pagenavi a:last-child {
-        margin-right: 0;
-    }
-    .wp-pagenavi a:hover {
-        color: #0097de;
-        border-color: #0097de;
     }
     .wp-pagenavi .current,
-    .wp-pagenavi .extend {
+    .wp-pagenavi .extend,
+    .em-pagination span,
+    .em-pagination .current {
         padding: 0 7px;
         margin-right: 5px;
         color: #8B9499;
     }
-    .wp-pagenavi .current{
+    .wp-pagenavi .current,
+    .em-pagination .current {
         color: #0097de;
+        font-weight: 400;
     }
 
 /*------------------------------------ERROR-404-------------------------------------*/
