@@ -453,8 +453,8 @@
         clear: both;
     }
 
-    .inner-calc .wrapper {
-        padding-top: 160px;
+    .section-calculator-risk {
+        padding-top: 52px;
     }
 }
 
@@ -1654,9 +1654,6 @@
         margin-right: -10px;
     }
 
-    .inner-calc .wrapper {
-        padding-top: 160px;
-    }
     .calculator-wrap {
         padding: 0 10px;
     }

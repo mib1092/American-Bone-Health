@@ -3611,30 +3611,39 @@ img {
     font-size: 22px;
 }
 /*-------------------------------------CALCULATOR----------------------------------*/
-.inner-calc .wrapper {
-    padding-top: 247px;
-}
 .section-calculator-risk {
     position: relative;
     margin-bottom: 55px;
+    padding-top: 83px;
+}
+.section-calculator-risk:before,
+.section-calculator-risk:after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    max-height: 90%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .section-calculator-risk:before {
-    position: absolute;
-    content: '';
     top: 230px;
     left: 0;
     width: 252px;
     height: 1826px;
     background-image: url(../img/content/film_bgl.png);
+    background-position: top left;
 }
 .section-calculator-risk:after {
-    position: absolute;
-    content: '';
     bottom: 400px;
     right: 0;
     width: 242px;
     height: 1970px;
     background-image: url(../img/content/film_bgr.png);
+    background-position: bottom right;
+}
+.section-calculator-risk > .container {
+    position: relative;
+    z-index: 3;
 }
 .section-calculator-risk .title {
     margin-bottom: 50px;
@@ -3644,36 +3653,41 @@ img {
     padding: 0 100px;
 }
     .about-calculator {
-        padding: 29px 90px 30px;
+        padding: 34px 90px;
         text-align: center;
         background: #ffffff;
-        margin-bottom: 20px;
     }
         .about-calculator-title {
             font: 700 20px 'proximanova-bold';
-            padding-bottom: 25px;
+            padding-bottom: 28px;
         }
             .about-calculator p {
                 font-size: 16px;
+                line-height: 1.3;
+                margin-bottom: 12px;
             }
             .about-calculator > :last-child {
                 margin-bottom: 0;
             }
 .calculator-list {
     counter-reset: num;
-    margin-bottom: 65px;
+    margin-bottom: 78px;
 }
     .calculator-list > li {
         display: table;
         position: relative;
         width: 100%;
-        padding: 52px 0 41px 80px;
+        height: 135px;
+        padding: 50px 0 50px 80px;
         border-bottom: 2px solid #cbd3d6;
         font: 700 20px 'proximanova-bold';
         -webkit-transition: 0.2s;
         -moz-transition: 0.2s;
         -o-transition: 0.2s;
         transition: 0.2s;
+    }
+    .calculator-list > li:first-child {
+        padding-top: 63px;
     }
 
     .calculator-list > li:before {
@@ -3698,17 +3712,20 @@ img {
         -o-transition: 0.2s;
         transition: 0.2s;
     }
+    .calculator-list > li:first-child:before {
+        top: 53px;
+    }
     .calculator-list > li:hover:before {
         color: #ffffff;
         background: #0097de;
     }
     .calculator-list > li:hover {
-        background: -moz-linear-gradient(358deg, rgba(223,228,235,0.35) 0%, rgba(223,228,235,1) 15%, rgba(223,228,235,1) 85%, rgba(223,228,235,0) 100%); /* ff3.6+ */
-        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(223,228,235,0.35)), color-stop(15%, rgba(223,228,235,1)), color-stop(85%, rgba(223,228,235,1)), color-stop(100%, rgba(223,228,235,0))); /* safari4+,chrome */
-        background: -webkit-linear-gradient(358deg, rgba(223,228,235,0.35) 0%, rgba(223,228,235,1) 15%, rgba(223,228,235,1) 85%, rgba(223,228,235,0) 100%); /* safari5.1+,chrome10+ */
-        background: -o-linear-gradient(358deg, rgba(223,228,235,0.35) 0%, rgba(223,228,235,1) 15%, rgba(223,228,235,1) 85%, rgba(223,228,235,0) 100%); /* opera 11.10+ */
-        background: -ms-linear-gradient(358deg, rgba(223,228,235,0.35) 0%, rgba(223,228,235,1) 15%, rgba(223,228,235,1) 85%, rgba(223,228,235,0) 100%); /* ie10+ */
-        background: linear-gradient(92deg, rgba(223,228,235,0.35) 0%, rgba(223,228,235,1) 15%, rgba(223,228,235,1) 85%, rgba(223,228,235,0) 100%); /* w3c */
+        background: -moz-linear-gradient(360deg, rgba(228,233,237,1) 0%, rgba(228,233,237,1) 3%, rgba(222,228,232,1) 10%, rgba(222,228,232,1) 90%, rgba(228,233,237,1) 97%, rgba(228,233,237,1) 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(228,233,237,1)), color-stop(3%, rgba(228,233,237,1)), color-stop(10%, rgba(222,228,232,1)), color-stop(90%, rgba(222,228,232,1)), color-stop(97%, rgba(228,233,237,1)), color-stop(100%, rgba(228,233,237,1)));
+        background: -webkit-linear-gradient(360deg, rgba(228,233,237,1) 0%, rgba(228,233,237,1) 3%, rgba(222,228,232,1) 10%, rgba(222,228,232,1) 90%, rgba(228,233,237,1) 97%, rgba(228,233,237,1) 100%);
+        background: -o-linear-gradient(360deg, rgba(228,233,237,1) 0%, rgba(228,233,237,1) 3%, rgba(222,228,232,1) 10%, rgba(222,228,232,1) 90%, rgba(228,233,237,1) 97%, rgba(228,233,237,1) 100%);
+        background: -ms-linear-gradient(360deg, rgba(228,233,237,1) 0%, rgba(228,233,237,1) 3%, rgba(222,228,232,1) 10%, rgba(222,228,232,1) 90%, rgba(228,233,237,1) 97%, rgba(228,233,237,1) 100%);
+        background: linear-gradient(90deg, rgba(228,233,237,1) 0%, rgba(228,233,237,1) 3%, rgba(222,228,232,1) 10%, rgba(222,228,232,1) 90%, rgba(228,233,237,1) 97%, rgba(228,233,237,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe4eb', endColorstr='#dfe4eb',GradientType=1 ); /* ie6-9 */
     }
         .section-calculator-risk .input-style {
@@ -3795,12 +3812,13 @@ img {
         }
             .bottom-calc-box label {
                 display: block;
-                margin-bottom: 42px;
+                margin-bottom: 50px;
             }
-            .bottom-calc-box button {
+            .bottom-calc-box .btn {
                 margin-right: 11px;
+                margin-bottom: 10px;
             }
-            .bottom-calc-box button:last-child {
+            .bottom-calc-box .btn:last-of-type {
                 margin-right: 0;
             }
 
@@ -3876,12 +3894,6 @@ img {
                 .jQtooltip.mini:focus {
                     background: #0097de;
                     color: #fff;
-                }
-                .jQtooltip.mini:hover {
-                    color: #ffffff;
-                    background: #0097de ;
-                    border: 1px solid #0097de;
-                    border-radius: 50%;
                 }
 .error {
     color: #ff0000;
