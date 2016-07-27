@@ -3607,13 +3607,24 @@ img {
     padding-top: 247px;
 }
 .section-calculator-risk {
+    position: relative;
     margin-bottom: 55px;
 }
 .section-calculator-risk:before {
-
+    position: absolute;
+    top: 230px;
+    left: 0;
+    width: 252px;
+    height: 1856px;
+    background-image: url(../img/content/film_bgl.png);
 }
 .section-calculator-risk:after {
-
+    position: absolute;
+    bottom: 400px;
+    right: 0;
+    width: 242px;
+    height: 1970px;
+    background-image: url(../img/content/film_bgr.png);
 }
 .section-calculator-risk .title {
     margin-bottom: 50px;

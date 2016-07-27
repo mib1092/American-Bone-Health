@@ -581,7 +581,20 @@
         margin-top: 0;
         margin-bottom: 5px;
     }
-
+    .about-calculator {
+        padding: 29px 50px 30px;
+    }
+    .radio-type.ques-1 {
+        margin-top: 5px;
+    }
+    .ques-2 li {
+        float: none;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .ques-2 li:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 860px) {
@@ -819,6 +832,13 @@
         float: left;
         margin-top: 0;
         margin-bottom: 5px;
+    }
+    .ques-2 li {
+        float: left;
+        margin-top: 0;
+    }
+    .ques-2 li:last-child {
+        margin-right: 0;
     }
 }
 
