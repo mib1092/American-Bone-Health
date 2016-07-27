@@ -291,8 +291,8 @@ $(document).ready(function() {
                 },
                 function() {
                     el.find('div')
-                        .animate({width: width + 20, height: height + 20}, 150)
-                        .animate({width: 'hide', height: 'hide'}, 150);
+                        .animate({width: width + 20, height: height + 20}, 250)
+                        .animate({width: 'hide', height: 'hide'}, 250);
                 }
             ).mouseleave(function() {
                     if (el.children().is(':hidden')) el.find('div').clearQueue();

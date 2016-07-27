@@ -3877,10 +3877,19 @@ img {
                     background: #0097de;
                     color: #fff;
                 }
+                .jQtooltip.mini:hover {
+                    color: #ffffff;
+                    background: #0097de ;
+                    border: 1px solid #0097de;
+                    border-radius: 50%;
+                }
 .error {
-    color: red;
+    color: #ff0000;
 }
 label.error {
+    position: absolute;
+    padding-top: 3px;
+    white-space: nowrap;
     font-size: 14px;
 }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
