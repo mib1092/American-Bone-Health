@@ -463,24 +463,27 @@
     .after-popular-article .cell-list {
         padding-top: 20px;
     }
+
     .cell-list > li,
     .sidebar .trand-list > li,
-    .after-popular-article .cell-list > li{
+    .after-popular-article .cell-list > li {
         float: left;
         width: 50%;
         padding-bottom: 20px;
         margin: 0;
     }
+
     .cell-list > li:first-child,
     .cell-list > li:nth-child(2n+1),
     .sidebar .trand-list > li:first-child,
-    .sidebar .trand-list > li:nth-child(2n+1){
+    .sidebar .trand-list > li:nth-child(2n+1) {
         clear: both;
     }
 
     .join-event-list {
         margin: 0 0 0 50px;
     }
+
     .join-box {
         margin-left: 0;
     }
@@ -488,9 +491,11 @@
     .section-download-list .download-list > li {
         width: 50%;
     }
+
     .section-download-list .download-list > li:nth-child(3n+1) {
         clear: none;
     }
+
     .section-download-list .download-list > li:nth-child(2n+1) {
         clear: both;
     }
@@ -499,31 +504,37 @@
         padding-right: 0;
         margin-bottom: 40px;
     }
-        .wp-pagenavi,
-        .em-pagination {
-            float: none;
-            padding-bottom: 20px;
-        }
+
+    .wp-pagenavi,
+    .em-pagination {
+        float: none;
+        padding-bottom: 20px;
+    }
+
     .sidebar {
         position: relative;
         left: 0;
         margin: 0;
         max-width: 100%;
     }
+
     .sidebar .newsletter-box li,
     .sidebar .es_textbox,
     .sidebar .es_button {
         margin-bottom: 0;
         display: table-cell;
     }
+
     .newsletter-btn,
     .sidebar .es_button {
         width: 130px;
         padding-left: 10px;
     }
+
     .sidebar .es_textbox {
         width: 100%;
     }
+
     .sidebar .es_textbox_button {
         padding-left: 20px;
         padding-right: 20px;
@@ -534,9 +545,11 @@
         /*width: 100%;*/
         margin-bottom: 0;
     }
+
     .sidebar .related-article {
         padding-bottom: 0;
     }
+
     .standard-page.blog-list-page,
     .standard-page.blog-page,
     .standard-page {
@@ -550,15 +563,19 @@
     .faces-list-box li {
         width: 20%;
     }
+
     .faces-list-box li:nth-child(4n+1) {
         clear: none;
     }
+
     .faces-list-box li:nth-child(5n+1) {
         clear: both;
     }
+
     .faces-details-page .after-post-widget {
         margin-bottom: -16px;
     }
+
     a.btn-load-more {
         margin-bottom: 40px;
     }
@@ -566,6 +583,7 @@
     .becoming-vol-page .big-banner .banner-box {
         max-width: 100%;
     }
+
     .section-program-overview .program-video-wrap {
         float: none;
         width: 100%;
@@ -580,34 +598,43 @@
     .map-wrapper {
         padding-top: 60%;
     }
+
     .calculator-list > li {
         font-size: 18px;
     }
+
     .calculator-list span {
         font-size: 16px;
     }
+
     .calculator-left-box a.more-info-w {
         font-size: 13px;
     }
+
     .block-note {
         font-size: 15px;
     }
+
     .ques-1 li {
         float: none;
         margin-top: 0;
         margin-bottom: 5px;
     }
+
     .about-calculator {
         padding: 29px 50px 30px;
     }
+
     .radio-type.ques-1 {
         margin-top: 5px;
     }
+
     .ques-2 li {
         float: none;
         margin-top: 0;
         margin-bottom: 10px;
     }
+
     .ques-2 li:last-child {
         margin-bottom: 0;
     }
@@ -615,16 +642,19 @@
     .calculator-wrap {
         padding: 0 50px;
     }
+
     .section-calculator-risk:before {
         top: 950px;
         width: 74px;
         height: 545px;
-}
+    }
+
     .section-calculator-risk:after {
         top: 1682px;
         width: 75px;
         height: 619px;
     }
+}
 
 @media all and (min-width: 768px) and (max-width: 860px) {
     .article-slider-box {
