@@ -3303,14 +3303,14 @@ img {
             }
 
 /*-------------------------------------BECOMING-VOLUNTEER---------------------------*/
-    .becoming-vol-page .big-banner .banner-box {
+    .big-banner .banner-box {
         max-width: 50%;
         padding-right: 20px;
     }
-        .becoming-vol-page .big-banner a.learn-more {
+        .big-banner a.learn-more {
             padding: 18px 51px 16px;
         }
-    .becoming-vol-page .big-banner .banner-map-box {
+    .big-banner .banner-map-box {
         overflow: hidden;
         position: relative;
         display: table-cell;
@@ -3328,10 +3328,17 @@ img {
                 position: relative;
                 padding-top: 60%;
                 z-index: 5;
+                overflow: hidden;
             }
+        .google-maps-builder {
+            position: absolute !important;
+            height: 100% !important;
+            width: 100% !important;
+            top: 0;
+        }
 #save-widget {
     width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px -1px;
     background-color: white;
     padding: 10px;
     font-family: Roboto, Arial;
@@ -4392,3 +4399,7 @@ img {
         -moz-border-radius: 4px;
         border-radius: 4px;
     }
+
+.main-place-infobubble-content {
+    color: #191f22;
+}

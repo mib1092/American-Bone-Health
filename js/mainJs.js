@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // scroll navigation fixed
-    if (document.body.clientWidth > '974') {
+    if ($(window).width() > '974') {
         $(window).scroll(function(){
             $('.header').toggleClass('scroll-js', $(this).scrollTop() > 0);
         });
@@ -37,12 +37,12 @@ $(document).ready(function() {
 
     // for "Faces of Osteoporosis" Section on devices
     $(window).on('load resize', function() {
-        if (document.body.clientWidth <= '991') {
+        if ($(window).width() <= '991') {
             $('.faces-wrap').on("click", function() {
                 location.href = $(this).attr('data-href');
             });
         }
-        if (document.body.clientWidth <= '768') {
+        if ($(window).width() <= '768') {
             $('.faces-list li:not(.small-faces)').each(function(index){
                 var face = $('.faces-list li:not(.small-faces)').eq(index);
                 face.css({'height': face.width()});
@@ -67,7 +67,7 @@ $(document).ready(function() {
         $(sidebar).parent().css({'min-height': sidebar.height()});
     }
     $(window).on('load resize', function() {
-        if (document.body.clientWidth > '860') {
+        if ($(window).width() > '860') {
             contentMinHeight();
             setTimeout(contentMinHeight, 2000);
             setTimeout(contentMinHeight, 4000);
@@ -142,18 +142,17 @@ $(document).ready(function() {
 
     // move sing-volonteer btn
     $(window).on('load resize', function() {
-        if (document.body.clientWidth > '1024') {
-            $('.select-volunteer-left-box input[type=submit], .select-volunteer-left-box button[type=submit]').each(function(index){
-                var submit = $(this).eq(index),
-                    parentBox = submit.parents('.move-sign-volun');
-                submit.appendTo(parentBox);
+        if ($(window).width() > '1024') {
+            $('.select-volunteer-left-box [type=submit]').each(function(){
+                var parentBox = $(this).closest('.move-sign-volun');
+
+                $(this).appendTo(parentBox);
             });
         } else {
-            $('.select-volunteer-wrap + input[type=submit], .select-volunteer-wrap + button[type=submit]').each(function(index){
-                var submit = $(this).eq(index),
-                    parentBox = submit.parent().find('.select-volunteer-left-box').children('form');
+            $('.select-volunteer-wrap + [type=submit]').each(function(){
+                var parentBox = $(this).parent().find('.select-volunteer-left-box').children('form');
 
-                submit.appendTo(parentBox);
+                $(this).appendTo(parentBox);
             });
         }
     });
@@ -177,7 +176,7 @@ $(document).ready(function() {
             allTabs = selectVolonteerTabs.find('.tabs'),
             allBoxes = selectVolonteerTabs.find('.box-tabs-list');
 
-        if (document.body.clientWidth <= '640') {
+        if ($(window).width() <= '640') {
             subBoxTabsListLi.children('.sub-box').attr('style', '');
 
             allSubTabs.each(function (index) {
@@ -208,7 +207,7 @@ $(document).ready(function() {
                 }
             });
 
-        } if (document.body.clientWidth > '640') {
+        } if ($(window).width() > '640') {
             subBoxTabsListLi.children('.sub-box').attr('style', '');
 
             allSubTabs.each(function (index) {
@@ -239,7 +238,7 @@ $(document).ready(function() {
                     boxTabsListLi.eq(tabId).children('.box').addClass('visible');
                 }
             });
-        } if (document.body.clientWidth > '1024') {
+        } if ($(window).width() > '1024') {
             // for Sub tabs
             subBoxTabsListLi.children('.sub-box').attr('style', '');
 
@@ -276,8 +275,8 @@ $(document).ready(function() {
 
     // for help
     $('span.jQtooltip').each(function() {
-        var el = $(this);
-        var title = el.attr('title');
+        var el = $(this),
+            title = el.attr('title');
         if (title && title != '') {
             el.attr('title', '').append('<div>' + title + '</div>');
             var width = el.find('div').width();

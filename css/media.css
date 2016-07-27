@@ -281,14 +281,15 @@
         text-align: center;
     }
 
-    .becoming-vol-page .big-banner .banner-map-box,.becoming-vol-page .big-banner .banner-box {
+    .big-banner .banner-map-box,
+    .big-banner .banner-box {
         display: block;
         width: 100%;
         max-width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
-    .becoming-vol-page .big-banner .banner-map-box {
+    .big-banner .banner-map-box {
         padding-bottom: 50px;
     }
     .take-action-page .banner-box a {
@@ -580,7 +581,7 @@
         margin-bottom: 40px;
     }
 
-    .becoming-vol-page .big-banner .banner-box {
+    .big-banner .banner-box {
         max-width: 100%;
     }
 
