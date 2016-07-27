@@ -96,6 +96,20 @@
         width: 213px;
         height: 362px;
     }
+    .section-calculator-risk:before {
+        background-size: contain;
+        background-position: left center;
+        top: 750px;
+        width: 110px;
+        height: 799px;
+    }
+    .section-calculator-risk:after {
+        background-size: contain;
+        background-position: right center;
+        top: 1082px;
+        width: 110px;
+        height: 900px;
+    }
     .why-we-list {
         width: auto;
         margin-left: -15px;
@@ -438,6 +452,10 @@
     }
     .faces-list-box li:nth-child(4n+1) {
         clear: both;
+    }
+
+    .inner-calc .wrapper {
+        padding-top: 160px;
     }
 }
 
@@ -839,6 +857,14 @@
     }
     .ques-2 li:last-child {
         margin-right: 0;
+    }
+    .calculator-right-box li:last-child {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .calculator-right-box li {
+        margin-left: 0;
+        margin-right: 20px;
     }
 }
 
@@ -1249,6 +1275,12 @@
     .em-pagination a {
         margin-bottom: 10px;
     }
+    .calculator-wrap {
+        padding: 0 20px;
+    }
+    .about-calculator {
+        padding: 19px 20px 20px;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -1578,6 +1610,16 @@
         padding-top: 0;
         margin-left: -10px;
         margin-right: -10px;
+    }
+
+    .inner-calc .wrapper {
+        padding-top: 160px;
+    }
+    .calculator-wrap {
+        padding: 0 10px;
+    }
+    .about-calculator {
+        padding: 19px 20px 20px;
     }
 }
 

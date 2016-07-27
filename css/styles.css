@@ -3612,14 +3612,16 @@ img {
 }
 .section-calculator-risk:before {
     position: absolute;
+    content: '';
     top: 230px;
     left: 0;
     width: 252px;
-    height: 1856px;
+    height: 1826px;
     background-image: url(../img/content/film_bgl.png);
 }
 .section-calculator-risk:after {
     position: absolute;
+    content: '';
     bottom: 400px;
     right: 0;
     width: 242px;
@@ -3628,6 +3630,7 @@ img {
 }
 .section-calculator-risk .title {
     margin-bottom: 50px;
+    text-align: center;
 }
 .calculator-wrap {
     padding: 0 100px;
@@ -3750,9 +3753,9 @@ img {
             .check-two-row {
                 padding-top: 31px;
                 margin-bottom: 8px;
-                -webkit-columns: 2;
-                -moz-columns:  2;
-                columns: 2;
+                -webkit-columns: 350px 2;
+                -moz-columns: 350px  2;
+                columns: 350px 2;
                 -webkit-column-gap: 60px;
                 -moz-column-gap: 60px;
                 column-gap: 60px;
