@@ -103,7 +103,7 @@
                             learn their risk.</p>
                     </div>
 
-                    <form>
+                    <form id="calculator-form">
                         <ul class="calculator-list">
                             <li>
                                 <div class="calculator-right-box">
@@ -136,7 +136,7 @@
 
                             <li>
                                 <div class="calculator-right-box">
-                                    <input type="text" class="input-style" placeholder="e.g. 54" >
+                                    <input type="text" class="input-style" placeholder="e.g. 54" name="calcfild1">
                                 </div>
 
                                 <div class="calculator-left-box">
@@ -148,10 +148,10 @@
                                 <div class="calculator-right-box">
                                     <ul class="ques-2">
                                     <li class="sbl-ft">
-                                        <input type="text" class="input-style" placeholder="e.g. 3">
+                                        <input type="text" class="input-style" placeholder="e.g. 3" name="calcfild2">
                                     </li>
                                     <li class="sbl-in">
-                                        <input type="text" class="input-style" placeholder="e.g. 7">
+                                        <input type="text" class="input-style" placeholder="e.g. 7" name="calcfild3">
                                     </li>
                                 </ul>
                                 </div>
@@ -164,7 +164,7 @@
                                 <div class="calculator-right-box">
                                     <ul>
                                         <li class="sbl-lbs">
-                                            <input type="text" class="input-style" placeholder="e.g. 100">
+                                            <input type="text" class="input-style" placeholder="e.g. 100" name="calcfild4">
                                         </li>
                                     </ul>
                                 </div>
@@ -451,7 +451,7 @@
 
                             <li>
                                 <div class="calculator-right-box">
-                                    <input type="text" class="input-style">
+                                    <input type="text" class="input-style" name="calcfild5">
                                 </div>
                                 <div class="calculator-left-box">
                                     <p>This calculator will give results WITH OR WITHOUT a bone density test score result.
@@ -462,7 +462,7 @@
 
                             <li>
                                 <div class="calculator-right-box">
-                                    <input type="email" class="input-style calc-email" placeholder="Email">
+                                    <input type="email" class="input-style calc-email" placeholder="Email" name="calcfild6">
                                 </div>
                                 <div class="calculator-left-box">
                                     <p>If you would like a copy of your report emailed to you, enter your email address. </p>
@@ -583,6 +583,7 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="assets/owl.carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
 	<script src="js/scroll.js"></script>
     <script src="js/mainJs.js"></script>
 </body>

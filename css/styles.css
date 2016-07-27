@@ -3843,7 +3843,10 @@ img {
                     border: 1px solid #0097de;
                     border-radius: 50%;
                 }
-
+.error{
+    color: red;
+    font-size: 14px;
+}
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
 .wp-pagenavi,
 .em-pagination {

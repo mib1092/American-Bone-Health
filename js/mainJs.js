@@ -146,7 +146,6 @@ $(document).ready(function() {
             $('.select-volunteer-left-box input[type=submit], .select-volunteer-left-box button[type=submit]').each(function(index){
                 var submit = $(this).eq(index),
                     parentBox = submit.parents('.move-sign-volun');
-
                 submit.appendTo(parentBox);
             });
         } else {
@@ -158,6 +157,7 @@ $(document).ready(function() {
             });
         }
     });
+
 
     // for Tabs
     $(window).on('load resize', function() {
@@ -301,6 +301,47 @@ $(document).ready(function() {
         }
     });
 
+    // for Validate
+    $("#calculator-form").validate({
+        rules:{
+            calcfild1:{
+                required: true,
+                number: true,
+                minlength: 1,
+                maxlength: 16
+            },
+
+            calcfild2:{
+                required: true,
+                number: true,
+                minlength: 1,
+                maxlength: 16
+            },
+            calcfild3:{
+                required: true,
+                number: true,
+                minlength: 1,
+                maxlength: 16
+            },
+            calcfild4:{
+                required: true,
+                number: true,
+                minlength: 1,
+                maxlength: 16
+            },
+            calcfild5:{
+                required: true,
+                minlength: 1,
+                maxlength: 16
+            },
+            calcfild6:{
+                required: true,
+                email: true,
+                minlength: 4,
+                maxlength: 16
+            }
+        }
+    });
     // for copy post permalink
     $("a.copy-permalink").on('click', function (e) {
         e.preventDefault();
