@@ -28,6 +28,21 @@
     .banner-box {
         height: 620px;
     }
+
+    .section-calculator-risk:before {
+        background-size: contain;
+        background-position: left center;
+        top: 750px;
+        width: 110px;
+        height: 799px;
+    }
+    .section-calculator-risk:after {
+        background-size: contain;
+        background-position: right center;
+        top: 1082px;
+        width: 110px;
+        height: 900px;
+    }
 }
 
 @media all and (max-width: 1280px) {
@@ -95,20 +110,6 @@
         background-position: right center;
         width: 213px;
         height: 362px;
-    }
-    .section-calculator-risk:before {
-        background-size: contain;
-        background-position: left center;
-        top: 750px;
-        width: 110px;
-        height: 799px;
-    }
-    .section-calculator-risk:after {
-        background-size: contain;
-        background-position: right center;
-        top: 1082px;
-        width: 110px;
-        height: 900px;
     }
     .why-we-list {
         width: auto;
@@ -263,9 +264,6 @@
 
     .select-volunteer-wrap {
         overflow: visible;
-    }
-    .calculator-wrap {
-        padding: 0 50px;
     }
 }
 
@@ -613,7 +611,20 @@
     .ques-2 li:last-child {
         margin-bottom: 0;
     }
+
+    .calculator-wrap {
+        padding: 0 50px;
+    }
+    .section-calculator-risk:before {
+        top: 950px;
+        width: 74px;
+        height: 545px;
 }
+    .section-calculator-risk:after {
+        top: 1682px;
+        width: 75px;
+        height: 619px;
+    }
 
 @media all and (min-width: 768px) and (max-width: 860px) {
     .article-slider-box {
