@@ -282,6 +282,7 @@ input:focus:-moz-placeholder { opacity: 0; }
     -webkit-font-smoothing: antialiased;
     text-align: center;
     background: #ffffff;
+    letter-spacing: 1px;
 }
 .radio-style input[type=radio]:checked + span:before {
     content: '\f111';
@@ -3755,7 +3756,7 @@ img {
             .sbl-ft .input-style,
             .sbl-in .input-style,
             .sbl-lbs .input-style {
-                padding-right: 35px;
+                padding-right: 47px;
             }
             .check-two-row {
                 padding-top: 31px;
@@ -3850,8 +3851,10 @@ img {
                     border: 1px solid #0097de;
                     border-radius: 50%;
                 }
-.error{
+.error {
     color: red;
+}
+label.error {
     font-size: 14px;
 }
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
