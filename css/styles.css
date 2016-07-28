@@ -3639,7 +3639,7 @@ img {
     width: 242px;
     height: 1970px;
     background-image: url(../img/content/film_bgr.png);
-    background-position: bottom right;
+    background-position: top right;
 }
 .section-calculator-risk > .container {
     position: relative;
@@ -3745,7 +3745,7 @@ img {
             margin-left: 20px;
         }
         .calculator-right-box .radio-type {
-            margin-top: 7px;
+            margin-top: 12px;
         }
         .calculator-right-box .select-wrap {
             width: 180px;
@@ -3879,8 +3879,8 @@ img {
                     height: 17px;
                     line-height: 17px;
                     text-align: center;
-                    margin-left: 10px;
-                    top: -6px;
+                    margin-left: 4px;
+                    top: -4px;
                     color: #0097de;
                     border: 1px solid #0097de;
                     border-radius: 50%;
