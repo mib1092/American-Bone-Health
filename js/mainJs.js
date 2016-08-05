@@ -143,10 +143,12 @@ $(document).ready(function() {
     // move sing-volonteer btn
     $(window).on('load resize', function() {
         if ($(window).width() > '1024') {
-            $('.select-volunteer-left-box [type=submit]').each(function(){
-                var parentBox = $(this).closest('.move-sign-volun');
+            $('.select-volunteer-left-box [type=submit]').each(function (index) {
+                var parentBox = $(this).closest('.move-sign-volun'),
+                    id = 'volunteer-form-' + index;
 
-                $(this).appendTo(parentBox);
+                $(this).closest('form').attr('id', id);
+                $(this).attr('form', id).appendTo(parentBox);
             });
         } else {
             $('.select-volunteer-wrap + [type=submit]').each(function(){
@@ -204,6 +206,23 @@ $(document).ready(function() {
                     miniBox.removeClass('visible');
                     miniTabParent.eq(liId).addClass('current');
                     miniBox.eq(liId).addClass('visible');
+                }
+            });
+
+            $(tabsMini).click( function(e) {
+                e.preventDefault();
+
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    let target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        setTimeout(function(){
+                            $('html, body').animate({
+                                scrollTop: target.offset().top - 100
+                            }, 300);
+                            return false;
+                        }, 10)
+                    }
                 }
             });
 
@@ -300,6 +319,7 @@ $(document).ready(function() {
         }
     });
 
+
     // for Validate
     $("#calculator-form").validate({
         rules:{
@@ -309,7 +329,6 @@ $(document).ready(function() {
                 minlength: 1,
                 maxlength: 16
             },
-
             calcfild2:{
                 required: true,
                 number: true,
@@ -341,6 +360,8 @@ $(document).ready(function() {
             }
         }
     });
+
+
     // for copy post permalink
     $("a.copy-permalink").on('click', function (e) {
         e.preventDefault();
@@ -355,4 +376,88 @@ $(document).ready(function() {
             }
         });
     });
+
+
+
+    // for Donate section
+    var other_input = $('#_dgx_donate_user_amount[name="_dgx_donate_user_amount"]'),
+        donate_repeating = $('#dgx-donate-repeating'),
+        donate_tribute = $('#dgx-donate-tribute'),
+        donate_tribute_section = $('#dgx-donate-form-tribute-section');
+
+    $('.donate-list .donate-number').not('.open-other').on('click', function(){
+        var quantity = $(this).prev('input[type=radio]').val();
+
+        $('#dgx-donate-other-radio').prop( "checked", true );
+        other_input.val(quantity);
+        $(this).closest('.donate-list').removeClass('open-hide');
+        $('#dgx-donate-form-donor-section').slideDown(400);
+    });
+
+    $('.open-other').on('click', function(){
+        $(this).closest('.donate-list').addClass('open-hide');
+        other_input.val('');
+    });
+
+    $('#other-quantity').on('change keyup paste input', function(){
+        var otherValue = $(this).val();
+        other_input.val(otherValue);
+        $('#dgx-donate-form-donor-section').slideDown(400);
+    });
+
+
+    $('.donate-repeating').on('change', function(){
+        if (this.checked) {
+            donate_repeating.prop( "checked", true );
+        } else {
+            donate_repeating.prop( "checked", false );
+        }
+    });
+
+    $('.donate-tribute-gift').on('change', function(){
+        donate_tribute.click();
+        if (this.checked) {
+            donate_tribute.prop( "checked", true );
+        } else {
+            donate_tribute.prop( "checked", false );
+        }
+        $('#_dgx_donate_honor_by_email').find('.radio-style').addClass('check');
+    });
+
+
+    $('#dgx-donate-form-payment-section').find('input[type=submit]').on('click', function(){
+        setTimeout(function(){
+            if ($('#seamless-donations-form').children('.seamless-donations-forms-error-message').text().length > 0) {
+                $('html, body').animate({
+                    scrollTop: $("#seamless-donations-form").offset().top - 130
+                }, 0);
+            }
+        }, 1);
+    });
+
+
+    donate_tribute_section.find('input[type="checkbox"]').wrap("<label class='check-style'></label>");
+    donate_tribute_section.find('input[type="radio"]').wrap("<label class='radio-style'></label>");
+    donate_tribute_section.find('select').wrap("<div class='select-wrap'></div>");
+
+
+    var check_boxes = $('#dgx-donate-form-tribute-section').find('.check-style'),
+        radio_boxes = $('#dgx-donate-form-tribute-section').find('.radio-style');
+
+    check_boxes.on('click', function(){
+        var thisCheck = $(this).children('input[type=checkbox]');
+
+        if (thisCheck.is(':checked')) {
+            $(this).addClass('check');
+        } else {
+            $(this).removeClass('check');
+        }
+    });
+
+    radio_boxes.on('click', function(){
+        radio_boxes.removeClass('check');
+        $(this).addClass('check');
+    });
+
+
 });

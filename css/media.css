@@ -100,6 +100,13 @@
     }
 }
 
+@media all and (min-width: 1025px) {
+    div.wpcf7-response-output {
+        margin: 0;
+        padding: 5px 10px;
+    }
+}
+
 @media all and (max-width: 1024px) {
     .section-calculator:before {
         background-position: left center;
@@ -179,6 +186,9 @@
         width: 100%;
         border: none;
         margin: 0;
+    }
+    .select-volunteer-left-box .volonteer-left-box-list {
+        margin-bottom: 40px;
     }
     .tabs {
         display: table-cell;
@@ -410,7 +420,8 @@
     .why-we-list > li {
         width: 48%;
     }
-    .map-wrapper {
+    .map-wrapper,
+    #wpgmza_map {
         padding-top: 40%;
     }
 }
@@ -622,7 +633,8 @@
         line-height: 1.5;
     }
 
-    .map-wrapper {
+    .map-wrapper,
+    #wpgmza_map {
         padding-top: 60%;
     }
 
@@ -1309,11 +1321,16 @@
             .sub-tabs .sub-volonteer-tab-name {
                 color: #191f22;
             }
-        .tabs-mini {
+        .tabs-mini,
+        a.tabs-mini {
+            color: #191f22;
             background: #ffffff;
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             border-radius: 4px;
+        }
+        a.tabs-mini:hover {
+            text-decoration: none;
         }
     .select-volunteer-wrap {
         margin-bottom: 30px;
@@ -1509,7 +1526,8 @@
     .btn, a.btn {
         /*padding: 11px 20px 9px;*/
     }
-    .section .btn {
+    .section .btn,
+    .section-donate input[name="dgx-donate-pay-enabled"] {
         min-width: 180px;
     }
 
